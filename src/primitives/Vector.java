@@ -3,14 +3,14 @@ package primitives;
 public class Vector extends Point {
     Vector(Double3 xyz) {
         super(xyz);
-        if (xyz == Double3.ZERO) {
+        if (xyz.equals(Double3.ZERO)) {
             throw new IllegalArgumentException("invalid coordinates for a vector");
         }
     }
 
     public Vector(double x, double y, double z) {
         super(x, y, z);
-        if (xyz == (Double3.ZERO)) {
+        if (xyz.equals(Double3.ZERO)) {
             throw new IllegalArgumentException("invalid coordinates for a vector");
         }
     }
@@ -28,12 +28,12 @@ public class Vector extends Point {
         return newVector;
     }
 
-    private double dotProduct(Double3 toScale) {
-        double scalar = (xyz.d1 * toScale.d1) + (xyz.d2 * toScale.d2) + (xyz.d3 * toScale.d3);
+    public double dotProduct(Vector toScale) {
+        double scalar = (xyz.d1 * toScale.xyz.d1) + (xyz.d2 * toScale.xyz.d2) + (xyz.d3 * toScale.xyz.d3);
         return scalar;
     }
 
-    private Vector crossProduct(Vector v2) {
+    public Vector crossProduct(Vector v2) {
         double x = xyz.d2 * v2.xyz.d3 - xyz.d3 * v2.xyz.d2;
         double y = xyz.d3 * v2.xyz.d1 - xyz.d1 * v2.xyz.d3;
         double z = xyz.d1 * v2.xyz.d2 - xyz.d2 * v2.xyz.d1;
@@ -41,12 +41,12 @@ public class Vector extends Point {
         return newVector;
     }
 
-    private double lengthSquared() {
+    public double lengthSquared() {
         double length = (xyz.d1 * xyz.d1) + (xyz.d2 * xyz.d2) + (xyz.d3 * xyz.d3);
         return length;
     }
 
-    private double length() {
+    public double length() {
         return Math.sqrt(lengthSquared());
     }
 
