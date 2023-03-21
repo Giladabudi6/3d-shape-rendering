@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddd7cf09-e0eb-4fc3-8367-3a130fcedbfc" name="Changes" comment="completed Level 1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Vector.java" afterDir="false" />
-    </list>
+    <list default="true" id="ddd7cf09-e0eb-4fc3-8367-3a130fcedbfc" name="Changes" comment="completed Level 1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +77,7 @@
       <workItem from="1677599390465" duration="4805000" />
       <workItem from="1679433279466" duration="575000" />
       <workItem from="1679433888473" duration="2000" />
-      <workItem from="1679433914874" duration="6973000" />
+      <workItem from="1679433914874" duration="7271000" />
     </task>
     <task id="LOCAL‎-00001" summary="ISE5783">
       <created>1677599486250</created>
@@ -117,7 +114,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1679440479718</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL‎-00006" summary="completed Level 1">
+      <created>1679441113669</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL‎-00006" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1679441113669</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
