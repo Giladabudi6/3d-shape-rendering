@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddd7cf09-e0eb-4fc3-8367-3a130fcedbfc" name="Changes" comment="completed Primitives package and begin working on the Geometry package">
-      <change afterPath="$PROJECT_DIR$/src/geometries/Cylinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/geometries/Sphare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/geometries/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/geometries/Tube.java" afterDir="false" />
+    <list default="true" id="ddd7cf09-e0eb-4fc3-8367-3a130fcedbfc" name="Changes" comment="completed Level 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Plane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/primitives/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Vector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +80,7 @@
       <workItem from="1677599390465" duration="4805000" />
       <workItem from="1679433279466" duration="575000" />
       <workItem from="1679433888473" duration="2000" />
-      <workItem from="1679433914874" duration="6147000" />
+      <workItem from="1679433914874" duration="6973000" />
     </task>
     <task id="LOCAL‎-00001" summary="ISE5783">
       <created>1677599486250</created>
@@ -116,7 +110,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1679433386245</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL‎-00005" summary="completed Level 1">
+      <created>1679440479718</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL‎-00005" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1679440479718</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +137,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ISE5783" />
     <MESSAGE value="completed Primitives package and begin working on the Geometry package" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed Primitives package and begin working on the Geometry package" />
+    <MESSAGE value="completed Level 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed Level 1" />
   </component>
 </project>
