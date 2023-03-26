@@ -7,6 +7,7 @@ import primitives.Point;
 import primitives.Vector;
 // test..
 // test33
+// hi
 /** Test program for the 1st stage
  * @author Dan Zilberstein */
 public final class Main {
