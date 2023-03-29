@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddd7cf09-e0eb-4fc3-8367-3a130fcedbfc" name="Changes" comment="Generated test classes for Vector and Point (without implementation)">
+      <change afterPath="$PROJECT_DIR$/unittests/geometries/CylinderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unittests/geometries/PlaneTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unittests/geometries/SphareTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unittests/geometries/TubeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/primitives/PointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/primitives/PointTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/primitives/VectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/primitives/VectorTest.java" afterDir="false" />
     </list>
     <list id="99ca53c0-8b38-423a-aa30-f47e844d496f" name="Changes by gilad" comment="">
-      <change beforePath="$PROJECT_DIR$/src/primitives/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Vector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/primitives/VectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/primitives/VectorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +37,21 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/unittests/primitives/VectorTest.java">
+      <ranges>
+        <range start1="5" end1="6" start2="5" end2="8" changelist="99ca53c0-8b38-423a-aa30-f47e844d496f" />
+        <range start1="8" end1="8" start2="10" end2="11" changelist="99ca53c0-8b38-423a-aa30-f47e844d496f" />
+        <range start1="10" end1="10" start2="13" end2="24" changelist="ddd7cf09-e0eb-4fc3-8367-3a130fcedbfc" />
+        <range start1="12" end1="12" start2="26" end2="27" changelist="99ca53c0-8b38-423a-aa30-f47e844d496f" />
+        <range start1="16" end1="16" start2="31" end2="32" changelist="99ca53c0-8b38-423a-aa30-f47e844d496f" />
+        <range start1="20" end1="20" start2="36" end2="37" changelist="99ca53c0-8b38-423a-aa30-f47e844d496f" />
+        <range start1="24" end1="24" start2="41" end2="42" changelist="99ca53c0-8b38-423a-aa30-f47e844d496f" />
+        <range start1="28" end1="28" start2="46" end2="47" changelist="99ca53c0-8b38-423a-aa30-f47e844d496f" />
+        <range start1="32" end1="32" start2="51" end2="52" changelist="99ca53c0-8b38-423a-aa30-f47e844d496f" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -80,11 +101,11 @@
       <recent name="C:\Users\tsuri\IdeaProjects\ISE5783_3676_3060\unittests\geometries" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="primitives" />
       <recent name="geometries" />
+      <recent name="primitives" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.VectorTest.TestAdd">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.Main" />
       <module name="ISE5783_3676_3060" />
@@ -98,8 +119,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VectorTest.TestAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ISE5783_3676_3060" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="primitives.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="primitives" />
+      <option name="MAIN_CLASS_NAME" value="primitives.VectorTest" />
+      <option name="METHOD_NAME" value="TestAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VectorTest.TestAdd" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -128,7 +166,7 @@
       <workItem from="1679826409923" duration="1047000" />
       <workItem from="1679837161845" duration="1786000" />
       <workItem from="1680013868400" duration="7122000" />
-      <workItem from="1680072163566" duration="3003000" />
+      <workItem from="1680072163566" duration="11012000" />
     </task>
     <task id="LOCAL‎-00001" summary="ISE5783">
       <created>1677599486250</created>
@@ -221,7 +259,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1680074090823</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL‎-00014" summary="Generated test classes for Vector and Point (without implementation)">
+      <created>1680096545634</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL‎-00014" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1680096545634</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,5 +291,16 @@
     <MESSAGE value="bla bla" />
     <MESSAGE value="Generated test classes for Vector and Point (without implementation)" />
     <option name="LAST_COMMIT_MESSAGE" value="Generated test classes for Vector and Point (without implementation)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/primitives/Vector.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
