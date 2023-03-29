@@ -27,8 +27,7 @@ public class Vector extends Point {
     }
 
     public Vector scale(double toScale) {
-        xyz.scale(toScale);
-        Vector newVector = new Vector(xyz);
+        Vector newVector = new Vector(xyz.scale(toScale));
         return newVector;
     }
 
