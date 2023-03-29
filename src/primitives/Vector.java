@@ -19,7 +19,6 @@ public class Vector extends Point {
             throw new IllegalArgumentException("invalid coordinates for a vector");
         }
     }
-//TODO check if its private
     public Vector add(Vector v1) {
         double x = xyz.d1 + v1.xyz.d1;
         double y = xyz.d2 + v1.xyz.d2;
@@ -27,7 +26,7 @@ public class Vector extends Point {
         return new Vector (x,y,z);
     }
 
-    private Vector scale(double toScale) {
+    public Vector scale(double toScale) {
         xyz.scale(toScale);
         Vector newVector = new Vector(xyz);
         return newVector;
@@ -56,7 +55,9 @@ public class Vector extends Point {
     }
 
     public Vector normalize() {
+
         double length = length();
+        //TODO: check performance
         double x = (xyz.d1 / length);
         double y = (xyz.d2 / length);
         double z = (xyz.d3 / length);
