@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddd7cf09-e0eb-4fc3-8367-3a130fcedbfc" name="Changes" comment="bla bla">
-      <change afterPath="$PROJECT_DIR$/unittests/primitives/PointTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unittests/primitives/VectorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter.xml" afterDir="false" />
+    <list default="true" id="ddd7cf09-e0eb-4fc3-8367-3a130fcedbfc" name="Changes" comment="Generated test classes for Vector and Point (without implementation)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ISE5783_3676_3060.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ISE5783_3676_3060.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Vector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/geometries/CylinderTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/geometries/PlaneTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/geometries/PolygonTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/geometries/RadialGeometryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/geometries/SphareTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/geometries/TriangleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/geometries/TubeTest.java" beforeDir="false" />
     </list>
     <list id="99ca53c0-8b38-423a-aa30-f47e844d496f" name="Changes by gilad" comment="">
       <change beforePath="$PROJECT_DIR$/src/primitives/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Vector.java" afterDir="false" />
@@ -44,17 +31,6 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/primitives/Vector.java">
-      <ranges>
-        <range start1="21" end1="22" start2="21" end2="21" changelist="ddd7cf09-e0eb-4fc3-8367-3a130fcedbfc" />
-        <range start1="29" end1="30" start2="28" end2="29" changelist="ddd7cf09-e0eb-4fc3-8367-3a130fcedbfc" />
-        <range start1="58" end1="58" start2="57" end2="58" changelist="ddd7cf09-e0eb-4fc3-8367-3a130fcedbfc" />
-        <range start1="59" end1="59" start2="59" end2="60" changelist="ddd7cf09-e0eb-4fc3-8367-3a130fcedbfc" />
-        <range start1="64" end1="65" start2="65" end2="65" changelist="99ca53c0-8b38-423a-aa30-f47e844d496f" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -152,7 +128,7 @@
       <workItem from="1679826409923" duration="1047000" />
       <workItem from="1679837161845" duration="1786000" />
       <workItem from="1680013868400" duration="7122000" />
-      <workItem from="1680072163566" duration="1774000" />
+      <workItem from="1680072163566" duration="3003000" />
     </task>
     <task id="LOCAL‎-00001" summary="ISE5783">
       <created>1677599486250</created>
@@ -238,7 +214,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1679839702588</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL‎-00013" summary="Generated test classes for Vector and Point (without implementation)">
+      <created>1680074090823</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL‎-00013" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1680074090823</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +244,7 @@
     <MESSAGE value="completed Level 1" />
     <MESSAGE value="started working on unit tests" />
     <MESSAGE value="bla bla" />
-    <option name="LAST_COMMIT_MESSAGE" value="bla bla" />
+    <MESSAGE value="Generated test classes for Vector and Point (without implementation)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Generated test classes for Vector and Point (without implementation)" />
   </component>
 </project>
