@@ -3,9 +3,12 @@ package primitives;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * Unit tests for Vector class
+ */
 class VectorTest {
 
+    // Test method for Add method
     @Test
     void TestAdd() {
         // =============== Boundary Values Tests ==================
@@ -21,26 +24,32 @@ class VectorTest {
         assertEquals(new Vector (1,3,4),v3.add(v4));
     }
 
+    // Test method for Scale method
     @Test
     void TestScale() {
     }
 
+    // Test method for DotProduct method
     @Test
     void TestDotProduct() {
     }
 
+    // Test method for CrossProduct method
     @Test
     void TestCrossProduct() {
     }
 
+    // Test method for LengthSquared method
     @Test
     void TestLengthSquared() {
     }
 
+    // Test method for Length method
     @Test
     void TestLength() {
     }
 
+    // Test method for Normalize method
     @Test
     void TestNormalize() {
     }
