@@ -45,9 +45,9 @@ public class Point {
     }
 
     public double distanceSquared(Point p2){
-        double x = (xyz.d1 + p2.xyz.d1) * (xyz.d1 + p2.xyz.d1);
-        double y = (xyz.d2 + p2.xyz.d2) * (xyz.d2 + p2.xyz.d2);
-        double z = (xyz.d3 + p2.xyz.d3) * (xyz.d3 + p2.xyz.d3);
+        double x = (xyz.d1 - p2.xyz.d1) * (xyz.d1 - p2.xyz.d1);
+        double y = (xyz.d2 - p2.xyz.d2) * (xyz.d2 - p2.xyz.d2);
+        double z = (xyz.d3 - p2.xyz.d3) * (xyz.d3 - p2.xyz.d3);
         return (x+y+z);
     }
     public double distance(Point p2) {

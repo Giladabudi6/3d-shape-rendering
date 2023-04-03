@@ -24,6 +24,7 @@ class VectorTest {
         });
     }
 
+    // Test method for Scale method
     @Test
     void TestAdd() {
         // ============ Equivalence Partitions Tests ==============
@@ -39,7 +40,6 @@ class VectorTest {
         assertThrows(IllegalArgumentException.class, () -> {
                     v1.add(v2);
         });
-
     }
 
     // Test method for Scale method
