@@ -16,13 +16,15 @@ public class Plane {
 
     public Plane(Point a, Point b, Point c ) {
         q0 = a;
-        normal = null;
+        normal = (a.subtract(b).crossProduct(a.subtract(c))).normalize();  // calculate the normalize normal
+
     }
 
     public Vector getNormal(Point point) {
         Vector v = getNormal();
         return v;
     }
+
     public Vector getNormal(){
         return normal;
     }

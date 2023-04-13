@@ -3,16 +3,15 @@ package geometries;
 import primitives.Point;
 import primitives.Vector;
 
-public class Sphare {
+public class Sphare extends RadialGeometry{
     private Point center;
-    private double radius;
 
     public Sphare(Point center, double radius) {
+        super(radius);
         this.center = center;
-        this.radius = radius;
     }
 
     public Vector getNormal(Point point){
-        return null;
+        return center.subtract(point);
     }
 }

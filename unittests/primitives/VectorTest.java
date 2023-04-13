@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class VectorTest {
 
-    // Test method for Add method
+    // Test method for  constractor of Vector
     @Test
     void testVector() {
         // ============ Equivalence Partitions Tests ==============
@@ -24,7 +24,7 @@ class VectorTest {
         });
     }
 
-    // Test method for Scale method
+    // Test method for Add method
     @Test
     void TestAdd() {
         // ============ Equivalence Partitions Tests ==============
@@ -118,5 +118,9 @@ class VectorTest {
         //Normalize vector - length = 1
         Vector v1 = new Vector(1,2,2);
         assertEquals(1,v1.normalize().length());
+        assertTrue(((v1.xyz.d1 > 0 && v1.normalize().xyz.d1 > 0) || (v1.xyz.d1 < 0 && v1.normalize().xyz.d1 > 0) || (v1.xyz.d1 == 0 && v1.normalize().xyz.d1 == 0))
+                &&((v1.xyz.d2 > 0 && v1.normalize().xyz.d2 > 0) || (v1.xyz.d2 < 0 && v1.normalize().xyz.d2 > 0) || (v1.xyz.d2 == 0 && v1.normalize().xyz.d2 == 0))
+                &&((v1.xyz.d3 > 0 && v1.normalize().xyz.d3 > 0) || (v1.xyz.d3 < 0 && v1.normalize().xyz.d3 > 0) || (v1.xyz.d3 == 0 && v1.normalize().xyz.d3 == 0)));
+
     }
 }
