@@ -15,10 +15,10 @@ public class Tube extends RadialGeometry{
 
         double scalar = axisRay.getDir().dotProduct(point.subtract(axisRay.getP0()));
         if(scalar != 0) {
-            return point.subtract(axisRay.getP0().add(axisRay.getDir().scale(axisRay.getDir().dotProduct(point.subtract(axisRay.getP0())))));
+            return point.subtract(axisRay.getP0().add(axisRay.getDir().scale(axisRay.getDir().dotProduct(point.subtract(axisRay.getP0()))))).normalize();
         }
         else
-            return point.subtract(axisRay.getP0());
+            return point.subtract(axisRay.getP0()).normalize();
     }
 
 }

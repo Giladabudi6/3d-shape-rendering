@@ -8,11 +8,11 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class PointTest {
     // Test method for subtract method
-//TODO check if the definition of this function is currect
     @Test
     void TestSubtract() {
         // ============ Equivalence Partitions Tests ==============
-        // subtracting point u from point v and create a new vector???
+        // subtracting point u from point v and create a new vector
+
         Point p1 = new Point(1,2,3);
         Vector v1 = new Vector(1,1,1);
         assertEquals(new Vector (0,1,2),p1.subtract(v1));

@@ -12,7 +12,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PlaneTest {
 
-
     // Test method for  constractor of Vector
     @Test
     void testVector() {

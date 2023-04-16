@@ -31,7 +31,6 @@ public class Point {
                 "xyz=" + xyz +
                 '}';
     }
-//todo check if the subtract is currect
     public Vector subtract(Point p2){
         Double3 updatePoint = xyz.subtract(p2.xyz);
         Vector newVector = new Vector(updatePoint.d1 , updatePoint.d2, updatePoint.d3);

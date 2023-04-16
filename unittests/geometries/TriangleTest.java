@@ -5,9 +5,11 @@ import primitives.Point;
 import primitives.Vector;
 
 import static org.junit.jupiter.api.Assertions.*;
+/**
+ * Unit tests for Sphare Point class
+ */
 
 class TriangleTest {
-
     @Test
     void getNormal() {
         // ============ Equivalence Partitions Tests ==============
@@ -18,6 +20,6 @@ class TriangleTest {
         Point p3 = new Point (0,0,1);
 
         Plane pla = new Plane(p1,p2,p3);
-        assertEquals(new Vector(1,1,1), pla.getNormal(p1));
+        assertEquals(new Vector(1,1,1).normalize(), pla.getNormal(p1));
     }
 }

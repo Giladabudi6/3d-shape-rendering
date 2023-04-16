@@ -27,8 +27,7 @@ public class Vector extends Point {
     }
 
     public Vector scale(double toScale) {
-        xyz.scale(toScale);
-        Vector newVector = new Vector(xyz);
+        Vector newVector = new Vector(xyz.scale(toScale));
         return newVector;
     }
 
@@ -57,7 +56,7 @@ public class Vector extends Point {
     public Vector normalize() {
 
         double length = length();
-        //TODO: check performance
+
         double x = (xyz.d1 / length);
         double y = (xyz.d2 / length);
         double z = (xyz.d3 / length);

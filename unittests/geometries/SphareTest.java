@@ -7,19 +7,17 @@ import primitives.Vector;
 import static org.junit.jupiter.api.Assertions.*;
 /**
  * Unit tests for Sphare Point class
- * @author Yossi Cohen
  */
 class SphareTest {
     // Test method for GetNormal method
     @Test
     void TestGetNormal() {
-        //TODO check what is sphare
 
         // ============ Equivalence Partitions Tests ==============
         // Test method for GetNormal method
         Point p1 = new Point(0,0,0);
-        Point p2 = new Point(-1,-1,-1);
-        Sphare s = new Sphare(p1,1);
-        assertEquals(new Vector(1,1,1), s.getNormal(p2));
+        Point p2 = new Point(0,-2,0);
+        Sphare s = new Sphare(p1,2);
+        assertEquals(new Vector(0,1,0), s.getNormal(p2));
     }
 }

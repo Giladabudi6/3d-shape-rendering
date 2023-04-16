@@ -12,6 +12,6 @@ public class Sphare extends RadialGeometry{
     }
 
     public Vector getNormal(Point point){
-        return center.subtract(point);
+        return center.subtract(point).normalize();
     }
 }

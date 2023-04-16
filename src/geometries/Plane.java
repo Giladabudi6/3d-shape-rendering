@@ -5,8 +5,6 @@ import primitives.Double3;
 
 public class Plane {
     Point q0;
-
-    //TODO: change from null in all usages.
     Vector normal = null;
 
     public Plane(Point q0, Vector normal) {
@@ -17,7 +15,6 @@ public class Plane {
     public Plane(Point a, Point b, Point c ) {
         q0 = a;
         normal = (a.subtract(b).crossProduct(a.subtract(c))).normalize();  // calculate the normalize normal
-
     }
 
     public Vector getNormal(Point point) {
