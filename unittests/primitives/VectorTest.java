@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.*;
  * Unit tests for Vector class
  */
 class VectorTest {
-
     // Test method for  constractor of Vector
     @Test
     void testVector() {
