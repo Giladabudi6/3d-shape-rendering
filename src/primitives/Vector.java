@@ -31,8 +31,8 @@ public class Vector extends Point {
         return newVector;
     }
 
-    public double dotProduct(Vector toScale) {
-        double scalar = (xyz.d1 * toScale.xyz.d1) + (xyz.d2 * toScale.xyz.d2) + (xyz.d3 * toScale.xyz.d3);
+    public double dotProduct(Vector vector) {
+        double scalar = (xyz.d1 * vector.xyz.d1) + (xyz.d2 * vector.xyz.d2) + (xyz.d3 * vector.xyz.d3);
         return scalar;
     }
 
