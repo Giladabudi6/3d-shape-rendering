@@ -1,0 +1,138 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"874aa220-7aef-438f-8583-4ab518bb28f0\" name=\"Changes\" comment=\"bka bla\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/primitives/Point.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/primitives/Point.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/unittests/primitives/PointTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/unittests/primitives/PointTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/unittests/primitives/VectorTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/unittests/primitives/VectorTest.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n        <option value=\"JUnit5 Test Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_TAGS\">\r\n      <GitPushTagMode>\r\n        <option name=\"argument\" value=\"--tags\" />\r\n        <option name=\"title\" value=\"All\" />\r\n      </GitPushTagMode>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\r\n  \"lastFilter\": {\r\n    \"state\": \"OPEN\"\r\n  }\r\n}]]></component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"a70098f3-ed7b-4d2c-8f87-e6f1bcf210c0\" />\r\n        <option name=\"url\" value=\"https://github.com/Tsuriya1/ISE5783_3676_3060.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2MNDwfssc2EXtE6cnt4n4a0VHRK\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,\r\n    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,\r\n    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,\r\n    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/tsuri/IdeaProjects/ISE5783_3676_3060&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CreateTestDialog.Recents.Supers\">\r\n      <recent name=\"\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\tsuri\\IdeaProjects\\ISE5783_3676_3060\\unittests\\geometries\" />\r\n    </key>\r\n    <key name=\"CreateTestDialog.RecentsKey\">\r\n      <recent name=\"geometries\" />\r\n      <recent name=\"primitives\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"JUnit.PointTest.TestDistance\">\r\n    <configuration name=\"PointTest.TestAdd\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"ISE5783_3676_3060\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"primitives.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"primitives\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"primitives.PointTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"TestAdd\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"PointTest.TestDistance\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"ISE5783_3676_3060\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"primitives.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"primitives\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"primitives.PointTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"TestDistance\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"PointTest.TestDistanceSquared\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"ISE5783_3676_3060\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"primitives.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"primitives\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"primitives.PointTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"TestDistanceSquared\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"PointTest.TestSubtract\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"ISE5783_3676_3060\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"primitives.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"primitives\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"primitives.PointTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"TestSubtract\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"VectorTest.TestLength\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"ISE5783_3676_3060\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"primitives.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"primitives\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"primitives.VectorTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"TestLength\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.PointTest.TestDistance\" />\r\n        <item itemvalue=\"JUnit.PointTest.TestDistanceSquared\" />\r\n        <item itemvalue=\"JUnit.PointTest.TestSubtract\" />\r\n        <item itemvalue=\"JUnit.PointTest.TestAdd\" />\r\n        <item itemvalue=\"JUnit.VectorTest.TestLength\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"874aa220-7aef-438f-8583-4ab518bb28f0\" name=\"Changes\" comment=\"bka bla\" />\r\n      <created>1677599389192</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1677599389192</updated>\r\n      <workItem from=\"1677599390465\" duration=\"4805000\" />\r\n      <workItem from=\"1679433279466\" duration=\"575000\" />\r\n      <workItem from=\"1679433888473\" duration=\"2000\" />\r\n      <workItem from=\"1679433914874\" duration=\"9075000\" />\r\n      <workItem from=\"1679499962032\" duration=\"1438000\" />\r\n      <workItem from=\"1679501478742\" duration=\"1341000\" />\r\n      <workItem from=\"1679503413673\" duration=\"1568000\" />\r\n      <workItem from=\"1679586419695\" duration=\"137000\" />\r\n      <workItem from=\"1679588082406\" duration=\"1164000\" />\r\n      <workItem from=\"1679818617598\" duration=\"6266000\" />\r\n      <workItem from=\"1679826409923\" duration=\"1047000\" />\r\n      <workItem from=\"1679838795219\" duration=\"1490000\" />\r\n      <workItem from=\"1680013978324\" duration=\"2653000\" />\r\n      <workItem from=\"1680105105246\" duration=\"10187000\" />\r\n      <workItem from=\"1680541401985\" duration=\"7552000\" />\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00001\" summary=\"ISE5783\">\r\n      <created>1677599486250</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1677599486250</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00002\" summary=\"ISE5783\">\r\n      <created>1677599609036</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1677599609036</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00003\" summary=\"completed Primitives package and begin working on the Geometry package\">\r\n      <created>1678036285424</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1678036285424</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00004\" summary=\"completed Primitives package and begin working on the Geometry package\">\r\n      <created>1679433386245</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1679433386245</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00005\" summary=\"completed Level 1\">\r\n      <created>1679440479718</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1679440479718</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00006\" summary=\"completed Level 1\">\r\n      <created>1679441113669</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1679441113669</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00007\" summary=\"completed Level 1\">\r\n      <created>1679441419820</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1679441419820</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00008\" summary=\"completed Level 1\">\r\n      <created>1679443089772</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1679443089772</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00009\" summary=\"started working on unit tests\">\r\n      <created>1679504399163</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1679504399163</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00010\" summary=\"bka bla\">\r\n      <created>1679839462979</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1679839462979</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"11\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"ISE5783\" />\r\n    <MESSAGE value=\"completed Primitives package and begin working on the Geometry package\" />\r\n    <MESSAGE value=\"completed Level 1\" />\r\n    <MESSAGE value=\"started working on unit tests\" />\r\n    <MESSAGE value=\"bka bla\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"bka bla\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 784de4325612af0a9cbe9127a6b0220ca16c36c8)
++++ b/.idea/workspace.xml	(date 1681656084584)
+@@ -6,9 +6,6 @@
+   <component name="ChangeListManager">
+     <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="bka bla">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/primitives/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Point.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/unittests/primitives/PointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/primitives/PointTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/unittests/primitives/VectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/primitives/VectorTest.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -32,11 +29,11 @@
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+-  "lastFilter": {
+-    "state": "OPEN"
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="GithubPullRequestsUISettings">
+     <option name="selectedUrlAndAccountId">
+       <UrlAndAccount>
+@@ -97,24 +94,21 @@
+       <recent name="primitives" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="JUnit.PointTest.TestDistance">
+-    <configuration name="PointTest.TestAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++  <component name="RunManager" selected="Application.Main">
++    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="test.Main" />
+       <module name="ISE5783_3676_3060" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="primitives.*" />
++          <option name="PATTERN" value="test.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+-      <option name="PACKAGE_NAME" value="primitives" />
+-      <option name="MAIN_CLASS_NAME" value="primitives.PointTest" />
+-      <option name="METHOD_NAME" value="TestAdd" />
+-      <option name="TEST_OBJECT" value="method" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="PointTest.TestDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="PointTest.TestAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="ISE5783_3676_3060" />
+       <extension name="coverage">
+         <pattern>
+@@ -124,13 +118,13 @@
+       </extension>
+       <option name="PACKAGE_NAME" value="primitives" />
+       <option name="MAIN_CLASS_NAME" value="primitives.PointTest" />
+-      <option name="METHOD_NAME" value="TestDistance" />
++      <option name="METHOD_NAME" value="TestAdd" />
+       <option name="TEST_OBJECT" value="method" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="PointTest.TestDistanceSquared" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="PointTest.TestDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="ISE5783_3676_3060" />
+       <extension name="coverage">
+         <pattern>
+@@ -140,13 +134,13 @@
+       </extension>
+       <option name="PACKAGE_NAME" value="primitives" />
+       <option name="MAIN_CLASS_NAME" value="primitives.PointTest" />
+-      <option name="METHOD_NAME" value="TestDistanceSquared" />
++      <option name="METHOD_NAME" value="TestDistance" />
+       <option name="TEST_OBJECT" value="method" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="PointTest.TestSubtract" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="PointTest.TestDistanceSquared" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="ISE5783_3676_3060" />
+       <extension name="coverage">
+         <pattern>
+@@ -156,13 +150,13 @@
+       </extension>
+       <option name="PACKAGE_NAME" value="primitives" />
+       <option name="MAIN_CLASS_NAME" value="primitives.PointTest" />
+-      <option name="METHOD_NAME" value="TestSubtract" />
++      <option name="METHOD_NAME" value="TestDistanceSquared" />
+       <option name="TEST_OBJECT" value="method" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="VectorTest.TestLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="PointTest.TestSubtract" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="ISE5783_3676_3060" />
+       <extension name="coverage">
+         <pattern>
+@@ -171,8 +165,8 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="primitives" />
+-      <option name="MAIN_CLASS_NAME" value="primitives.VectorTest" />
+-      <option name="METHOD_NAME" value="TestLength" />
++      <option name="MAIN_CLASS_NAME" value="primitives.PointTest" />
++      <option name="METHOD_NAME" value="TestSubtract" />
+       <option name="TEST_OBJECT" value="method" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+@@ -180,11 +174,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Application.Main" />
+         <item itemvalue="JUnit.PointTest.TestDistance" />
+         <item itemvalue="JUnit.PointTest.TestDistanceSquared" />
+         <item itemvalue="JUnit.PointTest.TestSubtract" />
+         <item itemvalue="JUnit.PointTest.TestAdd" />
+-        <item itemvalue="JUnit.VectorTest.TestLength" />
+       </list>
+     </recent_temporary>
+   </component>
