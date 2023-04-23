@@ -1,7 +1,10 @@
 package geometries;
 import primitives.Point;
+import primitives.Ray;
 import primitives.Vector;
 import primitives.Double3;
+
+import java.util.List;
 
 public class Plane {
     Point q0;
@@ -24,5 +27,10 @@ public class Plane {
 
     public Vector getNormal(){
         return normal;
+    }
+
+    public List<Point> findIntsersections (Ray ray){
+        return null;
+
     }
 }
