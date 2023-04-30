@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="started level 3">
-      <change afterPath="$PROJECT_DIR$/src/geometries/Intersectable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Geometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Geometry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Plane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Sphare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Sphare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/geometries/SphareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/geometries/SphareTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="findIntersection test in Sphare, Triangle and Plane" />
     <list id="526cacc3-672e-4354-9838-85da3e543276" name="Changes by gilad" comment="">
       <change beforePath="$PROJECT_DIR$/unittests/geometries/SphareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/geometries/SphareTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unittests/geometries/TubeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/geometries/TubeTest.java" afterDir="false" />
@@ -52,17 +44,6 @@
         <option name="url" value="https://github.com/Tsuriya1/ISE5783_3676_3060.git" />
       </UrlAndAccount>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/unittests/geometries/SphareTest.java">
-      <ranges>
-        <range start1="4" end1="4" start2="4" end2="5" changelist="526cacc3-672e-4354-9838-85da3e543276" />
-        <range start1="6" end1="6" start2="7" end2="9" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="11" end1="11" start2="14" end2="15" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="17" end1="21" start2="21" end2="67" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="23" end1="23" start2="69" end2="71" changelist="526cacc3-672e-4354-9838-85da3e543276" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -223,7 +204,7 @@
       <workItem from="1681658771648" duration="4112000" />
       <workItem from="1681744996734" duration="62000" />
       <workItem from="1681827384985" duration="2933000" />
-      <workItem from="1682235484596" duration="7128000" />
+      <workItem from="1682235484596" duration="7239000" />
     </task>
     <task id="LOCAL‎-00001" summary="ISE5783">
       <created>1677599486250</created>
@@ -330,7 +311,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1682235801913</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL‎-00016" summary="findIntersection test in Sphare, Triangle and Plane">
+      <created>1682246392406</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL‎-00016" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1682246392406</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,6 +344,7 @@
     <MESSAGE value="tests for getnormals&#10;mimiush to getnormals&#10;end of targil 2!" />
     <MESSAGE value="taged level 2" />
     <MESSAGE value="started level 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="started level 3" />
+    <MESSAGE value="findIntersection test in Sphare, Triangle and Plane" />
+    <option name="LAST_COMMIT_MESSAGE" value="findIntersection test in Sphare, Triangle and Plane" />
   </component>
 </project>
