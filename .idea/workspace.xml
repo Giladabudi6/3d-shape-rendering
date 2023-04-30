@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="findIntersection test in Sphare, Triangle and Plane">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unittests/geometries/SphereTest.java" afterDir="false" />
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="completed all sphere tests (findIntersection and getnormal)&#10;not yet implemented findIintersection in the class sphere">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Polygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Polygon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Sphare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Sphere.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/geometries/SphareTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Sphere.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Ray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Ray.java" afterDir="false" />
     </list>
-    <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="">
-      <change beforePath="$PROJECT_DIR$/src/primitives/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Point.java" afterDir="false" />
+    <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="Changes by gilad">
+      <change beforePath="$PROJECT_DIR$/src/primitives/Ray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Ray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +49,11 @@
     </option>
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/primitives/Point.java">
+    <file path="$PROJECT_DIR$/src/primitives/Ray.java">
       <ranges>
-        <range start1="6" end1="6" start2="6" end2="14" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="54" end1="54" start2="62" end2="64" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="3" end1="3" start2="3" end2="5" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="13" end1="13" start2="15" end2="19" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="40" end1="40" start2="46" end2="52" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
       </ranges>
     </file>
   </component>
@@ -114,7 +111,7 @@
       <recent name="primitives" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in ISE5783_3676_3060">
+  <component name="RunManager" selected="JUnit.SphereTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.Main" />
       <module name="ISE5783_3676_3060" />
@@ -136,7 +133,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CylinderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SphereTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
         <pattern>
@@ -145,7 +142,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="geometries" />
-      <option name="MAIN_CLASS_NAME" value="geometries.CylinderTest" />
+      <option name="MAIN_CLASS_NAME" value="geometries.SphereTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -185,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SphereTest" />
         <item itemvalue="JUnit.SphereTest.testFindIntersections" />
         <item itemvalue="JUnit.All in ISE5783_3676_3060" />
         <item itemvalue="JUnit.VectorTest.TestScale" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.CylinderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +218,7 @@
       <workItem from="1681744996734" duration="62000" />
       <workItem from="1681827384985" duration="2933000" />
       <workItem from="1682235484596" duration="7239000" />
-      <workItem from="1682840242926" duration="9420000" />
+      <workItem from="1682840242926" duration="10124000" />
     </task>
     <task id="LOCAL‎-00001" summary="ISE5783">
       <created>1677599486250</created>
@@ -349,7 +346,21 @@
       <option name="project" value="LOCAL‎" />
       <updated>1682840505913</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL‎-00019" summary="completed all sphere tests (findIntersection and getnormal)&#10;not yet implemented findIintersection in the class sphere">
+      <created>1682849786799</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL‎-00019" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1682849786799</updated>
+    </task>
+    <task id="LOCAL‎-00020" summary="Changes by gilad">
+      <created>1682849815409</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL‎-00020" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1682849815409</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,8 +386,9 @@
     <MESSAGE value="tests for getnormals&#10;mimiush to getnormals&#10;end of targil 2!" />
     <MESSAGE value="taged level 2" />
     <MESSAGE value="started level 3" />
-    <MESSAGE value="Changes by gilad" />
     <MESSAGE value="findIntersection test in Sphare, Triangle and Plane" />
-    <option name="LAST_COMMIT_MESSAGE" value="findIntersection test in Sphare, Triangle and Plane" />
+    <MESSAGE value="completed all sphere tests (findIntersection and getnormal)&#10;not yet implemented findIintersection in the class sphere" />
+    <MESSAGE value="Changes by gilad" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by gilad" />
   </component>
 </project>

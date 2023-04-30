@@ -2,6 +2,8 @@ package primitives;
 
 import java.util.Objects;
 
+import static primitives.Util.isZero;
+
 public class Ray {
     Point p0;
     Vector dir;
@@ -37,5 +39,11 @@ public class Ray {
 
     public Vector getDir() {
         return dir;
+    }
+    public Point getPoint(double t) {
+        if(isZero(t)){
+            throw new IllegalArgumentException("t is equal to 0 produce an illegal ZERO vector");
+        }
+        return p0.add(dir.scale(t));
     }
 }
