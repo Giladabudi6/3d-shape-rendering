@@ -60,4 +60,6 @@ public class Point {
     public double distance(Point p2) {
         return Math.sqrt(distanceSquared(p2));
     }
+
+
 }
