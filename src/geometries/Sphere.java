@@ -24,7 +24,7 @@ public class Sphere extends RadialGeometry {
         return center.subtract(point).normalize();
     }
 
- 
+
     public List<Point> findIntersections(Ray ray) {
 
         Point p0 = ray.getP0(); // ray's starting point

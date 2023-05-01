@@ -44,6 +44,7 @@ public class Ray {
     public Vector getDir() {
         return dir;
     }
+
     public Point getPoint(double t) {
         if(isZero(t)){
             return p0;
