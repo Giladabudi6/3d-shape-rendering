@@ -46,7 +46,7 @@ public class Ray {
     }
     public Point getPoint(double t) {
         if(isZero(t)){
-            throw new IllegalArgumentException("t is equal to 0 produce an illegal ZERO vector");
+            return p0;
         }
         return p0.add(dir.scale(t));
     }

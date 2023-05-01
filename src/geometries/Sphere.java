@@ -1,10 +1,11 @@
 package geometries;
-
 import primitives.Point;
 import primitives.Ray;
 import primitives.Vector;
 
+import java.util.LinkedList;
 import java.util.List;
+import java.lang.Math;
 
 public class Sphere extends RadialGeometry {
     private Point center;
@@ -13,12 +14,17 @@ public class Sphere extends RadialGeometry {
         super(radius);
         this.center = center;
     }
+    public boolean comparePoints(Point intersection,Ray ray){
+        double epsilon = 1E-10;
+        double c =intersection.distance(ray.getP0());
+        return intersection.distance(ray.getP0()) < epsilon;
+    }
 
     public Vector getNormal(Point point) {
         return center.subtract(point).normalize();
     }
 
-
+ 
     public List<Point> findIntersections(Ray ray) {
 
         Point p0 = ray.getP0(); // ray's starting point
@@ -44,19 +50,30 @@ public class Sphere extends RadialGeometry {
         double t2 = tm + th;
 
         if (t1 > 0 && t2 > 0) {
+            List<Point> myList = new LinkedList<>();
             Point p1 = ray.getPoint(t1);
+            if (!comparePoints(p1,ray)){
+                myList.add(p1);
+            }
             Point p2 = ray.getPoint(t2);
-            return List.of(p1, p2);
+            if (!comparePoints(p2,ray)){
+                myList.add(p2);
+            }
+            return myList;
         }
 
         if (t1 > 0) {
             Point p1 = ray.getPoint(t1);
-            return List.of(p1);
+            if(!comparePoints(p1,ray)){
+                return List.of(p1);
+            }
         }
 
         if (t2 > 0) {
             Point p2 = ray.getPoint(t2);
-            return List.of(p2);
+            if(!comparePoints(p2,ray)){
+                return List.of(p2);
+            }
         }
         return null;
     }

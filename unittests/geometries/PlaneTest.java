@@ -49,4 +49,7 @@ class PlaneTest {
         Plane pla = new Plane(p1,p2,p3);
         assertEquals(new Vector (1,1,1).normalize(), pla.getNormal(p1));
     }
+    void findIntersection(){
+
+    }
 }
