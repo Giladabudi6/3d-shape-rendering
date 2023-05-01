@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.lang.Math;
 
-public class Sphere extends RadialGeometry implements Intersectable{
+public class Sphere extends RadialGeometry {
     private Point center;
 
     public Sphere(double radius,Point center) {

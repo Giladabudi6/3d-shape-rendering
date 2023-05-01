@@ -26,21 +26,17 @@ public class Geometries implements Intersectable{
     }
 
     public List<Point> findIntersections(Ray ray) {
-
-
-        if (shapesList.get(0).findIntersections(ray) == null ||
-                shapesList.get(1).findIntersections(ray) == null ||
-                shapesList.get(2).findIntersections(ray) == null)
-            return null;
-
-
-        List<Point> myList = new LinkedList<>();
-
-        myList.addAll((shapesList.get(0).findIntersections(ray)));
-        myList.addAll((shapesList.get(1).findIntersections(ray)));
-        myList.addAll((shapesList.get(2).findIntersections(ray)));
-
-        return myList;
-
+        // holds the intersection points
+        LinkedList<Point> points=null;
+        for(var geometry: shapesList){
+            var geometryList=geometry.findIntersections(ray);
+            if(geometryList!=null){
+                if(points==null){
+                    points=new LinkedList<>();
+                }
+                points.addAll(geometryList);
+            }
+        }
+        return points;
     }
 }

@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="created 'Geometries' class,&#10;completed TestsFindIntersections of Geometries,&#10;start implement findIntersection of Geometries">
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="completed all Plane Tests (findIntersections)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Geometries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Geometries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Sphere.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/geometries/GeometriesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/geometries/GeometriesTest.java" afterDir="false" />
     </list>
     <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +101,7 @@
       <recent name="primitives" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GeometriesTest.testFindIntersections">
+  <component name="RunManager" selected="JUnit.SphereTest.testFindIntersections">
     <configuration name="GeometriesTest.testFindIntersections" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
@@ -180,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SphereTest.testFindIntersections" />
         <item itemvalue="JUnit.GeometriesTest.testFindIntersections" />
         <item itemvalue="JUnit.TriangleTest" />
         <item itemvalue="JUnit.TriangleTest.testFindIntersections" />
         <item itemvalue="JUnit.PlaneTest.TestFindIntersections" />
-        <item itemvalue="JUnit.SphereTest.testFindIntersections" />
       </list>
     </recent_temporary>
   </component>
@@ -439,5 +442,16 @@
     <MESSAGE value="created 'Geometries' class,completed TestsFindIntersections of Geometries" />
     <MESSAGE value="created 'Geometries' class,&#10;completed TestsFindIntersections of Geometries,&#10;start implement findIntersection of Geometries" />
     <option name="LAST_COMMIT_MESSAGE" value="created 'Geometries' class,&#10;completed TestsFindIntersections of Geometries,&#10;start implement findIntersection of Geometries" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/unittests/geometries/GeometriesTest.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
