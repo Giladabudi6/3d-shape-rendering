@@ -402,7 +402,21 @@
       <option name="project" value="LOCAL‎" />
       <updated>1682937082387</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL‎-00026" summary="completed all Triangle Tests (findIntersections)">
+      <created>1682939490946</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL‎-00026" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1682939490946</updated>
+    </task>
+    <task id="LOCAL‎-00027" summary="completed all Triangle Tests (findIntersections) - changes by gilad">
+      <created>1682939546034</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL‎-00027" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1682939546034</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,6 +449,8 @@
     <MESSAGE value="Changes by gilad" />
     <MESSAGE value="completed all Plane Tests (findIntersections)" />
     <MESSAGE value="completed all Plane Tests (findIntersections) - changes by gilad" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed all Plane Tests (findIntersections) - changes by gilad" />
+    <MESSAGE value="completed all Triangle Tests (findIntersections)" />
+    <MESSAGE value="completed all Triangle Tests (findIntersections) - changes by gilad" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed all Triangle Tests (findIntersections) - changes by gilad" />
   </component>
 </project>
