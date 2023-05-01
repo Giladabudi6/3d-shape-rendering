@@ -34,7 +34,7 @@ public class Plane implements Intersectable {
 
 
     @Override
-    public List<Point> findIntsersections(Ray ray) {
+    public List<Point> findIntersections(Ray ray) {
 
         Point P0= ray.getP0(); // according to the illustration P0 is the same point of the ray's P0 (that's why the definition))
         Vector v = ray.getDir(); // according to the illustration v is the same vector of the ray's vector (that's why the definition))
