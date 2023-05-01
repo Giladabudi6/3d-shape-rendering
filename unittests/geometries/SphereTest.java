@@ -7,7 +7,9 @@ import primitives.Vector;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+
 /**
  * Unit tests for Sphere Point class
  */
@@ -48,7 +50,7 @@ class SphereTest {
 
         // TC03: Ray starts inside the sphere (1 point)
         assertEquals(List.of(p2),
-                sphere.findIntersections(new Ray(new Point(0.8, 0.6, 0),new Vector(3,1,0))),
+                sphere.findIntersections(new Ray(new Point(0.8, 0.6, 0), new Vector(3, 1, 0))),
                 "Ray crosses sphere on one point");
 
         // TC04: Ray starts after the sphere (0 points)
@@ -60,11 +62,11 @@ class SphereTest {
         // **** Group: Ray's line crosses the sphere (but not the center)
         // TC11: Ray starts on sphere and goes inside (1 point)
         assertEquals(List.of(p2),
-                sphere.findIntersections(new Ray(p1,new Vector(3,1,0))),
+                sphere.findIntersections(new Ray(p1, new Vector(3, 1, 0))),
                 "Ray starts at sphere and goes inside");
 
         // TC12: Ray starts at sphere and goes outside (0 points)
-        assertNull(sphere.findIntersections(new Ray(p2, new Vector(3,1,0))),
+        assertNull(sphere.findIntersections(new Ray(p2, new Vector(3, 1, 0))),
                 "Ray starts at sphere and goes outside");
 
         // **** Group: Ray's line goes through the center
