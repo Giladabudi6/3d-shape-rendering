@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="added the class Geometries.&#10;completed all Geometries Tests(findIntersections) and implementation.&#10;completed level 3">
-      <change afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unittests/CameraIntegrationTests/CameraIntegrationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unittests/CameraTests/CameraTest.java" afterDir="false" />
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="created 'Geometries' class,&#10;completed TestsFindIntersections of Geometries,&#10;start implement findIntersection of Geometries">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Geometries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Geometries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/primitives/VectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/primitives/VectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/CameraIntegrationTests/CameraIntegrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/CameraIntegrationTests/CameraIntegrationTests.java" afterDir="false" />
     </list>
-    <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad">
-      <change beforePath="$PROJECT_DIR$/src/geometries/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Triangle.java" afterDir="false" />
-    </list>
+    <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -51,9 +45,6 @@
       </UrlAndAccount>
     </option>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/Temp1_תשובות אליסף כהן תרגיל 4.zip/ISE5782_7227_0292-Targil4/unitTests/renderer/CameraIntegrationsTest.java" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -77,13 +68,12 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/תלת-ממדי/Polygon3D.java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gilad/IdeaProjects/ISE5783_3676_3060&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -92,7 +82,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.toDoOptions&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -101,8 +91,6 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\tsuri\IdeaProjects\ISE5783_3676_3060\unittests\CameraTests" />
-      <recent name="C:\Users\tsuri\IdeaProjects\ISE5783_3676_3060\unittests\renderer" />
       <recent name="C:\Users\gilad\IdeaProjects\ISE5783_3676_3060\unittests\geometries" />
       <recent name="C:\Users\tsuri\IdeaProjects\ISE5783_3676_3060\unittests\geometries" />
     </key>
@@ -111,54 +99,7 @@
       <recent name="primitives" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CameraIntegrationTests.testCameraPlaneIntegration">
-    <configuration name="CameraIntegrationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ISE5783_3676_3060" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CameraIntegrationTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CameraIntegrationTests" />
-      <option name="MAIN_CLASS_NAME" value="CameraIntegrationTests.CameraIntegrationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CameraIntegrationTests.testCameraPlaneIntegration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ISE5783_3676_3060" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CameraIntegrationTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CameraIntegrationTests" />
-      <option name="MAIN_CLASS_NAME" value="CameraIntegrationTests.CameraIntegrationTests" />
-      <option name="METHOD_NAME" value="testCameraPlaneIntegration" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CameraTest.testConstructRay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ISE5783_3676_3060" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="renderer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CameraTest" />
-      <option name="MAIN_CLASS_NAME" value="CameraTest.CameraTest" />
-      <option name="METHOD_NAME" value="testConstructRay" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.GeometriesTest.testFindIntersections">
     <configuration name="GeometriesTest.testFindIntersections" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
@@ -170,6 +111,22 @@
       <option name="PACKAGE_NAME" value="geometries" />
       <option name="MAIN_CLASS_NAME" value="geometries.GeometriesTest" />
       <option name="METHOD_NAME" value="testFindIntersections" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlaneTest.TestFindIntersections" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ISE5783_3676_3060" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="geometries.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="geometries" />
+      <option name="MAIN_CLASS_NAME" value="geometries.PlaneTest" />
+      <option name="METHOD_NAME" value="TestFindIntersections" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -191,13 +148,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TriangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ISE5783_3676_3060" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="geometries.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="geometries" />
+      <option name="MAIN_CLASS_NAME" value="geometries.TriangleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TriangleTest.testFindIntersections" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ISE5783_3676_3060" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="geometries.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="geometries" />
+      <option name="MAIN_CLASS_NAME" value="geometries.TriangleTest" />
+      <option name="METHOD_NAME" value="testFindIntersections" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CameraIntegrationTests.testCameraPlaneIntegration" />
-        <item itemvalue="JUnit.CameraIntegrationTests" />
-        <item itemvalue="JUnit.SphereTest.testFindIntersections" />
-        <item itemvalue="JUnit.CameraTest.testConstructRay" />
         <item itemvalue="JUnit.GeometriesTest.testFindIntersections" />
+        <item itemvalue="JUnit.TriangleTest" />
+        <item itemvalue="JUnit.TriangleTest.testFindIntersections" />
+        <item itemvalue="JUnit.PlaneTest.TestFindIntersections" />
+        <item itemvalue="JUnit.SphereTest.testFindIntersections" />
       </list>
     </recent_temporary>
   </component>
@@ -233,9 +221,13 @@
       <workItem from="1682915835692" duration="19238000" />
       <workItem from="1682946386205" duration="20335000" />
       <workItem from="1682967990542" duration="9000" />
-      <workItem from="1683039348533" duration="2296000" />
-      <workItem from="1683193704624" duration="656000" />
-      <workItem from="1683444541015" duration="10726000" />
+      <workItem from="1682968035904" duration="262000" />
+      <workItem from="1682970431927" duration="2365000" />
+      <workItem from="1683445191821" duration="870000" />
+      <workItem from="1683446689601" duration="614000" />
+      <workItem from="1683464493344" duration="117000" />
+      <workItem from="1683464629856" duration="60000" />
+      <workItem from="1683464691997" duration="1785000" />
     </task>
     <task id="LOCAL‎-00001" summary="ISE5783">
       <created>1677599486250</created>
@@ -419,28 +411,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1682967788405</updated>
     </task>
-    <task id="LOCAL‎-00027" summary="added the class Geometries.&#10;completed all Geometries Tests(findIntersections) and implementation">
-      <created>1682975038812</created>
+    <task id="LOCAL‎-00027" summary="created 'Geometries' class,&#10;completed TestsFindIntersections of Geometries,&#10;start implement findIntersection of Geometries">
+      <created>1682968111311</created>
       <option name="number" value="00027" />
       <option name="presentableId" value="LOCAL‎-00027" />
       <option name="project" value="LOCAL‎" />
-      <updated>1682975038812</updated>
+      <updated>1682968111311</updated>
     </task>
-    <task id="LOCAL‎-00028" summary="added the class Geometries.&#10;completed all Geometries Tests(findIntersections) and implementation.&#10;completed level 3">
-      <created>1682975487359</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL‎-00028" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1682975487359</updated>
-    </task>
-    <task id="LOCAL‎-00029" summary="added the class Geometries.&#10;completed all Geometries Tests(findIntersections) and implementation.&#10;completed level 3">
-      <created>1682975637404</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL‎-00029" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1682975637404</updated>
-    </task>
-    <option name="localTasksCounter" value="30" />
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,19 +453,6 @@
     <MESSAGE value="completed all Plane Tests (findIntersections) - changes by gilad" />
     <MESSAGE value="created 'Geometries' class,completed TestsFindIntersections of Geometries" />
     <MESSAGE value="created 'Geometries' class,&#10;completed TestsFindIntersections of Geometries,&#10;start implement findIntersection of Geometries" />
-    <MESSAGE value="added the class Geometries.&#10;completed all Geometries Tests(findIntersections) and implementation" />
-    <MESSAGE value="added the class Geometries.&#10;completed all Geometries Tests(findIntersections) and implementation.&#10;completed level 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the class Geometries.&#10;completed all Geometries Tests(findIntersections) and implementation.&#10;completed level 3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/unittests/geometries/GeometriesTest.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="created 'Geometries' class,&#10;completed TestsFindIntersections of Geometries,&#10;start implement findIntersection of Geometries" />
   </component>
 </project>
