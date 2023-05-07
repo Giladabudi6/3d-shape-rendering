@@ -26,8 +26,8 @@ public class Geometries implements Intersectable {
     public List<Point> findIntersections(Ray ray) {
         // holds the intersection points
         LinkedList<Point> points = null;
-        for (var geometry : shapesList) {
-            var geometryList = geometry.findIntersections(ray);
+        for (var shape : shapesList) {
+            var geometryList = shape.findIntersections(ray);
             if (geometryList != null) {
                 if (points == null) {
                     points = new LinkedList<>();

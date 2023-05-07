@@ -122,6 +122,5 @@ class VectorTest {
         assertTrue(((v1.xyz.d1 > 0 && v1.normalize().xyz.d1 > 0) || (v1.xyz.d1 < 0 && v1.normalize().xyz.d1 > 0) || (v1.xyz.d1 == 0 && v1.normalize().xyz.d1 == 0))
                 && ((v1.xyz.d2 > 0 && v1.normalize().xyz.d2 > 0) || (v1.xyz.d2 < 0 && v1.normalize().xyz.d2 > 0) || (v1.xyz.d2 == 0 && v1.normalize().xyz.d2 == 0))
                 && ((v1.xyz.d3 > 0 && v1.normalize().xyz.d3 > 0) || (v1.xyz.d3 < 0 && v1.normalize().xyz.d3 > 0) || (v1.xyz.d3 == 0 && v1.normalize().xyz.d3 == 0)));
-
     }
 }
