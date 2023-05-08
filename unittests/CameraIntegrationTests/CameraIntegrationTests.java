@@ -25,7 +25,7 @@ public class CameraIntegrationTests {
 */
     private int countIntersectionsCameraGeometry(Camera camera, int Nx, int Ny, Intersectable geometry) {
         int count = 0;
-        List<Point> intersections;
+        List<Point> intersections = null;
 
         for (int i = 0; i < Nx; i++) {
             for (int j = 0; j < Ny; j++) {
