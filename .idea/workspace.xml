@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="finish integrationTests of sphere,plane,triangle -">
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="temp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unittests/CameraIntegrationTests/CameraIntegrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/CameraIntegrationTests/CameraIntegrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/CameraTests/CameraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/CameraTests/CameraTest.java" afterDir="false" />
     </list>
     <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
     <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="">
@@ -52,15 +53,23 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/unittests/CameraIntegrationTests/CameraIntegrationTests.java">
       <ranges>
-        <range start1="22" end1="24" start2="22" end2="24" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="25" end1="26" start2="25" end2="26" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
+        <range start1="25" end1="26" start2="25" end2="26" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
         <range start1="27" end1="28" start2="27" end2="28" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
-        <range start1="31" end1="33" start2="31" end2="36" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="34" end1="37" start2="37" end2="54" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="43" end1="46" start2="60" end2="64" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="47" end1="50" start2="65" end2="69" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="53" end1="54" start2="72" end2="73" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="56" end1="57" start2="75" end2="76" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="31" end1="35" start2="31" end2="33" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="36" end1="36" start2="34" end2="35" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="37" end1="38" start2="36" end2="36" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="39" end1="39" start2="37" end2="41" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="54" end1="55" start2="56" end2="57" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="61" end1="62" start2="63" end2="64" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="66" end1="67" start2="68" end2="69" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="72" end1="73" start2="74" end2="75" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="75" end1="76" start2="77" end2="78" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="94" end1="97" start2="96" end2="99" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="100" end1="101" start2="102" end2="103" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="103" end1="104" start2="105" end2="106" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="106" end1="107" start2="108" end2="109" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="115" end1="116" start2="117" end2="118" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="127" end1="128" start2="129" end2="129" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
       </ranges>
     </file>
   </component>
@@ -118,7 +127,15 @@
       <recent name="primitives" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CameraTest.testConstructRay">
+  <component name="RunManager" selected="JUnit.All in ISE5783_3676_3060">
+    <configuration name="All in ISE5783_3676_3060" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ISE5783_3676_3060" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CameraIntegrationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
@@ -166,23 +183,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CameraIntegrationTests.testCameraTriangleIntegration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ISE5783_3676_3060" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CameraIntegrationTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CameraIntegrationTests" />
-      <option name="MAIN_CLASS_NAME" value="CameraIntegrationTests.CameraIntegrationTests" />
-      <option name="METHOD_NAME" value="testCameraTriangleIntegration" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CameraTest.testConstructRay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CameraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
         <pattern>
@@ -192,19 +193,18 @@
       </extension>
       <option name="PACKAGE_NAME" value="CameraTests" />
       <option name="MAIN_CLASS_NAME" value="CameraTests.CameraTest" />
-      <option name="METHOD_NAME" value="testConstructRay" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CameraTest.testConstructRay" />
+        <item itemvalue="JUnit.All in ISE5783_3676_3060" />
+        <item itemvalue="JUnit.CameraTest" />
+        <item itemvalue="JUnit.CameraIntegrationTests" />
         <item itemvalue="JUnit.CameraIntegrationTests.testCameraSphereIntegration" />
         <item itemvalue="JUnit.CameraIntegrationTests.testCameraPlaneIntegration" />
-        <item itemvalue="JUnit.CameraIntegrationTests.testCameraTriangleIntegration" />
-        <item itemvalue="JUnit.CameraIntegrationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -248,6 +248,7 @@
       <workItem from="1683464629856" duration="60000" />
       <workItem from="1683464691997" duration="3396000" />
       <workItem from="1683549723010" duration="17335000" />
+      <workItem from="1683573388050" duration="5387000" />
     </task>
     <task id="LOCAL‎-00001" summary="ISE5783">
       <created>1677599486250</created>
@@ -445,7 +446,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1683466587697</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL‎-00029" summary="temp">
+      <created>1683573422225</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL‎-00029" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1683573422225</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,17 +489,7 @@
     <MESSAGE value="created 'Geometries' class,completed TestsFindIntersections of Geometries" />
     <MESSAGE value="created 'Geometries' class,&#10;completed TestsFindIntersections of Geometries,&#10;start implement findIntersection of Geometries" />
     <MESSAGE value="finish integrationTests of sphere,plane,triangle" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish integrationTests of sphere,plane,triangle" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/unittests/CameraTests/CameraTest.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="temp" />
+    <option name="LAST_COMMIT_MESSAGE" value="temp" />
   </component>
 </project>

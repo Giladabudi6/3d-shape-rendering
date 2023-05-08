@@ -40,7 +40,7 @@ public class Camera {
         return distance;
     }
 
-    public Camera(Point location, Vector vup, Vector vto) {
+    public Camera(Point location, Vector vto,Vector vup) {
 
         if (!isZero(vup.dotProduct(vto))) {
             throw new IllegalArgumentException("The two Vectors are not orthogonal");
@@ -48,7 +48,7 @@ public class Camera {
         this.location = location;
         Vup = vup.normalize();
         Vto = vto.normalize();
-        Vright = Vup.crossProduct(Vto).normalize();
+        Vright = Vup.crossProduct(Vto).scale(-1).normalize();
     }
 
     public Camera setVPSize(double width, double height) {
@@ -66,14 +66,13 @@ public class Camera {
         // nX represent rows and nY represents columns of the resolution
         // i represent rows and j represents columns of the view plane
 
-
         Point pIJ = location.add(Vto.scale(distance));
 
         double Ry = height / nY;
         double Rx = width / nX;
 
-        double yI = -(i - ((nY - 1) / 2)) * Ry;
-        double xJ = (j - ((nX - 1) / 2)) * Rx;
+        double yI = -(i - ((nY - 1) / 2d)) * Ry;
+        double xJ = (j - ((nX - 1) / 2d)) * Rx;
 
         if (xJ != 0)
             pIJ = pIJ.add(Vright.scale(xJ));
@@ -82,10 +81,7 @@ public class Camera {
 
         Ray ray = new Ray(location, pIJ.subtract(location));
 
-        //pIJ = location.add(Vright.scale(j).add(Vup.scale(i)));
-
         return ray;
 
     }
-
 }
