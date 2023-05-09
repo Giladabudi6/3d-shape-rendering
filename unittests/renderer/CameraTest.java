@@ -1,4 +1,4 @@
-package CameraTests;
+package renderer;
 
 import org.junit.jupiter.api.Test;
 import primitives.Point;
