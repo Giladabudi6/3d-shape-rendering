@@ -19,11 +19,12 @@ public class Vector extends Point {
             throw new IllegalArgumentException("invalid coordinates for a vector");
         }
     }
+
     public Vector add(Vector v1) {
         double x = xyz.d1 + v1.xyz.d1;
         double y = xyz.d2 + v1.xyz.d2;
         double z = xyz.d3 + v1.xyz.d3;
-        return new Vector (x,y,z);
+        return new Vector(x, y, z);
     }
 
     public Vector scale(double toScale) {

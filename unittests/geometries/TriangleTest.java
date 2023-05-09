@@ -7,7 +7,9 @@ import primitives.Vector;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+
 /**
  * Unit tests for Sphare Point class
  */
@@ -18,13 +20,14 @@ class TriangleTest {
         // ============ Equivalence Partitions Tests ==============
         // Test method for GetNormal method
 
-        Point p1 = new Point (1,0,0);
-        Point p2 = new Point (0,1,0);
-        Point p3 = new Point (0,0,1);
+        Point p1 = new Point(1, 0, 0);
+        Point p2 = new Point(0, 1, 0);
+        Point p3 = new Point(0, 0, 1);
 
-        Plane pla = new Plane(p1,p2,p3);
-        assertEquals(new Vector(1,1,1).normalize(), pla.getNormal(p1));
+        Plane pla = new Plane(p1, p2, p3);
+        assertEquals(new Vector(1, 1, 1).normalize(), pla.getNormal(p1));
     }
+
     @Test
     void testFindIntersections() {
         Triangle triangle = new Triangle(new Point(0, 1, 0), new Point(0, 5, 0), new Point(0, 3, 5));

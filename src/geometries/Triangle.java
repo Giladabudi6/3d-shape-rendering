@@ -40,7 +40,7 @@ public class Triangle extends Polygon {
         // check if the vector's direction (from Subtraction between the ray's vector to each vector from above) are equal
         // if not - there is no intersection point between the ray and the triangle
         if ((alignZero(v.dotProduct(n1)) > 0 && alignZero(v.dotProduct(n2)) > 0 && alignZero(v.dotProduct(n3)) > 0) ||
-                (alignZero(v.dotProduct(n1)) < 0 && alignZero(v.dotProduct(n2)) < 0 && alignZero(v.dotProduct(n3)) < 0)){
+                (alignZero(v.dotProduct(n1)) < 0 && alignZero(v.dotProduct(n2)) < 0 && alignZero(v.dotProduct(n3)) < 0)) {
 
             return plane.findIntersections(ray);
         }

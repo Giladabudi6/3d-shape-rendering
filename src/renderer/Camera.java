@@ -8,9 +8,22 @@ import static primitives.Util.isZero;
 
 public class Camera {
     //TODO: note - we are using double for the distance etc. should we change it to int?
-    private Point location;
-    private Vector Vright, Vup, Vto;
+    private final Point location;
+    private final Vector Vright;
+    private final Vector Vup;
+    private final Vector Vto;
     private double height, width, distance;
+
+    public Camera(Point location, Vector vto, Vector vup) {
+
+        if (!isZero(vup.dotProduct(vto))) {
+            throw new IllegalArgumentException("The two Vectors are not orthogonal");
+        }
+        this.location = location;
+        Vup = vup.normalize();
+        Vto = vto.normalize();
+        Vright = Vup.crossProduct(Vto).scale(-1).normalize();
+    }
 
     public Point getLocation() {
         return location;
@@ -38,17 +51,6 @@ public class Camera {
 
     public double getDistance() {
         return distance;
-    }
-
-    public Camera(Point location, Vector vto,Vector vup) {
-
-        if (!isZero(vup.dotProduct(vto))) {
-            throw new IllegalArgumentException("The two Vectors are not orthogonal");
-        }
-        this.location = location;
-        Vup = vup.normalize();
-        Vto = vto.normalize();
-        Vright = Vup.crossProduct(Vto).scale(-1).normalize();
     }
 
     public Camera setVPSize(double width, double height) {
