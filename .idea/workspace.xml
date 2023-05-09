@@ -4,24 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="finish level 4!">
-      <change afterPath="$PROJECT_DIR$/src/primitives/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/ImageWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="reformatted all files&#10;began level 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ISE5783_3676_3060.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ISE5783_3676_3060.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Sphere.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Double3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Double3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/CameraIntegrationTests/CameraIntegrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/CameraIntegrationTests/CameraIntegrationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/CameraTests/CameraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/CameraTest.java" afterDir="false" />
     </list>
     <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
     <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="finish level 4!">
       <change afterPath="$PROJECT_DIR$/unittests/renderer/ImageWriterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/CameraTests/CameraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/CameraTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/renderer/CameraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/CameraTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,14 +47,6 @@
         <option name="url" value="https://github.com/Tsuriya1/ISE5783_3676_3060.git" />
       </UrlAndAccount>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/unittests/renderer/CameraTest.java">
-      <ranges>
-        <range start1="0" end1="1" start2="0" end2="1" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
-        <range start1="6" end1="7" start2="6" end2="6" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -126,7 +107,7 @@
       <recent name="primitives" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in ISE5783_3676_3060">
+  <component name="RunManager" selected="JUnit.ImageWriterTest.writeToImage">
     <configuration name="All in ISE5783_3676_3060" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <option name="PACKAGE_NAME" value="" />
@@ -199,8 +180,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in ISE5783_3676_3060" />
         <item itemvalue="JUnit.ImageWriterTest.writeToImage" />
+        <item itemvalue="JUnit.All in ISE5783_3676_3060" />
         <item itemvalue="JUnit.CameraTest" />
         <item itemvalue="JUnit.CameraIntegrationTests" />
         <item itemvalue="JUnit.CameraIntegrationTests.testCameraSphereIntegration" />
@@ -249,7 +230,7 @@
       <workItem from="1683549723010" duration="17335000" />
       <workItem from="1683573388050" duration="6274000" />
       <workItem from="1683641777356" duration="146000" />
-      <workItem from="1683641926089" duration="5349000" />
+      <workItem from="1683641926089" duration="5908000" />
     </task>
     <task id="LOCAL‎-00001" summary="ISE5783">
       <created>1677599486250</created>
@@ -468,7 +449,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1683581204789</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL‎-00032" summary="reformatted all files&#10;began level 5">
+      <created>1683647404320</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL‎-00032" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1683647404320</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,6 +494,7 @@
     <MESSAGE value="finish integrationTests of sphere,plane,triangle" />
     <MESSAGE value="temp" />
     <MESSAGE value="finish level 4!" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish level 4!" />
+    <MESSAGE value="reformatted all files&#10;began level 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="reformatted all files&#10;began level 5" />
   </component>
 </project>
