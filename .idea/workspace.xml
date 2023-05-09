@@ -4,35 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="completed level 4">
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="finish level 4!">
+      <change afterPath="$PROJECT_DIR$/src/primitives/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/ImageWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Cylinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Intersectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Intersectable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Plane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Polygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Polygon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/RadialGeometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/RadialGeometry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ISE5783_3676_3060.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ISE5783_3676_3060.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/geometries/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Sphere.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/geometries/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Tube.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Tube.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/primitives/Double3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Double3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/primitives/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Ray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Ray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Vector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/CameraIntegrationTests/CameraIntegrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/CameraIntegrationTests/CameraIntegrationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/CameraTests/CameraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/CameraTests/CameraTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/geometries/CylinderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/geometries/CylinderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/geometries/GeometriesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/geometries/GeometriesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/geometries/PlaneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/geometries/PlaneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/geometries/PolygonTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/geometries/PolygonTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/geometries/TriangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/geometries/TriangleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/geometries/TubeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/geometries/TubeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/primitives/PointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/primitives/PointTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/CameraIntegrationTests/CameraIntegrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/CameraIntegrationTests/CameraIntegrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/CameraTests/CameraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/CameraTest.java" afterDir="false" />
     </list>
     <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
-    <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="" />
+    <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="finish level 4!">
+      <change afterPath="$PROJECT_DIR$/unittests/renderer/ImageWriterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/CameraTests/CameraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/CameraTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -69,8 +59,13 @@
       </UrlAndAccount>
     </option>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/Temp1_תשובות אליסף כהן תרגיל 4.zip/ISE5782_7227_0292-Targil4/unitTests/renderer/CameraIntegrationsTest.java" root0="FORCE_HIGHLIGHTING" />
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/unittests/renderer/CameraTest.java">
+      <ranges>
+        <range start1="0" end1="1" start2="0" end2="1" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
+        <range start1="6" end1="7" start2="6" end2="6" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -100,7 +95,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
     "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/Users/tsuri/IdeaProjects/ISE5783_3676_3060",
+    "last_opened_file_path": "C:/Users/gilad/IdeaProjects/ISE5783_3676_3060/src/renderer",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -114,6 +109,10 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gilad\IdeaProjects\ISE5783_3676_3060\src\renderer" />
+      <recent name="C:\Users\gilad\IdeaProjects\ISE5783_3676_3060\src\primitives" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -122,6 +121,7 @@
       <recent name="C:\Users\tsuri\IdeaProjects\ISE5783_3676_3060\unittests\geometries" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="renderer" />
       <recent name="geometries" />
       <recent name="primitives" />
     </key>
@@ -135,7 +135,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CameraIntegrationTests.testCameraPlaneIntegration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CameraIntegrationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
         <pattern>
@@ -145,8 +145,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="CameraIntegrationTests" />
       <option name="MAIN_CLASS_NAME" value="CameraIntegrationTests.CameraIntegrationTests" />
-      <option name="METHOD_NAME" value="testCameraPlaneIntegration" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,33 +166,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CameraIntegrationTests.testCameraTriangleIntegration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CameraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CameraIntegrationTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CameraIntegrationTests" />
-      <option name="MAIN_CLASS_NAME" value="CameraIntegrationTests.CameraIntegrationTests" />
-      <option name="METHOD_NAME" value="testCameraTriangleIntegration" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CameraTest.testConstructRay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ISE5783_3676_3060" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CameraTests.*" />
+          <option name="PATTERN" value="renderer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="CameraTests" />
-      <option name="MAIN_CLASS_NAME" value="CameraTests.CameraTest" />
-      <option name="METHOD_NAME" value="testConstructRay" />
+      <option name="MAIN_CLASS_NAME" value="renderer.CameraTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImageWriterTest.writeToImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ISE5783_3676_3060" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="renderer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="renderer" />
+      <option name="MAIN_CLASS_NAME" value="renderer.ImageWriterTest" />
+      <option name="METHOD_NAME" value="writeToImage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,10 +200,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in ISE5783_3676_3060" />
-        <item itemvalue="JUnit.CameraTest.testConstructRay" />
+        <item itemvalue="JUnit.ImageWriterTest.writeToImage" />
+        <item itemvalue="JUnit.CameraTest" />
+        <item itemvalue="JUnit.CameraIntegrationTests" />
         <item itemvalue="JUnit.CameraIntegrationTests.testCameraSphereIntegration" />
-        <item itemvalue="JUnit.CameraIntegrationTests.testCameraPlaneIntegration" />
-        <item itemvalue="JUnit.CameraIntegrationTests.testCameraTriangleIntegration" />
       </list>
     </recent_temporary>
   </component>
@@ -249,8 +247,9 @@
       <workItem from="1683464629856" duration="60000" />
       <workItem from="1683464691997" duration="3396000" />
       <workItem from="1683549723010" duration="17335000" />
-      <workItem from="1683581627610" duration="285000" />
-      <workItem from="1683637735133" duration="1003000" />
+      <workItem from="1683573388050" duration="6274000" />
+      <workItem from="1683641777356" duration="146000" />
+      <workItem from="1683641926089" duration="5349000" />
     </task>
     <task id="LOCAL‎-00001" summary="ISE5783">
       <created>1677599486250</created>
@@ -448,14 +447,28 @@
       <option name="project" value="LOCAL‎" />
       <updated>1683466587697</updated>
     </task>
-    <task id="LOCAL‎-00029" summary="completed level 4">
-      <created>1683581737316</created>
+    <task id="LOCAL‎-00029" summary="temp">
+      <created>1683573422225</created>
       <option name="number" value="00029" />
       <option name="presentableId" value="LOCAL‎-00029" />
       <option name="project" value="LOCAL‎" />
-      <updated>1683581737316</updated>
+      <updated>1683573422225</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL‎-00030" summary="finish level 4!">
+      <created>1683581096534</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL‎-00030" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1683581096534</updated>
+    </task>
+    <task id="LOCAL‎-00031" summary="finish level 4!">
+      <created>1683581204789</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL‎-00031" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1683581204789</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,26 +504,8 @@
     <MESSAGE value="created 'Geometries' class,completed TestsFindIntersections of Geometries" />
     <MESSAGE value="created 'Geometries' class,&#10;completed TestsFindIntersections of Geometries,&#10;start implement findIntersection of Geometries" />
     <MESSAGE value="finish integrationTests of sphere,plane,triangle" />
-    <MESSAGE value="completed level 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed level 4" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/unittests/CameraTests/CameraTest.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Polygon_java$CameraIntegrationTests.ic" NAME="CameraIntegrationTests Coverage Results" MODIFIED="1683577907151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>CameraIntegrationTests.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Polygon_java$CameraIntegrationTests_testCameraPlaneIntegration.ic" NAME="CameraIntegrationTests.testCameraPlaneIntegration Coverage Results" MODIFIED="1683578189048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>CameraIntegrationTests.*</FILTER>
-    </SUITE>
+    <MESSAGE value="temp" />
+    <MESSAGE value="finish level 4!" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish level 4!" />
   </component>
 </project>

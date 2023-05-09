@@ -29,17 +29,17 @@ public class Sphere extends RadialGeometry {
     public List<Point> findIntersections(Ray ray) {
 
         Point p0 = ray.getP0(); // ray's starting point
-        Point O = center; //the sphere's center point
+        Point center = this.center; //the sphere's center point
         Vector V = ray.getDir(); // "the v vector" from the presentation
 
         // if p0 on center, calculate with line parametric representation
         // the direction vector normalized.
-        if (O.equals(p0)) {
-            Point newPoint = p0.add(ray.getDir().scale(radius));
+        if (center.equals(p0)) {
+            Point newPoint = ray.getPoint(radius);
             return List.of(newPoint);
         }
 
-        Vector U = O.subtract(p0);
+        Vector U = center.subtract(p0);
         double tm = V.dotProduct(U);
         double d = Math.sqrt(U.lengthSquared() - tm * tm);
         if (d >= radius) {

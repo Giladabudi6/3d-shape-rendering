@@ -20,7 +20,8 @@ public class Triangle extends Polygon {
         // we get a pyramid
 
         //Check if the ray intersect the plane.
-        if (plane.findIntersections(ray) == null) {
+        List<Point> intersections = plane.findIntersections(ray);
+        if (intersections == null) {
             return null;
         }
         // the three vectors from the same starting point
@@ -42,7 +43,7 @@ public class Triangle extends Polygon {
         if ((alignZero(v.dotProduct(n1)) > 0 && alignZero(v.dotProduct(n2)) > 0 && alignZero(v.dotProduct(n3)) > 0) ||
                 (alignZero(v.dotProduct(n1)) < 0 && alignZero(v.dotProduct(n2)) < 0 && alignZero(v.dotProduct(n3)) < 0)) {
 
-            return plane.findIntersections(ray);
+            return intersections;
         }
         return null;
     }
