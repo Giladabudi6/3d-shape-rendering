@@ -20,7 +20,6 @@ public class ImageWriterTest {
 
             }
         }
-//hsgh
         imageWriter.writeToImage();
 
     }
