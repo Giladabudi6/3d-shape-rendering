@@ -14,13 +14,12 @@ class PointTest {
     void TestSubtract() {
         // ============ Equivalence Partitions Tests ==============
         // subtracting point u from point v and create a new vector
-
         Point p1 = new Point(1, 2, 3);
         Vector v1 = new Vector(1, 1, 1);
         assertEquals(new Vector(0, 1, 2), p1.subtract(v1));
 
         // =============== Boundary Values Tests ==================
-        // subtracting point u from point u and create a new vector???
+        // subtracting point u from point u and create a new vector
         Point p2 = new Point(1, -1, 3);
         Vector v2 = new Vector(1, -1, 3);
         assertThrows(IllegalArgumentException.class, () -> {

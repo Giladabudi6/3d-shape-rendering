@@ -13,6 +13,8 @@ public class Camera {
     private final Vector Vup;
     private final Vector Vto;
     private double height, width, distance;
+    ImageWriter imageWriter;
+    RayTracerBase rayTracerBase;
 
     public Camera(Point location, Vector vto, Vector vup) {
 
@@ -64,6 +66,17 @@ public class Camera {
         return this;
     }
 
+    public Camera setImageWriter(ImageWriter imageWriter) {
+        this.imageWriter = imageWriter;
+        return this;
+    }
+
+    public Camera setRayTracerBase(RayTracerBase rayTracerBase) {
+        this.rayTracerBase = rayTracerBase;
+        return this;
+    }
+
+
     public Ray constructRay(int nX, int nY, int j, int i) {
         // nX represent rows and nY represents columns of the resolution
         // i represent rows and j represents columns of the view plane
@@ -84,6 +97,18 @@ public class Camera {
         Ray ray = new Ray(location, pIJ.subtract(location));
 
         return ray;
+
+    }
+
+    void  renderImage(){
+
+    }
+
+    printGrid(int interval, Color color){
+
+    }
+
+    writeToImage(){
 
     }
 }

@@ -15,9 +15,6 @@ public class Ray {
         this.dir = dir.normalize();
     }
 
-/*    public Point getPoint() {
-        return this.p0;
-    }*/
 
     @Override
     public boolean equals(Object o) {
