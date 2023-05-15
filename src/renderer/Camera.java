@@ -99,8 +99,15 @@ public class Camera {
         return ray;
 
     }
-
+//trdf
     void  renderImage(){
+        if (location == null || Vright == null || Vup == null || Vto == null
+                || imageWriter == null || rayTracerBase == null ||
+                Double.isNaN(height) || Double.isNaN(width) || Double.isNaN(distance))
+        {
+            throw new NullPointerException("Field is null");
+        }
+        int y = 6;
 
     }
 
