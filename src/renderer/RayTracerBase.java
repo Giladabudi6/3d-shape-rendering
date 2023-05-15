@@ -1,9 +1,9 @@
 package renderer;
 
 
-import scene.Scene;
-import primitives.Ray;
 import primitives.Color;
+import primitives.Ray;
+import scene.Scene;
 
 
 public abstract class RayTracerBase {
@@ -13,6 +13,7 @@ public abstract class RayTracerBase {
     public RayTracerBase(Scene scene) {
         this.scene = scene;
     }
+
     // TODO: check if the returned value is correct
     public Color traceRay(Ray ray){
         return null;

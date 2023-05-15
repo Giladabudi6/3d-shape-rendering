@@ -4,9 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="level 5 start renderImage func" />
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="level 5 start renderImage func">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lighting/AmbientLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lighting/AmbientLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Ray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Ray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scene/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/primitives/RayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/primitives/RayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/renderer/ImageWriterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/ImageWriterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/renderer/RenderTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/RenderTests.java" afterDir="false" />
+    </list>
     <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
-    <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="reformatted all files&#10;began level 5" />
+    <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="reformatted all files&#10;began level 5">
+      <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scene/Scene.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +58,37 @@
         <option name="url" value="https://github.com/Tsuriya1/ISE5783_3676_3060.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/scene/Scene.java">
+      <ranges>
+        <range start1="1" end1="1" start2="1" end2="2" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="7" end1="8" start2="8" end2="9" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
+        <range start1="20" end1="22" start2="21" end2="23" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/renderer/Camera.java">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="3" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
+        <range start1="6" end1="6" start2="7" end2="9" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
+        <range start1="14" end1="15" start2="17" end2="17" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="17" end1="17" start2="19" end2="20" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="101" end1="108" start2="104" end2="137" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
+        <range start1="109" end1="110" start2="138" end2="138" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
+        <range start1="111" end1="111" start2="139" end2="149" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
+        <range start1="113" end1="115" start2="151" end2="162" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="117" end1="119" start2="164" end2="169" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="120" end1="120" start2="170" end2="175" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/renderer/RayTracerBase.java">
+      <ranges>
+        <range start1="3" end1="5" start2="3" end2="3" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="6" end1="6" start2="4" end2="6" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="15" end1="15" start2="15" end2="16" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="16" end1="17" start2="17" end2="18" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -102,42 +149,11 @@
       <recent name="primitives" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ImageWriterTest.writeToImage">
+  <component name="RunManager" selected="JUnit.RenderTests">
     <configuration name="All in ISE5783_3676_3060" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CameraIntegrationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ISE5783_3676_3060" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CameraIntegrationTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CameraIntegrationTests" />
-      <option name="MAIN_CLASS_NAME" value="CameraIntegrationTests.CameraIntegrationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CameraIntegrationTests.testCameraSphereIntegration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ISE5783_3676_3060" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CameraIntegrationTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CameraIntegrationTests" />
-      <option name="MAIN_CLASS_NAME" value="CameraIntegrationTests.CameraIntegrationTests" />
-      <option name="METHOD_NAME" value="testCameraSphereIntegration" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,13 +189,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RenderTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ISE5783_3676_3060" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="renderer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="renderer" />
+      <option name="MAIN_CLASS_NAME" value="renderer.RenderTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RenderTests.basicRenderTwoColorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ISE5783_3676_3060" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="renderer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="renderer" />
+      <option name="MAIN_CLASS_NAME" value="renderer.RenderTests" />
+      <option name="METHOD_NAME" value="basicRenderTwoColorTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RenderTests" />
+        <item itemvalue="JUnit.RenderTests.basicRenderTwoColorTest" />
         <item itemvalue="JUnit.ImageWriterTest.writeToImage" />
         <item itemvalue="JUnit.All in ISE5783_3676_3060" />
         <item itemvalue="JUnit.CameraTest" />
-        <item itemvalue="JUnit.CameraIntegrationTests" />
-        <item itemvalue="JUnit.CameraIntegrationTests.testCameraSphereIntegration" />
       </list>
     </recent_temporary>
   </component>
@@ -228,6 +275,8 @@
       <workItem from="1683641926089" duration="7170000" />
       <workItem from="1684051259392" duration="53000" />
       <workItem from="1684051352752" duration="4070000" />
+      <workItem from="1684136614608" duration="220000" />
+      <workItem from="1684136881779" duration="10143000" />
     </task>
     <task id="LOCAL‎-00001" summary="ISE5783">
       <created>1677599486250</created>
@@ -481,7 +530,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1683648798036</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL‎-00037" summary="level 5 start renderImage func">
+      <created>1684136690952</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL‎-00037" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1684136690952</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,6 +578,7 @@
     <MESSAGE value="reformatted all files&#10;began level 5" />
     <MESSAGE value="level 5 - complete 1 from 4" />
     <MESSAGE value="level 5 - complete 1 out of 4." />
-    <option name="LAST_COMMIT_MESSAGE" value="level 5 - complete 1 out of 4." />
+    <MESSAGE value="level 5 start renderImage func" />
+    <option name="LAST_COMMIT_MESSAGE" value="level 5 start renderImage func" />
   </component>
 </project>

@@ -51,14 +51,14 @@ public class Ray {
         return p0.add(dir.scale(t));
     }
 
-    public Point findClosestPoint(List<Point> points){
-        if(points.size() == 0)
+    public Point findClosestPoint(List<Point> points) {
+        if (points.size() == 0)
             return null;
         Point closestPoint = points.get(0);
         double min = points.get(0).distance(this.p0);
-        for (int i=1; i<points.size();i++){
+        for (int i = 1; i < points.size(); i++) {
             double current = points.get(i).distance(this.p0);
-            if(current < min){
+            if (current < min) {
                 min = current;
                 closestPoint = points.get(i);
             }

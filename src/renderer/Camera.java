@@ -12,9 +12,9 @@ public class Camera {
     private final Vector Vright;
     private final Vector Vup;
     private final Vector Vto;
-    private double height, width, distance;
     ImageWriter imageWriter;
     RayTracerBase rayTracerBase;
+    private double height, width, distance;
 
     public Camera(Point location, Vector vto, Vector vup) {
 
@@ -111,11 +111,23 @@ public class Camera {
 
     }
 
-    printGrid(int interval, Color color){
-
+    public void printGrid(int interval, Color color) {
+        // Check if the imageWriter is set before printing the grid
+        if (imageWriter == null)
+            throw new MissingResourceException("missing resource", "imageWriter", "name/nX/nY is missing");
+        for (int i = 0; i < imageWriter.getNx(); i++) {
+            for (int j = 0; j < imageWriter.getNy(); j++) {
+                if (i % interval == 0 || j % interval == 0)
+                    // Write the specified color to the current pixel
+                    imageWriter.writePixel(i, j, color);
+            }
+        }
     }
 
-    writeToImage(){
-
+    public void writeToImage() {
+        // Check if the imageWriter is set before writing the image
+        if (imageWriter == null)
+            throw new MissingResourceException("missing resource", "imageWriter", "name/nX/nY is missing");
+        imageWriter.writeToImage();
     }
 }
