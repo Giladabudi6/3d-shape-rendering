@@ -6,7 +6,7 @@ import primitives.Color;
 
 public class Scene {
     public String name;
-    public Color backround;
+    public Color background;
     public AmbientLight ambientLight = AmbientLight.NONE;
     public Geometries geometries = new Geometries();
 
@@ -19,8 +19,8 @@ public class Scene {
         return this;
     }
 
-    public Scene setBackground(Color backround) {
-        this.backround = backround;
+    public Scene setBackground(Color background) {
+        this.background = background;
         return this;
     }
 

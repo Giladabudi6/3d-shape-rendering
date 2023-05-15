@@ -15,7 +15,7 @@ public abstract class RayTracerBase {
     }
 
     // TODO: check if the returned value is correct
-    public Color traceRay(Ray ray){
+    public Color traceRay(Ray ray) {
         return null;
     }
 }

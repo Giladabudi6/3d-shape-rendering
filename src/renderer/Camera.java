@@ -1,8 +1,11 @@
 package renderer;
 
+import primitives.Color;
 import primitives.Point;
 import primitives.Ray;
 import primitives.Vector;
+
+import java.util.MissingResourceException;
 
 import static primitives.Util.isZero;
 
@@ -99,16 +102,51 @@ public class Camera {
         return ray;
 
     }
-//trdf
-    void  renderImage(){
-        if (location == null || Vright == null || Vup == null || Vto == null
-                || imageWriter == null || rayTracerBase == null ||
-                Double.isNaN(height) || Double.isNaN(width) || Double.isNaN(distance))
-        {
-            throw new NullPointerException("Field is null");
-        }
-        int y = 6;
 
+    public void renderImage() {
+        // Check if all the required resources are set before rendering the image
+        if (location == null) {
+            throw new MissingResourceException("missing resource", "location", "Location is missing");
+        }
+
+        if (Vright == null) {
+            throw new MissingResourceException("missing resource", "Vright", "Vright is missing");
+        }
+
+        if (Vup == null) {
+            throw new MissingResourceException("missing resource", "Vup", "Vup is missing");
+        }
+
+        if (Vto == null) {
+            throw new MissingResourceException("missing resource", "Vto", "Vto is missing");
+        }
+
+        if (imageWriter == null) {
+            throw new MissingResourceException("missing resource", "imageWriter", "Image writer is missing");
+        }
+
+        if (rayTracerBase == null) {
+            throw new MissingResourceException("missing resource", "rayTracerBase", "Ray tracer base is missing");
+        }
+
+        if (Double.isNaN(height)) {
+            throw new MissingResourceException("missing resource", "height", "Height is missing");
+        }
+
+        if (Double.isNaN(width)) {
+            throw new MissingResourceException("missing resource", "width", "Width is missing");
+        }
+
+        if (Double.isNaN(distance)) {
+            throw new MissingResourceException("missing resource", "distance", "Distance is missing");
+        }
+
+        for (int i = 0; i < imageWriter.getNx(); i++) {
+            for (int j = 0; j < imageWriter.getNy(); j++) {
+                // Cast a ray from the camera to the current pixel and get the color
+                imageWriter.writePixel(i, j, castRay(constructRay(imageWriter.getNx(), imageWriter.getNy(), i, j)));
+            }
+        }
     }
 
     public void printGrid(int interval, Color color) {
@@ -129,5 +167,10 @@ public class Camera {
         if (imageWriter == null)
             throw new MissingResourceException("missing resource", "imageWriter", "name/nX/nY is missing");
         imageWriter.writeToImage();
+    }
+
+    public Color castRay(Ray ray) {
+        // Use the ray tracer base to trace the given ray and return the resulting color
+        return rayTracerBase.traceRay(ray);
     }
 }
