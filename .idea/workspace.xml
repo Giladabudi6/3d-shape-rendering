@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="Complete level 5!">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/renderer/CameraIntegrationTests/CameraIntegrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/CameraIntegrationTests/CameraIntegrationTests.java" afterDir="false" />
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="minor general changes">
+      <change beforePath="$PROJECT_DIR$/unittests/geometries/PolygonTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/geometries/PolygonTests.java" afterDir="false" />
     </list>
     <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
     <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="Complete level 5!" />
@@ -237,7 +235,7 @@
       <workItem from="1684147758215" duration="755000" />
       <workItem from="1684151879602" duration="595000" />
       <workItem from="1684160629933" duration="667000" />
-      <workItem from="1684244384144" duration="1042000" />
+      <workItem from="1684244384144" duration="1408000" />
     </task>
     <task id="LOCAL‎-00001" summary="ISE5783">
       <created>1677599486250</created>
@@ -512,7 +510,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1684147372744</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL‎-00040" summary="minor general changes">
+      <created>1684245468504</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL‎-00040" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1684245468504</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +535,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ISE5783" />
     <MESSAGE value="completed Primitives package and begin working on the Geometry package" />
     <MESSAGE value="completed Level 1" />
     <MESSAGE value="started working on unit tests" />
@@ -555,6 +559,7 @@
     <MESSAGE value="level 5 - complete 1 out of 4." />
     <MESSAGE value="level 5 start renderImage func" />
     <MESSAGE value="Complete level 5!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete level 5!" />
+    <MESSAGE value="minor general changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor general changes" />
   </component>
 </project>
