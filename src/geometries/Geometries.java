@@ -24,18 +24,19 @@ public class Geometries extends Intersectable {
     }
 
     @Override
-    public List<Point> findIntersections(Ray ray) {
+    public List<GeoPoint> findGeoIntersectionsHelper(Ray ray) {
         // holds the intersection points
-        LinkedList<Point> points = null;
+        LinkedList<GeoPoint> intersection = null;
         for (var shape : shapesList) {
-            var geometryList = shape.findIntersections(ray);
+            var geometryList = shape.findGeoIntersectionsHelper(ray);
             if (geometryList != null) {
-                if (points == null) {
-                    points = new LinkedList<>();
+                if (intersection == null) {
+                    intersection = new LinkedList<>();
                 }
-                points.addAll(geometryList);
+                intersection.addAll(geometryList);
             }
         }
-        return points;
+        return intersection;
     }
 }
+

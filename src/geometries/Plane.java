@@ -34,7 +34,7 @@ public class Plane extends Geometry {
 
 
     @Override
-    public List<Point> findIntersections(Ray ray) {
+    public List<GeoPoint> findGeoIntersectionsHelper(Ray ray) {
 
         Point P0 = ray.getP0(); // according to the illustration P0 is the same point of the ray's P0 (that's why the definition))
         Vector v = ray.getDir(); // according to the illustration v is the same vector of the ray's vector (that's why the definition))
@@ -67,7 +67,7 @@ public class Plane extends Geometry {
             return null;
         }
 
-        return List.of(ray.getPoint(t));
+        return List.of(new GeoPoint(this,ray.getPoint(t)));
     }
 
 

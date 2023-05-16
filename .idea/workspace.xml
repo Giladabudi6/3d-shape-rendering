@@ -4,27 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="minor general changes">
-      <change afterPath="$PROJECT_DIR$/unittests/renderer/LightsTests.java" afterDir="false" />
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="Complete level 5!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Geometries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Geometries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Geometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Geometry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Intersectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Intersectable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Ray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Ray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBase.java" afterDir="false" />
-    </list>
-    <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad">
       <change beforePath="$PROJECT_DIR$/src/geometries/Geometries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Geometries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/geometries/Intersectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Intersectable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/geometries/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Plane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/geometries/Polygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Polygon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/RadialGeometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/RadialGeometry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/geometries/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Sphere.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Tube.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Tube.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/renderer/ImageWriterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/ImageWriterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/renderer/RenderTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/RenderTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Ray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Ray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/renderer/LightsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/LightsTests.java" afterDir="false" />
     </list>
+    <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
     <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="Complete level 5!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,20 +52,6 @@
         <option name="url" value="https://github.com/Tsuriya1/ISE5783_3676_3060.git" />
       </UrlAndAccount>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/geometries/Geometries.java">
-      <ranges>
-        <range start1="9" end1="10" start2="9" end2="10" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
-        <range start1="25" end1="25" start2="25" end2="26" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/geometries/Intersectable.java">
-      <ranges>
-        <range start1="6" end1="6" start2="6" end2="7" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="7" end1="9" start2="8" end2="54" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -126,7 +103,6 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\tsuri\IdeaProjects\ISE5783_3676_3060\unittests\renderer" />
       <recent name="C:\Users\gilad\IdeaProjects\ISE5783_3676_3060\unittests\geometries" />
       <recent name="C:\Users\tsuri\IdeaProjects\ISE5783_3676_3060\unittests\geometries" />
     </key>
@@ -136,7 +112,7 @@
       <recent name="primitives" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RenderTests">
+  <component name="RunManager" selected="JUnit.All in ISE5783_3676_3060">
     <configuration name="All in ISE5783_3676_3060" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <option name="PACKAGE_NAME" value="" />
@@ -145,53 +121,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CameraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GeometriesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="renderer.*" />
+          <option name="PATTERN" value="geometries.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="CameraTests" />
-      <option name="MAIN_CLASS_NAME" value="renderer.CameraTest" />
+      <option name="PACKAGE_NAME" value="geometries" />
+      <option name="MAIN_CLASS_NAME" value="geometries.GeometriesTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImageWriterTest.writeToImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GeometriesTest.testFindIntersections" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="renderer.*" />
+          <option name="PATTERN" value="geometries.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="renderer" />
-      <option name="MAIN_CLASS_NAME" value="renderer.ImageWriterTest" />
-      <option name="METHOD_NAME" value="writeToImage" />
+      <option name="PACKAGE_NAME" value="geometries" />
+      <option name="MAIN_CLASS_NAME" value="geometries.GeometriesTest" />
+      <option name="METHOD_NAME" value="testFindIntersections" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RenderTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RenderTests.basicRenderMultiColorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="renderer.*" />
+          <option name="PATTERN" value="unittests.renderer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="renderer" />
-      <option name="MAIN_CLASS_NAME" value="renderer.RenderTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="unittests.renderer" />
+      <option name="MAIN_CLASS_NAME" value="unittests.renderer.RenderTests" />
+      <option name="METHOD_NAME" value="basicRenderMultiColorTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RenderTests.basicRenderTwoColorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="renderer in ISE5783_3676_3060" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
         <pattern>
@@ -200,20 +177,18 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="renderer" />
-      <option name="MAIN_CLASS_NAME" value="renderer.RenderTests" />
-      <option name="METHOD_NAME" value="basicRenderTwoColorTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RenderTests" />
-        <item itemvalue="JUnit.RenderTests.basicRenderTwoColorTest" />
-        <item itemvalue="JUnit.ImageWriterTest.writeToImage" />
         <item itemvalue="JUnit.All in ISE5783_3676_3060" />
-        <item itemvalue="JUnit.CameraTest" />
+        <item itemvalue="JUnit.GeometriesTest" />
+        <item itemvalue="JUnit.GeometriesTest.testFindIntersections" />
+        <item itemvalue="JUnit.RenderTests.basicRenderMultiColorTest" />
+        <item itemvalue="JUnit.renderer in ISE5783_3676_3060" />
       </list>
     </recent_temporary>
   </component>
@@ -263,11 +238,9 @@
       <workItem from="1684051259392" duration="53000" />
       <workItem from="1684051352752" duration="4070000" />
       <workItem from="1684136614608" duration="220000" />
-      <workItem from="1684136881779" duration="10566000" />
-      <workItem from="1684147758215" duration="755000" />
-      <workItem from="1684151879602" duration="595000" />
-      <workItem from="1684160629933" duration="667000" />
-      <workItem from="1684244384144" duration="7396000" />
+      <workItem from="1684136881779" duration="10836000" />
+      <workItem from="1684247134197" duration="11228000" />
+      <workItem from="1684266958641" duration="36000" />
     </task>
     <task id="LOCAL‎-00001" summary="ISE5783">
       <created>1677599486250</created>
@@ -542,21 +515,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1684147372744</updated>
     </task>
-    <task id="LOCAL‎-00040" summary="minor general changes">
-      <created>1684245468504</created>
+    <task id="LOCAL‎-00040" summary="Complete level 5!">
+      <created>1684147592973</created>
       <option name="number" value="00040" />
       <option name="presentableId" value="LOCAL‎-00040" />
       <option name="project" value="LOCAL‎" />
-      <updated>1684245468504</updated>
+      <updated>1684147592973</updated>
     </task>
-    <task id="LOCAL‎-00041" summary="minor general changes">
-      <created>1684245819105</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL‎-00041" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1684245819105</updated>
-    </task>
-    <option name="localTasksCounter" value="42" />
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,6 +540,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="ISE5783" />
     <MESSAGE value="completed Primitives package and begin working on the Geometry package" />
     <MESSAGE value="completed Level 1" />
     <MESSAGE value="started working on unit tests" />
@@ -598,7 +565,6 @@
     <MESSAGE value="level 5 - complete 1 out of 4." />
     <MESSAGE value="level 5 start renderImage func" />
     <MESSAGE value="Complete level 5!" />
-    <MESSAGE value="minor general changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor general changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete level 5!" />
   </component>
 </project>

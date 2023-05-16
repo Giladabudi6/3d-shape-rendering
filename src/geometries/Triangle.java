@@ -14,16 +14,18 @@ public class Triangle extends Polygon {
     }
 
     @Override
-    public List<Point> findIntersections(Ray ray) {
+    public List<GeoPoint> findGeoIntersectionsHelper(Ray ray) {
 
         // we take three vectors from the same starting point and connect them to the triangle's vertices
         // we get a pyramid
 
         //Check if the ray intersect the plane.
-        List<Point> intersections = plane.findIntersections(ray);
+        List<GeoPoint> intersections = plane.findGeoIntersectionsHelper(ray);
+
         if (intersections == null) {
             return null;
         }
+
         // the three vectors from the same starting point
         Vector v1 = vertices.get(0).subtract(ray.getP0());
         Vector v2 = vertices.get(1).subtract(ray.getP0());
@@ -48,6 +50,3 @@ public class Triangle extends Polygon {
         return null;
     }
 }
-
-
-

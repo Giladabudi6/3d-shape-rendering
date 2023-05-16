@@ -3,12 +3,26 @@ package geometries;
 import primitives.Point;
 import primitives.Ray;
 
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 
 public abstract class Intersectable {
 
-    public abstract List <Point> findIntersections(Ray ray);
+    public List<Point> findIntersections(Ray ray) {
+        var geoList = findGeoIntersections(ray);
+        return geoList == null ? null : geoList.stream().map(gp -> gp.point).toList();
+    }
+
+
+
+    public List<GeoPoint> findGeoIntersections(Ray ray) {
+        return findGeoIntersectionsHelper(ray);
+    }
+
+    protected List<GeoPoint> findGeoIntersectionsHelper(Ray ray) {
+        return null;
+    }
 
     public static class GeoPoint {
         public Geometry geometry;
@@ -19,16 +33,6 @@ public abstract class Intersectable {
             this.geometry = geometry;
             this.point = point;
         }
-
-
-        public List<GeoPoint> findGeoIntersections(Ray ray){
-            return findGeoIntersectionsHelper();
-        }
-
-        protected <GeoPoint> findGeoIntersectionsHelper(){
-
-        }
-
 
         @Override
         public boolean equals(Object o) {

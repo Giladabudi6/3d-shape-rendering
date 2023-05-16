@@ -26,7 +26,7 @@ public class Sphere extends RadialGeometry {
     }
 
 
-    public <GeoPoint> findGeoIntersectionsHelper(Ray ray) {
+    public List<GeoPoint> findGeoIntersectionsHelper(Ray ray) {
 
         Point p0 = ray.getP0(); // ray's starting point
         Point center = this.center; //the sphere's center point
@@ -36,7 +36,7 @@ public class Sphere extends RadialGeometry {
         // the direction vector normalized.
         if (center.equals(p0)) {
             Point newPoint = ray.getPoint(radius);
-            return List.of(newPoint);
+            return List.of(new GeoPoint(this, newPoint));
         }
 
         Vector U = center.subtract(p0);
@@ -51,14 +51,14 @@ public class Sphere extends RadialGeometry {
         double t2 = tm + th;
 
         if (t1 > 0 && t2 > 0) {
-            List<Point> myList = new LinkedList<>();
+            List<GeoPoint> myList = new LinkedList<>();
             Point p1 = ray.getPoint(t1);
             if (!comparePoints(p1, ray)) {
-                myList.add(p1);
+                myList.add(new GeoPoint(this, p1));
             }
             Point p2 = ray.getPoint(t2);
             if (!comparePoints(p2, ray)) {
-                myList.add(p2);
+                myList.add(new GeoPoint(this, p2));
             }
             return myList;
         }
@@ -66,14 +66,14 @@ public class Sphere extends RadialGeometry {
         if (t1 > 0) {
             Point p1 = ray.getPoint(t1);
             if (!comparePoints(p1, ray)) {
-                return List.of(p1);
+                return List.of(new GeoPoint(this, p1));
             }
         }
 
         if (t2 > 0) {
             Point p2 = ray.getPoint(t2);
             if (!comparePoints(p2, ray)) {
-                return List.of(p2);
+                return List.of(new GeoPoint(this, p2));
             }
         }
         return null;
