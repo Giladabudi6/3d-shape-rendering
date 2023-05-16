@@ -55,9 +55,10 @@ public class Ray {
         if (points.size() == 0)
             return null;
         Point closestPoint = points.get(0);
-        double min = points.get(0).distance(this.p0);
+        // Before checking the rest the default is that the first point is the closest
+        double min = points.get(0).distanceSquared(this.p0);
         for (int i = 1; i < points.size(); i++) {
-            double current = points.get(i).distance(this.p0);
+            double current = points.get(i).distanceSquared(this.p0);
             if (current < min) {
                 min = current;
                 closestPoint = points.get(i);

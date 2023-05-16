@@ -23,6 +23,7 @@ public class Geometries implements Intersectable {
         Collections.addAll(shapesList, geometries);
     }
 
+    @Override
     public List<Point> findIntersections(Ray ray) {
         // holds the intersection points
         LinkedList<Point> points = null;
