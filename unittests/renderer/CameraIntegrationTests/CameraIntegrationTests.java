@@ -68,7 +68,6 @@ public class CameraIntegrationTests {
         assertEquals(10, countIntersectionsCameraGeometry(camera2, new Sphere(2, new Point(0, 0, -2)), 3, 3), "Wrong number of intersections");
 
         //TC04: Sphere r=4 (9 intersections)
-        //TODO: find the correct point
         assertEquals(9, countIntersectionsCameraGeometry(camera2, new Sphere(4, new Point(0, 0, 0)), 3, 3), "Wrong number of intersections");
 
         //TC05: Sphere r=0.5 (0 intersections)

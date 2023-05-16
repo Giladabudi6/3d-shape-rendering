@@ -10,7 +10,6 @@ import java.util.MissingResourceException;
 import static primitives.Util.isZero;
 
 public class Camera {
-    //TODO: note - we are using double for the distance etc. should we change it to int?
     private final Point location;
     private final Vector Vright;
     private final Vector Vup;

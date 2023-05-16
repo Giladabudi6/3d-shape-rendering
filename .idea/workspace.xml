@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="Complete level 5!" />
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="Complete level 5!">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/renderer/CameraIntegrationTests/CameraIntegrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/CameraIntegrationTests/CameraIntegrationTests.java" afterDir="false" />
+    </list>
     <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
     <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="Complete level 5!" />
     <option name="SHOW_DIALOG" value="false" />
@@ -230,6 +234,10 @@
       <workItem from="1684051352752" duration="4070000" />
       <workItem from="1684136614608" duration="220000" />
       <workItem from="1684136881779" duration="10566000" />
+      <workItem from="1684147758215" duration="755000" />
+      <workItem from="1684151879602" duration="595000" />
+      <workItem from="1684160629933" duration="667000" />
+      <workItem from="1684244384144" duration="1042000" />
     </task>
     <task id="LOCAL‎-00001" summary="ISE5783">
       <created>1677599486250</created>
