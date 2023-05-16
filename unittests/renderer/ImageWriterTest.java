@@ -14,10 +14,12 @@ public class ImageWriterTest {
 
         for (int i = 0; i < imageWriter.getNx(); i++) {
             for (int j = 0; j < imageWriter.getNy(); j++) {
-                imageWriter.writePixel(i, j, new Color(java.awt.Color.yellow));
-                if (i % 50 == 0 || j % 50 == 0)
-                    imageWriter.writePixel(i, j, new Color(java.awt.Color.BLUE));
-
+                Color backgroundColor = new Color(java.awt.Color.yellow);
+                imageWriter.writePixel(i, j, backgroundColor);
+                if (i % 50 == 0 || j % 50 == 0) {
+                    Color linesColor = new Color(java.awt.Color.BLUE);
+                    imageWriter.writePixel(i, j, linesColor);
+                }
             }
         }
         imageWriter.writeToImage();

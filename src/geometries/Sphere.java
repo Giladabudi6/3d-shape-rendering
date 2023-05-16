@@ -26,7 +26,7 @@ public class Sphere extends RadialGeometry {
     }
 
 
-    public List<Point> findIntersections(Ray ray) {
+    public <GeoPoint> findGeoIntersectionsHelper(Ray ray) {
 
         Point p0 = ray.getP0(); // ray's starting point
         Point center = this.center; //the sphere's center point
