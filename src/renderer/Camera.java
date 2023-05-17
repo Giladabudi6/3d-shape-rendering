@@ -143,7 +143,9 @@ public class Camera {
         for (int i = 0; i < imageWriter.getNx(); i++) {
             for (int j = 0; j < imageWriter.getNy(); j++) {
                 // Cast a ray from the camera to the current pixel and get the color
-                Color color = castRay(constructRay(imageWriter.getNx(), imageWriter.getNy(), i, j));
+
+                Ray ray = constructRay(imageWriter.getNx(), imageWriter.getNy(), i, j);
+                Color color = castRay(ray);
                 imageWriter.writePixel(i, j, color);
             }
         }

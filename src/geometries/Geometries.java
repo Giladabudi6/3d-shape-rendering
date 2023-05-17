@@ -28,7 +28,7 @@ public class Geometries extends Intersectable {
         // holds the intersection points
         LinkedList<GeoPoint> intersection = null;
         for (var shape : shapesList) {
-            var geometryList = shape.findGeoIntersectionsHelper(ray);
+            List <GeoPoint> geometryList = shape.findGeoIntersectionsHelper(ray);
             if (geometryList != null) {
                 if (intersection == null) {
                     intersection = new LinkedList<>();

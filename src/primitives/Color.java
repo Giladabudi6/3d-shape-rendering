@@ -143,4 +143,10 @@ public class Color {
     public String toString() {
         return "rgb:" + rgb;
     }
+
+    public boolean equals(Color c)
+    {
+        return this.rgb.d1==c.rgb.d1 && this.rgb.d2==c.rgb.d2 && this.rgb.d3==c.rgb.d3;
+    }
 }
+

@@ -4,20 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="start level 6.&#10;creat the findGeoIntersectionsHelper in all the shapes.&#10;finish A.3">
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="level 6 finish A but the second image is wrong">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lighting/AmbientLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lighting/AmbientLight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Ray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Ray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Geometries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Geometries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Intersectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Intersectable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/renderer/LightsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/LightsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scene/Scene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unittests/renderer/RenderTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/RenderTests.java" afterDir="false" />
     </list>
     <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
-    <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="Complete level 5!">
-      <change beforePath="$PROJECT_DIR$/src/primitives/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Ray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Ray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBase.java" afterDir="false" />
-    </list>
+    <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="Complete level 5!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,19 +52,6 @@
         <option name="url" value="https://github.com/Tsuriya1/ISE5783_3676_3060.git" />
       </UrlAndAccount>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/primitives/Ray.java">
-      <ranges>
-        <range start1="17" end1="17" start2="17" end2="18" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
-        <range start1="54" end1="56" start2="55" end2="57" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="57" end1="58" start2="58" end2="59" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="59" end1="62" start2="60" end2="63" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="64" end1="65" start2="65" end2="66" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="67" end1="68" start2="68" end2="69" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="70" end1="70" start2="71" end2="76" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -126,7 +112,15 @@
       <recent name="primitives" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RenderTests.basicRenderMultiColorTest (1)">
+  <component name="RunManager" selected="JUnit.All in ISE5783_3676_3060">
+    <configuration name="All in ISE5783_3676_3060" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ISE5783_3676_3060" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RenderTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
@@ -152,22 +146,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="renderer" />
       <option name="MAIN_CLASS_NAME" value="renderer.RenderTests" />
-      <option name="METHOD_NAME" value="basicRenderMultiColorTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RenderTests.basicRenderMultiColorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ISE5783_3676_3060" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unittests.renderer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="unittests.renderer" />
-      <option name="MAIN_CLASS_NAME" value="unittests.renderer.RenderTests" />
       <option name="METHOD_NAME" value="basicRenderMultiColorTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -208,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in ISE5783_3676_3060" />
         <item itemvalue="JUnit.RenderTests.basicRenderMultiColorTest (1)" />
         <item itemvalue="JUnit.RenderTests.basicRenderTwoColorTest (1)" />
         <item itemvalue="JUnit.RenderTests (1)" />
         <item itemvalue="JUnit.RenderTests.basicRenderTwoColorTest" />
-        <item itemvalue="JUnit.RenderTests.basicRenderMultiColorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +242,8 @@
       <workItem from="1684136614608" duration="220000" />
       <workItem from="1684136881779" duration="10836000" />
       <workItem from="1684247134197" duration="11228000" />
-      <workItem from="1684266958641" duration="16716000" />
+      <workItem from="1684266958641" duration="16857000" />
+      <workItem from="1684333027613" duration="15321000" />
     </task>
     <task id="LOCAL‎-00001" summary="ISE5783">
       <created>1677599486250</created>
@@ -553,7 +532,21 @@
       <option name="project" value="LOCAL‎" />
       <updated>1684267134875</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL‎-00042" summary="level 6 finish A but the second image is wrong">
+      <created>1684324813326</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL‎-00042" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1684324813326</updated>
+    </task>
+    <task id="LOCAL‎-00043" summary="Complete level 5!">
+      <created>1684324825597</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL‎-00043" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1684324825597</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,7 +564,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed Primitives package and begin working on the Geometry package" />
     <MESSAGE value="completed Level 1" />
     <MESSAGE value="started working on unit tests" />
     <MESSAGE value="bka bla" />
@@ -594,23 +586,15 @@
     <MESSAGE value="level 5 - complete 1 from 4" />
     <MESSAGE value="level 5 - complete 1 out of 4." />
     <MESSAGE value="level 5 start renderImage func" />
-    <MESSAGE value="Complete level 5!" />
     <MESSAGE value="start level 6.&#10;creat the findGeoIntersectionsHelper in all the shapes.&#10;finish A.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="start level 6.&#10;creat the findGeoIntersectionsHelper in all the shapes.&#10;finish A.3" />
+    <MESSAGE value="level 6 finish A but the second image is wrong" />
+    <MESSAGE value="Complete level 5!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete level 5!" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/unittests/renderer/RenderTests.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
-        <PinnedItemInfo parentTag="geometries.Geometries" memberName="shapesList" />
+        <PinnedItemInfo parentTag="geometries.Triangle" memberName="emission" />
       </pinned-members>
     </pin-to-top-manager>
   </component>

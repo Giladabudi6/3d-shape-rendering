@@ -45,6 +45,7 @@ public class Triangle extends Polygon {
         if ((alignZero(v.dotProduct(n1)) > 0 && alignZero(v.dotProduct(n2)) > 0 && alignZero(v.dotProduct(n3)) > 0) ||
                 (alignZero(v.dotProduct(n1)) < 0 && alignZero(v.dotProduct(n2)) < 0 && alignZero(v.dotProduct(n3)) < 0)) {
 
+            intersections.get(0).geometry = this;
             return intersections;
         }
         return null;

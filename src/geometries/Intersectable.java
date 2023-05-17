@@ -15,14 +15,12 @@ public abstract class Intersectable {
     }
 
 
-
     public List<GeoPoint> findGeoIntersections(Ray ray) {
         return findGeoIntersectionsHelper(ray);
     }
 
-    protected List<GeoPoint> findGeoIntersectionsHelper(Ray ray) {
-        return null;
-    }
+    protected List<GeoPoint> findGeoIntersectionsHelper(Ray ray){return null;}
+
 
     public static class GeoPoint {
         public Geometry geometry;
