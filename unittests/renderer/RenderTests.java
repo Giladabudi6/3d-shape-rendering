@@ -1,4 +1,4 @@
-package unittests.renderer;
+package renderer;
 
 import static java.awt.Color.*;
 
@@ -49,7 +49,8 @@ public class RenderTests {
     @Test
     public void basicRenderMultiColorTest() {
         Scene scene = new Scene("Test scene")//
-                .setAmbientLight(new AmbientLight(new Color(WHITE), new Double3(0.2))); //
+                .setAmbientLight(new AmbientLight(new Color(WHITE), new Double3(0.2))) //
+        .setBackground(new Color(BLACK));
 
         scene.geometries.add( // center
                 new Sphere(50,new Point(0, 0, -100)),

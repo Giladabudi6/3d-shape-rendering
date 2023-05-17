@@ -52,20 +52,25 @@ public class Ray {
         return p0.add(dir.scale(t));
     }
 
-    public Point findClosestPoint(List<Point> points) {
-        if (points.size() == 0)
+    public GeoPoint findClosestGeoPoint(List<GeoPoint> intersections) {
+        if (intersections.size() == 0)
             return null;
-        Point closestPoint = points.get(0);
+        GeoPoint closestGeoPoint = intersections.get(0);
         // Before checking the rest the default is that the first point is the closest
-        double min = points.get(0).distanceSquared(this.p0);
-        for (int i = 1; i < points.size(); i++) {
-            double current = points.get(i).distanceSquared(this.p0);
+        double min = intersections.get(0).point.distanceSquared(this.p0);
+        for (int i = 1; i < intersections.size(); i++) {
+            double current = intersections.get(i).point.distanceSquared(this.p0);
             if (current < min) {
                 min = current;
-                closestPoint = points.get(i);
+                closestGeoPoint = intersections.get(i);
             }
         }
-        return closestPoint;
+        return closestGeoPoint;
+    }
+
+    public Point findClosestPoint(List<Point> points) {
+        return points == null || points.isEmpty() ? null
+                : findClosestGeoPoint(points.stream().map(p -> new GeoPoint(null, p)).toList()).point;
     }
 
 }
