@@ -14,7 +14,7 @@ public abstract class RayTracerBase {
         this.scene = scene;
     }
 
-    public Color traceRay(Ray ray) {
+    public Color traceRay(Ray ray){
         return null;
     }
 }
