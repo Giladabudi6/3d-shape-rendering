@@ -6,6 +6,7 @@ import primitives.Color;
 
 public class Scene {
     public String name;
+    //TODO לבדוק אם הברירת מחדל של הריקע היא צבע שחור
     public Color background = Color.BLACK;
     public AmbientLight ambientLight = AmbientLight.NONE;
     public Geometries geometries = new Geometries();
@@ -31,6 +32,11 @@ public class Scene {
 
     public Scene setGeometries(Geometries geometries) {
         this.geometries = geometries;
+        return this;
+    }
+
+    public Scene setLights(List<LightSource> lights) {
+        this.lights = lights;
         return this;
     }
 }
