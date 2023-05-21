@@ -55,7 +55,7 @@ public class RayTracerBasic extends RayTracerBase {
             if (nl * nv > 0) { // sign(nl) == sing(nv)
                 Color Li = lightSource.getIntensity(gp.point);
                 // TODO: check if "material is correct instead of the "mat" it was
-                color = color.add(Li.scale(calcDiffusive(material, nl, Li)),Li.scale(calcSpecular(material, n, l, v, nl,Li));
+                color = color.add(Li.scale(calcDiffusive(material, nl)),Li.scale(calcSpecular(material, n, l, v, nl)));
 
             }
         }
@@ -63,17 +63,20 @@ public class RayTracerBasic extends RayTracerBase {
 
     }
 
-    private Color calcDiffusive(Material material, double nl, Color Li) {
+    private Double3 calcDiffusive(Material material, double nl) {
         Double3 diffusion = material.kD.scale(Math.abs(nl));
-        return Li.scale(diffusion);
+        //return Li.scale(diffusion);
+        return diffusion;
+
     }
 
-    private Color calcSpecular(Material material, Vector n, Vector l, Vector v, double nl, Color Li) {
+    private Double3 calcSpecular(Material material, Vector n, Vector l, Vector v, double nl) {
         Vector r = l.subtract(n.scale(nl).scale(2)).normalize();
         double max = Math.max(0, -v.dotProduct(r));
         double maxNs = Math.pow(max, material.nShininess);
         Double3 maxOfNsKs = material.kS.scale(maxNs);
-        return Li.scale(maxOfNsKs);
+        //return Li.scale(maxOfNsKs);
+        return maxOfNsKs;
     }
 
 }

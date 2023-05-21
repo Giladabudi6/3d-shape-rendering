@@ -6,12 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="level 6 finish A but the second image is wrong">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lighting/SpotLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lighting/SpotLight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/lighting/LightsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/lighting/LightsTests.java" afterDir="false" />
     </list>
-    <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad">
-      <change beforePath="$PROJECT_DIR$/src/primitives/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Material.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" afterDir="false" />
-    </list>
+    <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
     <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="Complete level 5!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,19 +47,6 @@
         <option name="url" value="https://github.com/Tsuriya1/ISE5783_3676_3060.git" />
       </UrlAndAccount>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/renderer/RayTracerBasic.java">
-      <ranges>
-        <range start1="2" end1="5" start2="2" end2="4" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="12" end1="12" start2="11" end2="12" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="32" end1="33" start2="32" end2="33" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
-        <range start1="36" end1="37" start2="36" end2="37" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="38" end1="39" start2="38" end2="39" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="43" end1="43" start2="43" end2="77" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
-        <range start1="45" end1="45" start2="79" end2="81" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -148,6 +134,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LightsTests.trianglesSpotSharp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ISE5783_3676_3060" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lighting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lighting" />
+      <option name="MAIN_CLASS_NAME" value="lighting.LightsTests" />
+      <option name="METHOD_NAME" value="trianglesSpotSharp" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RenderTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
@@ -179,29 +181,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RenderTests.basicRenderTwoColorTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ISE5783_3676_3060" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="renderer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="renderer" />
-      <option name="MAIN_CLASS_NAME" value="renderer.RenderTests" />
-      <option name="METHOD_NAME" value="basicRenderTwoColorTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.LightsTests" />
+        <item itemvalue="JUnit.LightsTests.trianglesSpotSharp" />
         <item itemvalue="JUnit.RenderTests (1)" />
         <item itemvalue="JUnit.All in ISE5783_3676_3060" />
         <item itemvalue="JUnit.RenderTests.basicRenderMultiColorTest (1)" />
-        <item itemvalue="JUnit.RenderTests.basicRenderTwoColorTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -257,6 +243,7 @@
       <workItem from="1684333027613" duration="15412000" />
       <workItem from="1684415548900" duration="195000" />
       <workItem from="1684492643170" duration="10493000" />
+      <workItem from="1684665668159" duration="3795000" />
     </task>
     <task id="LOCAL‎-00001" summary="ISE5783">
       <created>1677599486250</created>
