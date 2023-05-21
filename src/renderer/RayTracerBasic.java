@@ -1,8 +1,7 @@
 package renderer;
 
-import primitives.Color;
-import primitives.Point;
-import primitives.Ray;
+import lighting.LightSource;
+import primitives.*;
 import scene.Scene;
 import geometries.Intersectable.GeoPoint;
 
@@ -10,6 +9,7 @@ import java.util.List;
 
 import static java.awt.Color.GREEN;
 import static java.awt.Color.green;
+import static primitives.Util.alignZero;
 
 public class RayTracerBasic extends RayTracerBase {
 
@@ -34,9 +34,9 @@ public class RayTracerBasic extends RayTracerBase {
     }
 
 
-    private Color calcColor(GeoPoint gp) {
+    private Color calcColor(GeoPoint gp, Ray ray) {
         // Return the intensity of the ambient light in the scene
-        Color color = gp.geometry.getEmission();
+        Color color = calcLocalEffects(gp, ray);
         return scene.ambientLight.getIntensity().add(color);
 
     }
