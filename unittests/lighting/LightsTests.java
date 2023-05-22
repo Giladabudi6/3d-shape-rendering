@@ -143,6 +143,7 @@ public class LightsTests {
         camera2.writeToImage(); //
     }
 
+
     /** Produce a picture of a sphere lighted by a narrow spotlight */
     @Test
     public void sphereSpotSharp() {
@@ -166,6 +167,41 @@ public class LightsTests {
                 .setNarrowBeam(10).setkL(0.001).setkQ(0.00004));
 
         ImageWriter imageWriter = new ImageWriter("lightTrianglesSpotSharp", 500, 500);
+        camera2.setImageWriter(imageWriter) //
+                .setRayTracerBase(new RayTracerBasic(scene2)) //
+                .renderImage(); //
+        camera2.writeToImage(); //
+    }
+
+    /** Produce a picture of a sphere lighted by multi source light */
+    @Test
+    public void lightSphereMultiSourceLight() {
+        scene1.geometries.add(sphere);
+        scene1.lights
+                .add(new SpotLight(new Color(red), new Point(0,0,20), new Vector(0, 0, -1))
+                        .setNarrowBeam(0.5).setkL(0.00000363).setkQ(0.0000045505));
+        scene1.lights.add(new PointLight(new Color(40,600,300), new Point(-50,-50,-25))
+                .setkL(0.00000001).setkQ(0.00000000000065));
+        scene1.lights.add(new DirectionalLight(new Color(400,700,34), new Vector(-1, 1, -0.5)));
+
+        ImageWriter imageWriter = new ImageWriter("lightSphereMultiSourceLight", 500, 500);
+        camera1.setImageWriter(imageWriter) //
+                .setRayTracerBase(new RayTracerBasic(scene1)) //
+                .renderImage(); //
+        camera1.writeToImage(); //
+    }
+
+
+    /** Produce a picture of two triangles lighted by multi source light */
+    @Test
+    public void lightTrianglesMultiSourceLight() {
+        scene2.geometries.add(triangle1, triangle2);
+        scene2.lights.add(new SpotLight(new Color(yellow), new Point(30,-10,-100), new Vector(-2,2,-2))
+                .setNarrowBeam(6).setkL(0.000001).setkQ(0.00000004));
+        scene2.lights.add(new PointLight(new Color(red),new Point(-30,-50,-100)).setkL(0.001).setkQ(0.00004));
+        scene2.lights.add(new DirectionalLight(new Color(blue),new Vector(2,2,-2)));
+
+        ImageWriter imageWriter = new ImageWriter("lightTrianglesMultiSourceLight", 500, 500);
         camera2.setImageWriter(imageWriter) //
                 .setRayTracerBase(new RayTracerBasic(scene2)) //
                 .renderImage(); //
