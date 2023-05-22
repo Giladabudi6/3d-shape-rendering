@@ -54,7 +54,6 @@ public class RayTracerBasic extends RayTracerBase {
             double nl = alignZero(n.dotProduct(l));
             if (nl * nv > 0) { // sign(nl) == sing(nv)
                 Color Li = lightSource.getIntensity(gp.point);
-                // TODO: check if "material is correct instead of the "mat" it was
                 color = color.add(Li.scale(calcDiffusive(material, nl)),Li.scale(calcSpecular(material, n, l, v, nl)));
 
             }
