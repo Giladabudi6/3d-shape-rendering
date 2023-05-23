@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="Complited level 6!">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Geometries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Geometries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Intersectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Intersectable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Plane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Polygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Polygon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Sphere.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/lighting/LightsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/lighting/LightsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/renderer/RenderTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/RenderTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="create &quot;unshaded&quot; function" />
     <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +241,7 @@
       <workItem from="1684665668159" duration="4131000" />
       <workItem from="1684677573944" duration="13215000" />
       <workItem from="1684788027764" duration="604000" />
-      <workItem from="1684851408796" duration="7768000" />
+      <workItem from="1684851408796" duration="7952000" />
     </task>
     <task id="LOCAL‎-00001" summary="ISE5783">
       <created>1677599486250</created>
@@ -590,7 +579,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1684785894564</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL‎-00049" summary="create &quot;unshaded&quot; function">
+      <created>1684859715389</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL‎-00049" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1684859715389</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,7 +604,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="taged level 2" />
     <MESSAGE value="started level 3" />
     <MESSAGE value="findIntersection test in Sphare, Triangle and Plane" />
     <MESSAGE value="completed all sphere tests (findIntersection and getnormal)&#10;not yet implemented findIintersection in the class sphere" />
@@ -633,7 +628,8 @@
     <MESSAGE value="level 6 finished bonus (adding &quot;narrow&quot;) and the tests are perfect" />
     <MESSAGE value="Complete level 6!" />
     <MESSAGE value="Complited level 6!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complited level 6!" />
+    <MESSAGE value="create &quot;unshaded&quot; function" />
+    <option name="LAST_COMMIT_MESSAGE" value="create &quot;unshaded&quot; function" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
