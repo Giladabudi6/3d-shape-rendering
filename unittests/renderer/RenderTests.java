@@ -2,14 +2,12 @@ package renderer;
 
 import static java.awt.Color.*;
 
-import geometries.Plane;
 import org.junit.jupiter.api.Test;
 
 import geometries.Sphere;
 import geometries.Triangle;
 import lighting.AmbientLight;
 import primitives.*;
-import renderer.*;
 import scene.Scene;
 
 /** Test rendering a basic image
@@ -37,7 +35,7 @@ public class RenderTests {
                 .setVPDistance(100) //
                 .setVPSize(500, 500) //
                 .setImageWriter(new ImageWriter("base render test", 1000, 1000))
-                .setRayTracerBase(new RayTracerBasic(scene));
+                .setRayTracer(new RayTracerBasic(scene));
 
         camera.renderImage();
         camera.printGrid(100, new Color(YELLOW));
@@ -67,7 +65,7 @@ public class RenderTests {
                 .setVPDistance(100) //
                 .setVPSize(500, 500) //
                 .setImageWriter(new ImageWriter("color render test", 1000, 1000))
-                .setRayTracerBase(new RayTracerBasic(scene));
+                .setRayTracer(new RayTracerBasic(scene));
 
         camera.renderImage();
         camera.printGrid(100, new Color(WHITE));

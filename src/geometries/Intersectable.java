@@ -10,8 +10,8 @@ import java.util.Objects;
 public abstract class Intersectable {
 
     public List<Point> findIntersections(Ray ray) {
-        var geoList = findGeoIntersections(ray);
-        return geoList == null ? null : geoList.stream().map(gp -> gp.point).toList();
+        var geoIntersections = findGeoIntersections(ray);
+        return geoIntersections == null ? null : geoIntersections.stream().map(gp -> gp.point).toList();
     }
 
 

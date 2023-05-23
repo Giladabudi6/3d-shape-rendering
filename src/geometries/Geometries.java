@@ -1,6 +1,5 @@
 package geometries;
 
-import primitives.Point;
 import primitives.Ray;
 
 import java.util.Collections;
@@ -8,10 +7,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Geometries extends Intersectable {
-    private final List<Intersectable> shapesList;
+    private final List<Intersectable> geometries;
 
     public Geometries() {
-        shapesList = new LinkedList<Intersectable>();
+        geometries = new LinkedList<Intersectable>();
     }
 
     public Geometries(Intersectable... geometries) {
@@ -20,23 +19,23 @@ public class Geometries extends Intersectable {
     }
 
     public void add(Intersectable... geometries) {
-        Collections.addAll(shapesList, geometries);
+        Collections.addAll(this.geometries, geometries);
     }
 
     @Override
-    public List<GeoPoint> findGeoIntersectionsHelper(Ray ray) {
-        // holds the intersection points
-        LinkedList<GeoPoint> intersection = null;
-        for (var shape : shapesList) {
-            List <GeoPoint> geometryList = shape.findGeoIntersectionsHelper(ray);
-            if (geometryList != null) {
-                if (intersection == null) {
-                    intersection = new LinkedList<>();
+    protected List<GeoPoint> findGeoIntersectionsHelper(Ray ray) {
+        // holds the result points
+        LinkedList<GeoPoint> result = null;
+        for (var geometry : geometries) {
+            List <GeoPoint> intersections = geometry.findGeoIntersectionsHelper(ray);
+            if (intersections != null) {
+                if (result == null) {
+                    result = new LinkedList<>();
                 }
-                intersection.addAll(geometryList);
+                result.addAll(intersections);
             }
         }
-        return intersection;
+        return result;
     }
 }
 

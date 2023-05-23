@@ -15,7 +15,7 @@ public class Camera {
     private final Vector Vup;
     private final Vector Vto;
     ImageWriter imageWriter;
-    RayTracerBase rayTracerBase;
+    RayTracerBase rayTracer;
     private double height, width, distance;
 
     public Camera(Point location, Vector vto, Vector vup) {
@@ -73,8 +73,8 @@ public class Camera {
         return this;
     }
 
-    public Camera setRayTracerBase(RayTracerBase rayTracerBase) {
-        this.rayTracerBase = rayTracerBase;
+    public Camera setRayTracer(RayTracerBase rayTracer) {
+        this.rayTracer = rayTracer;
         return this;
     }
 
@@ -91,9 +91,9 @@ public class Camera {
         double yI = -(i - ((nY - 1) / 2d)) * Ry;
         double xJ = (j - ((nX - 1) / 2d)) * Rx;
 
-        if (xJ != 0)
+        if (isZero(xJ))
             pIJ = pIJ.add(Vright.scale(xJ));
-        if (yI != 0)
+        if (isZero(yI))
             pIJ = pIJ.add(Vup.scale(yI));
 
         Ray ray = new Ray(location, pIJ.subtract(location));
@@ -124,7 +124,7 @@ public class Camera {
             throw new MissingResourceException("missing resource", "imageWriter", "Image writer is missing");
         }
 
-        if (rayTracerBase == null) {
+        if (rayTracer == null) {
             throw new MissingResourceException("missing resource", "rayTracerBase", "Ray tracer base is missing");
         }
 
@@ -140,11 +140,12 @@ public class Camera {
             throw new MissingResourceException("missing resource", "distance", "Distance is missing");
         }
 
-        for (int i = 0; i < imageWriter.getNx(); i++) {
-            for (int j = 0; j < imageWriter.getNy(); j++) {
+        int nX = imageWriter.getNx();
+        int nY = imageWriter.getNy();
+        for (int i = 0; i < nX; i++) {
+            for (int j = 0; j < nY; j++) {
                 // Cast a ray from the camera to the current pixel and get the color
-
-                Ray ray = constructRay(imageWriter.getNx(), imageWriter.getNy(), i, j);
+                Ray ray = constructRay(nX, nY, i, j);
                 Color color = castRay(ray);
                 imageWriter.writePixel(i, j, color);
             }
@@ -173,6 +174,6 @@ public class Camera {
 
     public Color castRay(Ray ray) {
         // Use the ray tracer base to trace the given ray and return the resulting color
-        return rayTracerBase.traceRay(ray);
+        return rayTracer.traceRay(ray);
     }
 }

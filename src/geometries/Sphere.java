@@ -51,16 +51,16 @@ public class Sphere extends RadialGeometry {
         double t2 = tm + th;
 
         if (t1 > 0 && t2 > 0) {
-            List<GeoPoint> myList = new LinkedList<>();
+            List<GeoPoint> intersections = new LinkedList<>();
             Point p1 = ray.getPoint(t1);
             if (!comparePoints(p1, ray)) {
-                myList.add(new GeoPoint(this, p1));
+                intersections.add(new GeoPoint(this, p1));
             }
             Point p2 = ray.getPoint(t2);
             if (!comparePoints(p2, ray)) {
-                myList.add(new GeoPoint(this, p2));
+                intersections.add(new GeoPoint(this, p2));
             }
-            return myList;
+            return intersections;
         }
 
         if (t1 > 0) {
