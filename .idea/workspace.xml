@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="started level 7">
-      <change afterPath="$PROJECT_DIR$/unittests/renderer/ShadowTests.java" afterDir="false" />
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="Completed shadowing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lighting/DirectionalLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lighting/DirectionalLight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lighting/LightSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lighting/LightSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" afterDir="false" />
     </list>
-    <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad">
-      <change beforePath="$PROJECT_DIR$/src/lighting/PointLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lighting/PointLight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lighting/SpotLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lighting/SpotLight.java" afterDir="false" />
+    <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="Completed shadowing">
+      <change beforePath="$PROJECT_DIR$/src/primitives/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Material.java" afterDir="false" />
     </list>
     <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="Complete level 5!" />
     <option name="SHOW_DIALOG" value="false" />
@@ -253,28 +249,7 @@
       <workItem from="1684677573944" duration="13215000" />
       <workItem from="1684788027764" duration="604000" />
       <workItem from="1684851408796" duration="7952000" />
-      <workItem from="1685261074780" duration="7436000" />
-    </task>
-    <task id="LOCAL‎-00002" summary="ISE5783">
-      <created>1677599609036</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL‎-00002" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1677599609036</updated>
-    </task>
-    <task id="LOCAL‎-00003" summary="completed Primitives package and begin working on the Geometry package">
-      <created>1678036285424</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL‎-00003" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1678036285424</updated>
-    </task>
-    <task id="LOCAL‎-00004" summary="completed Primitives package and begin working on the Geometry package">
-      <created>1679433386245</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL‎-00004" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1679433386245</updated>
+      <workItem from="1685261074780" duration="8605000" />
     </task>
     <task id="LOCAL‎-00005" summary="completed Level 1">
       <created>1679440479718</created>
@@ -598,7 +573,28 @@
       <option name="project" value="LOCAL‎" />
       <updated>1685262860970</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL‎-00051" summary="Completed shadowing">
+      <created>1685269115348</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL‎-00051" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1685269115348</updated>
+    </task>
+    <task id="LOCAL‎-00052" summary="Completed shadowing">
+      <created>1685269128707</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL‎-00052" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1685269128707</updated>
+    </task>
+    <task id="LOCAL‎-00053" summary="Completed shadowing">
+      <created>1685269224050</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL‎-00053" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1685269224050</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -616,7 +612,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="findIntersection test in Sphare, Triangle and Plane" />
     <MESSAGE value="completed all sphere tests (findIntersection and getnormal)&#10;not yet implemented findIintersection in the class sphere" />
     <MESSAGE value="implemented findIntersection in sphere class" />
     <MESSAGE value="completed all Sphere Tests" />
@@ -641,7 +636,8 @@
     <MESSAGE value="Complited level 6!" />
     <MESSAGE value="create &quot;unshaded&quot; function" />
     <MESSAGE value="started level 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="started level 7" />
+    <MESSAGE value="Completed shadowing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed shadowing" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
