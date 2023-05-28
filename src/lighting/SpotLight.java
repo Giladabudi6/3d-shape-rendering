@@ -25,4 +25,8 @@ public class SpotLight extends PointLight implements LightSource{
         return super.getIntensity(p).scale(Math.pow(Math.max(0,this.direction.normalize().dotProduct(vector)), narrowBeam));
     }
 
+    public double getDistance(Point point){
+        return super.getDistance(point);
+    }
+
 }
