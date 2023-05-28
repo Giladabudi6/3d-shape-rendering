@@ -91,9 +91,9 @@ public class Camera {
         double yI = -(i - ((nY - 1) / 2d)) * Ry;
         double xJ = (j - ((nX - 1) / 2d)) * Rx;
 
-        if (isZero(xJ))
+        if (!isZero(xJ))
             pIJ = pIJ.add(Vright.scale(xJ));
-        if (isZero(yI))
+        if (!isZero(yI))
             pIJ = pIJ.add(Vup.scale(yI));
 
         Ray ray = new Ray(location, pIJ.subtract(location));
