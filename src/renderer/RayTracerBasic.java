@@ -46,7 +46,7 @@ public class RayTracerBasic extends RayTracerBase {
 
     private Color calcLocalEffects(GeoPoint gp, Ray ray) {
         Color color = gp.geometry.getEmission();
-        Vector v = ray.getDir ();
+        Vector v = ray.getDir();
         Vector n = gp.geometry.getNormal(gp.point);
         double nv = alignZero(n.dotProduct(v));
         if (nv == 0)
@@ -56,7 +56,7 @@ public class RayTracerBasic extends RayTracerBase {
             Vector l = lightSource.getL(gp.point).normalize();
             double nl = alignZero(n.dotProduct(l));
             if (nl * nv > 0) { // sign(nl) == sing(nv)
-                if (unshaded(gp, l, n)) {
+                if (unshaded(gp, l, n, lightSource)) {
                     Color Li = lightSource.getIntensity(gp.point);
                     color = color.add(Li.scale(calcDiffusive(material, nl)), Li.scale(calcSpecular(material, n, l, v, nl)));
                 }
@@ -82,13 +82,28 @@ public class RayTracerBasic extends RayTracerBase {
         return maxOfNsKs;
     }
 
-    private boolean unshaded(GeoPoint gp, Vector l, Vector n) {
+    private boolean unshaded(GeoPoint gp, Vector l, Vector n, LightSource lightSource) {
+
         Vector backVector = l.scale(-1); // from point to light source
-        Point point = gp.point.add(backVector);
+        Vector delta = n.scale(n.dotProduct(backVector) > 0 ? DELTA : -DELTA);
+        Point point = gp.point.add(delta);
         Ray shadowRay = new Ray(point, backVector);
 
         List<GeoPoint> intersections = scene.geometries.findGeoIntersections(shadowRay);
-        return intersections == null ? true : false;
+        if (intersections == null) {
+            // there are no intersections
+            return true;
+        }
+        double distanceToLightSource = lightSource.getDistance(gp.point);
+
+        // Before checking the rest the default is that the first point is the closest
+        for (int i = 0; i < intersections.size(); i++) {
+            double current = intersections.get(i).point.distance(shadowRay.getP0());
+            if (current < distanceToLightSource) {
+                return false;
+            }
+        }
+        return true;
     }
 }
 
