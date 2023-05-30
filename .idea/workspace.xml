@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="Completed shadowing">
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="started 7.2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Material.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" afterDir="false" />
     </list>
-    <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="Completed shadowing">
-      <change beforePath="$PROJECT_DIR$/src/primitives/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Material.java" afterDir="false" />
+    <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="started 7.2">
+      <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" afterDir="false" />
     </list>
     <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="Complete level 5!" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +48,19 @@
         <option name="url" value="https://github.com/Tsuriya1/ISE5783_3676_3060.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/renderer/RayTracerBasic.java">
+      <ranges>
+        <range start1="90" end1="91" start2="90" end2="91" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="92" end1="93" start2="92" end2="93" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="101" end1="102" start2="101" end2="102" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="108" end1="110" start2="108" end2="114" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="112" end1="112" start2="116" end2="124" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="113" end1="113" start2="125" end2="128" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="114" end1="114" start2="129" end2="139" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,7 +100,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
+    "settings.editor.selected.configurable": "editor.preferences.folding",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -249,21 +263,8 @@
       <workItem from="1684677573944" duration="13215000" />
       <workItem from="1684788027764" duration="604000" />
       <workItem from="1684851408796" duration="7952000" />
-      <workItem from="1685261074780" duration="8605000" />
-    </task>
-    <task id="LOCAL‎-00005" summary="completed Level 1">
-      <created>1679440479718</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL‎-00005" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1679440479718</updated>
-    </task>
-    <task id="LOCAL‎-00006" summary="completed Level 1">
-      <created>1679441113669</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL‎-00006" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1679441113669</updated>
+      <workItem from="1685261074780" duration="8654000" />
+      <workItem from="1685379740174" duration="8470000" />
     </task>
     <task id="LOCAL‎-00007" summary="completed Level 1">
       <created>1679441419820</created>
@@ -594,7 +595,21 @@
       <option name="project" value="LOCAL‎" />
       <updated>1685269224050</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL‎-00054" summary="started 7.2">
+      <created>1685270159771</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL‎-00054" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1685270159771</updated>
+    </task>
+    <task id="LOCAL‎-00055" summary="started 7.2">
+      <created>1685270174339</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL‎-00055" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1685270174339</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,7 +627,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed all sphere tests (findIntersection and getnormal)&#10;not yet implemented findIintersection in the class sphere" />
     <MESSAGE value="implemented findIntersection in sphere class" />
     <MESSAGE value="completed all Sphere Tests" />
     <MESSAGE value="Changes by gilad" />
@@ -637,7 +651,8 @@
     <MESSAGE value="create &quot;unshaded&quot; function" />
     <MESSAGE value="started level 7" />
     <MESSAGE value="Completed shadowing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed shadowing" />
+    <MESSAGE value="started 7.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="started 7.2" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
@@ -645,5 +660,9 @@
         <PinnedItemInfo parentTag="geometries.Triangle" memberName="emission" />
       </pinned-members>
     </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

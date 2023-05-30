@@ -106,8 +106,34 @@ public class RayTracerBasic extends RayTracerBase {
         }
         return true;
     }
+    private Ray constructRefracted(GeoPoint gp, Ray ray, Vector n){
+        Vector backVector = ray.getDir().scale(-1); // from point to light source
+        Vector delta = n.scale(n.dotProduct(backVector) > 0 ? DELTA : -DELTA);
+        Point point = gp.point.add(delta);
+        return new Ray(point, backVector);
+    }
 
+
+    private Double3 transparency(GeoPoint geopoint, LightSource light, Vector l, Vector n) {
+
+        Vector backVector = l.scale(-1); // from point to light source
+        Vector delta = n.scale(n.dotProduct(backVector) > 0 ? DELTA : -DELTA);
+        Point point = geopoint.point.add(delta);
+        Ray backRay = new Ray(point, backVector);
+
+        double lightDistance = light.getDistance(geopoint.point);
+
+        var intersections = this.scene.geometries.findGeoIntersections(backRay);
+        if (intersections == null)
+            return Double3.ONE; //no intersections
+
+        Double3 ktr = Double3.ONE;
+        for (GeoPoint gp : intersections) {
+            if (alignZero(gp.point.distance(geopoint.point) - lightDistance) <= 0) {
+                ktr = ktr.product(gp.geometry.getMaterial().kT); //the more transparency the less shadow
+                if (ktr.lowerThan(MIN_CALC_COLOR_K)) return Double3.ZERO;
+            }
+        }
+        return ktr;
+    }
 }
-
-
-
