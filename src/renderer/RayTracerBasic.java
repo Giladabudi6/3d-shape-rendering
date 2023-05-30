@@ -88,9 +88,9 @@ public class RayTracerBasic extends RayTracerBase {
         Vector backVector = l.scale(-1); // from point to light source
         Vector delta = n.scale(n.dotProduct(backVector) > 0 ? DELTA : -DELTA);
         Point point = gp.point.add(delta);
-        Ray shadowRay = new Ray(point, backVector);
+        Ray backRay = new Ray(point, backVector);
 
-        List<GeoPoint> intersections = scene.geometries.findGeoIntersections(shadowRay);
+        List<GeoPoint> intersections = scene.geometries.findGeoIntersections(backRay);
         if (intersections == null) {
             // there are no intersections
             return true;
@@ -99,7 +99,7 @@ public class RayTracerBasic extends RayTracerBase {
 
         // Before checking the rest the default is that the first point is the closest
         for (int i = 0; i < intersections.size(); i++) {
-            double current = intersections.get(i).point.distance(shadowRay.getP0());
+            double current = intersections.get(i).point.distance(backRay.getP0());
             if (current < distanceToLightSource) {
                 return false;
             }
