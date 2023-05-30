@@ -18,6 +18,11 @@ public class Ray {
         this.dir = dir.normalize();
     }
 
+    public Ray(Point p0, Vector dir, Vector n) {
+        double delta = dir.dotProduct(n) >= 0 ? DELTA : -DELTA;
+        this.p0 = p0.add(n.scale(delta));
+        this.dir = dir;
+    }
 
 
     @Override

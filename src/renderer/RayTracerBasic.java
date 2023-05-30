@@ -25,27 +25,27 @@ public class RayTracerBasic extends RayTracerBase {
 
     public Color traceRay(Ray ray) {
 
-        // Find intersections of the ray with scene geometry
-
-        var intersections = scene.geometries.findGeoIntersections(ray);
-
-        if (intersections == null)
-            return scene.background;
-
-        // Find the closest intersection point
-        GeoPoint closestPoint = ray.findClosestGeoPoint(intersections);
-
+        // Find intersections of the ray and the closest intersection geoPoint
         // Calculate and return the color at the closest point
-        return calcColor(closestPoint, ray);
+        GeoPoint closestPoint = findClosestIntersection(ray);
+        return closestPoint == null ? scene.background
+                : calcColor(closestPoint, ray);
     }
 
 
-    private Color calcColor(GeoPoint gp, Ray ray) {
-        // Return the intensity of the ambient light in the scene
-        Color color = calcLocalEffects(gp, ray);
-        return scene.ambientLight.getIntensity().add(color);
+    private Color calcColor(GeoPoint geopoint, Ray ray) {
+        return calcColor(geopoint, ray, MAX_CALC_COLOR_LEVEL, INITIAL_K)
+                .add(scene.ambientLight.getIntensity());
 
     }
+
+    //private Color calcColor(GeoPoint gp, Ray ray);
+
+    private Color calcColor(GeoPoint intersection, Ray ray, int level, Double3 k) {
+        Color color = calcLocalEffects(intersection, ray);
+        return 1 == level ? color : color.add(calcGlobalEffects(intersection, ray, level, k));
+    }
+
 
     private Color calcLocalEffects(GeoPoint gp, Ray ray) {
         Color color = gp.geometry.getEmission();
@@ -66,8 +66,8 @@ public class RayTracerBasic extends RayTracerBase {
             }
         }
         return color;
-
     }
+
 
     private Double3 calcDiffusive(Material material, double nl) {
         Double3 diffusion = material.kD.scale(Math.abs(nl));
@@ -88,9 +88,7 @@ public class RayTracerBasic extends RayTracerBase {
     private boolean unshaded(GeoPoint gp, Vector l, Vector n, LightSource lightSource) {
 
         Vector backVector = l.scale(-1); // from point to light source
-        Vector delta = n.scale(n.dotProduct(backVector) > 0 ? DELTA : -DELTA);
-        Point point = gp.point.add(delta);
-        Ray backRay = new Ray(point, backVector);
+        Ray backRay = new Ray(gp.point, backVector, n);
 
         List<GeoPoint> intersections = scene.geometries.findGeoIntersections(backRay);
         if (intersections == null) {
@@ -101,6 +99,9 @@ public class RayTracerBasic extends RayTracerBase {
 
         // Before checking the rest the default is that the first point is the closest
         for (int i = 0; i < intersections.size(); i++) {
+            if (intersections.get(i).geometry.getMaterial().kT.equals(Double3.ZERO)) {
+                return true;
+            }
             double current = intersections.get(i).point.distance(backRay.getP0());
             if (current < distanceToLightSource) {
                 return false;
@@ -166,9 +167,7 @@ public class RayTracerBasic extends RayTracerBase {
     private Double3 transparency(GeoPoint geopoint, LightSource light, Vector l, Vector n) {
 
         Vector backVector = l.scale(-1); // from point to light source
-        Vector delta = n.scale(n.dotProduct(backVector) > 0 ? DELTA : -DELTA);
-        Point point = geopoint.point.add(delta);
-        Ray backRay = new Ray(point, backVector);
+        Ray backRay = new Ray(geopoint.point, backVector,n);
 
         double lightDistance = light.getDistance(geopoint.point);
 
@@ -179,10 +178,12 @@ public class RayTracerBasic extends RayTracerBase {
         Double3 ktr = Double3.ONE;
         for (GeoPoint gp : intersections) {
             if (alignZero(gp.point.distance(geopoint.point) - lightDistance) <= 0) {
-                ktr = ktr.product(gp.geometry.getMaterial().kT); //the more transparency the less shadow
-                if (ktr.lowerThan(MIN_CALC_COLOR_K)) return Double3.ZERO;
+                ktr = ktr.product(gp.geometry.getMaterial().kT);  // the more transparency the less shadow
+                if (ktr.lowerThan(MIN_CALC_COLOR_K))
+                    return Double3.ZERO;
             }
         }
         return ktr;
     }
+
 }
