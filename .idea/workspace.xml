@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="started 7.2">
-      <change afterPath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" afterDir="false" />
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="started level 7 - unshaded func">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Ray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Ray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" afterDir="false" />
     </list>
-    <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="started 7.2">
-      <change beforePath="$PROJECT_DIR$/src/primitives/Ray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Ray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" afterDir="false" />
-    </list>
+    <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
     <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="Complete level 5!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,33 +47,6 @@
       </UrlAndAccount>
     </option>
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/primitives/Ray.java">
-      <ranges>
-        <range start1="13" end1="13" start2="13" end2="15" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="18" end1="18" start2="20" end2="25" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/renderer/RayTracerBasic.java">
-      <ranges>
-        <range start1="12" end1="12" start2="12" end2="13" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="17" end1="17" start2="18" end2="19" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="25" end1="35" start2="27" end2="28" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
-        <range start1="36" end1="37" start2="29" end2="32" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
-        <range start1="40" end1="44" start2="35" end2="38" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
-        <range start1="47" end1="47" start2="41" end2="49" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
-        <range start1="66" end1="67" start2="68" end2="68" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
-        <range start1="69" end1="69" start2="70" end2="71" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
-        <range start1="88" end1="91" start2="90" end2="91" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
-        <range start1="101" end1="101" start2="101" end2="104" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
-        <range start1="108" end1="113" start2="111" end2="116" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="116" end1="116" start2="119" end2="166" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="119" end1="122" start2="169" end2="170" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
-        <range start1="132" end1="134" start2="180" end2="183" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
-        <range start1="138" end1="138" start2="187" end2="188" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
-      </ranges>
-    </file>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -100,8 +69,8 @@
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
@@ -115,7 +84,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.folding&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -128,7 +97,6 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\tsuri\IdeaProjects\ISE5783_3676_3060\unittests\renderer" />
       <recent name="C:\Users\gilad\IdeaProjects\ISE5783_3676_3060\unittests\geometries" />
       <recent name="C:\Users\tsuri\IdeaProjects\ISE5783_3676_3060\unittests\geometries" />
     </key>
@@ -141,7 +109,7 @@
       <recent name="primitives" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in ISE5783_3676_3060">
+  <component name="RunManager" selected="JUnit.ReflectionRefractionTests">
     <configuration name="All in ISE5783_3676_3060" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <option name="PACKAGE_NAME" value="" />
@@ -181,6 +149,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReflectionRefractionTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ISE5783_3676_3060" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="renderer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="renderer" />
+      <option name="MAIN_CLASS_NAME" value="renderer.ReflectionRefractionTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ShadowTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
@@ -196,27 +179,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShadowTests.sphereTriangleInitial" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ISE5783_3676_3060" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="renderer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="renderer" />
-      <option name="MAIN_CLASS_NAME" value="renderer.ShadowTests" />
-      <option name="METHOD_NAME" value="sphereTriangleInitial" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReflectionRefractionTests" />
         <item itemvalue="JUnit.All in ISE5783_3676_3060" />
         <item itemvalue="JUnit.ShadowTests" />
-        <item itemvalue="JUnit.ShadowTests.sphereTriangleInitial" />
         <item itemvalue="JUnit.LightsTests" />
         <item itemvalue="JUnit.LightsTests.lightSphereMultiSourceLight" />
       </list>
@@ -275,12 +242,75 @@
       <workItem from="1684415548900" duration="195000" />
       <workItem from="1684492643170" duration="10493000" />
       <workItem from="1684665668159" duration="4131000" />
-      <workItem from="1684677573944" duration="13215000" />
-      <workItem from="1684788027764" duration="604000" />
-      <workItem from="1684851408796" duration="7952000" />
-      <workItem from="1685261074780" duration="8654000" />
-      <workItem from="1685379740174" duration="8535000" />
-      <workItem from="1685452905012" duration="12826000" />
+      <workItem from="1684677573944" duration="12546000" />
+      <workItem from="1685261448225" duration="316000" />
+      <workItem from="1685262004953" duration="864000" />
+      <workItem from="1685262882819" duration="35000" />
+      <workItem from="1685262919419" duration="680000" />
+      <workItem from="1685273475889" duration="179000" />
+      <workItem from="1685273657058" duration="631000" />
+      <workItem from="1685275494718" duration="903000" />
+      <workItem from="1685356435304" duration="521000" />
+      <workItem from="1685384702631" duration="594000" />
+      <workItem from="1685393179500" duration="1000" />
+      <workItem from="1685452980716" duration="1861000" />
+      <workItem from="1685466784490" duration="1782000" />
+    </task>
+    <task id="LOCAL‎-00001" summary="ISE5783">
+      <created>1677599486250</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL‎-00001" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1677599486250</updated>
+    </task>
+    <task id="LOCAL‎-00002" summary="ISE5783">
+      <created>1677599609036</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL‎-00002" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1677599609036</updated>
+    </task>
+    <task id="LOCAL‎-00003" summary="completed Primitives package and begin working on the Geometry package">
+      <created>1678036285424</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL‎-00003" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1678036285424</updated>
+    </task>
+    <task id="LOCAL‎-00004" summary="completed Primitives package and begin working on the Geometry package">
+      <created>1679433386245</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL‎-00004" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1679433386245</updated>
+    </task>
+    <task id="LOCAL‎-00005" summary="completed Level 1">
+      <created>1679440479718</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL‎-00005" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1679440479718</updated>
+    </task>
+    <task id="LOCAL‎-00006" summary="completed Level 1">
+      <created>1679441113669</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL‎-00006" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1679441113669</updated>
+    </task>
+    <task id="LOCAL‎-00007" summary="completed Level 1">
+      <created>1679441419820</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL‎-00007" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1679441419820</updated>
+    </task>
+    <task id="LOCAL‎-00008" summary="completed Level 1">
+      <created>1679443089772</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL‎-00008" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1679443089772</updated>
     </task>
     <task id="LOCAL‎-00009" summary="started working on unit tests">
       <created>1679504399163</created>
@@ -541,91 +571,7 @@
       <option name="project" value="LOCAL‎" />
       <updated>1684669649737</updated>
     </task>
-    <task id="LOCAL‎-00046" summary="Complited level 6!">
-      <created>1684785755860</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL‎-00046" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1684785755860</updated>
-    </task>
-    <task id="LOCAL‎-00047" summary="Complete level 6!">
-      <created>1684785778414</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL‎-00047" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1684785778414</updated>
-    </task>
-    <task id="LOCAL‎-00048" summary="Complited level 6!">
-      <created>1684785894564</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL‎-00048" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1684785894564</updated>
-    </task>
-    <task id="LOCAL‎-00049" summary="create &quot;unshaded&quot; function">
-      <created>1684859715389</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL‎-00049" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1684859715389</updated>
-    </task>
-    <task id="LOCAL‎-00050" summary="started level 7">
-      <created>1685262860970</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL‎-00050" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1685262860970</updated>
-    </task>
-    <task id="LOCAL‎-00051" summary="Completed shadowing">
-      <created>1685269115348</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL‎-00051" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1685269115348</updated>
-    </task>
-    <task id="LOCAL‎-00052" summary="Completed shadowing">
-      <created>1685269128707</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL‎-00052" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1685269128707</updated>
-    </task>
-    <task id="LOCAL‎-00053" summary="Completed shadowing">
-      <created>1685269224050</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL‎-00053" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1685269224050</updated>
-    </task>
-    <task id="LOCAL‎-00054" summary="started 7.2">
-      <created>1685270159771</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL‎-00054" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1685270159771</updated>
-    </task>
-    <task id="LOCAL‎-00055" summary="started 7.2">
-      <created>1685270174339</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL‎-00055" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1685270174339</updated>
-    </task>
-    <task id="LOCAL‎-00056" summary="started 7.2">
-      <created>1685429996195</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL‎-00056" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1685429996195</updated>
-    </task>
-    <task id="LOCAL‎-00057" summary="started 7.2">
-      <created>1685430010565</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL‎-00057" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1685430010565</updated>
-    </task>
-    <option name="localTasksCounter" value="58" />
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,6 +589,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="bka bla" />
+    <MESSAGE value="tests for getnormals&#10;mimiush to getnormals&#10;end of targil 2!" />
+    <MESSAGE value="taged level 2" />
+    <MESSAGE value="started level 3" />
+    <MESSAGE value="findIntersection test in Sphare, Triangle and Plane" />
+    <MESSAGE value="completed all sphere tests (findIntersection and getnormal)&#10;not yet implemented findIintersection in the class sphere" />
     <MESSAGE value="implemented findIntersection in sphere class" />
     <MESSAGE value="completed all Sphere Tests" />
     <MESSAGE value="Changes by gilad" />
@@ -662,13 +614,7 @@
     <MESSAGE value="level 6 complete part A" />
     <MESSAGE value="level 6 finish A but the second image is wrong" />
     <MESSAGE value="level 6 finished bonus (adding &quot;narrow&quot;) and the tests are perfect" />
-    <MESSAGE value="Complete level 6!" />
-    <MESSAGE value="Complited level 6!" />
-    <MESSAGE value="create &quot;unshaded&quot; function" />
-    <MESSAGE value="started level 7" />
-    <MESSAGE value="Completed shadowing" />
-    <MESSAGE value="started 7.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="started 7.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="level 6 finished bonus (adding &quot;narrow&quot;) and the tests are perfect" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
@@ -676,9 +622,5 @@
         <PinnedItemInfo parentTag="geometries.Triangle" memberName="emission" />
       </pinned-members>
     </pin-to-top-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

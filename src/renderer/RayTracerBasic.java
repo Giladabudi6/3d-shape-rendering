@@ -16,7 +16,7 @@ public class RayTracerBasic extends RayTracerBase {
     private static final int MAX_CALC_COLOR_LEVEL = 10;
     private static final double MIN_CALC_COLOR_K = 0.001;
     private static final double DELTA = 0.1;
-    private static final double INITIAL_K = 1;
+    private static final Double3 INITIAL_K = new Double3(1) ;
 
 
     public RayTracerBasic(Scene scene) {
@@ -141,6 +141,7 @@ public class RayTracerBasic extends RayTracerBase {
     private Color calcGlobalEffects(GeoPoint gp, Ray ray, int level, Double3 k) {
         Color color = Color.BLACK;
         Material mat = gp.geometry.getMaterial();
+
         Double3 kr = mat.kR;
         Double3 kkr = k.product(kr);
         if (!kkr.lowerThan(MIN_CALC_COLOR_K)) {
@@ -152,11 +153,16 @@ public class RayTracerBasic extends RayTracerBase {
             }
             color = color.add(calcColor(reflectedPoint, reflectedRay, level - 1, kkr).scale(kr));
         }
+
         Double3 kt = mat.kR;
         Double3 kkt = k.product(kt);
         if (!kkt.lowerThan(MIN_CALC_COLOR_K)) {
-            Ray reflectedRay = constructReflectedRay(gp, ray, gp.geometry.getNormal(gp.point));
-            GeoPoint reflectedPoint = findClosestIntersection(reflectedRay);
+            Ray refractedRay = constructRefractedRay(gp, ray, gp.geometry.getNormal(gp.point));
+            GeoPoint refractedPoint = findClosestIntersection(refractedRay);
+            // no geometry intersected by ray
+            if (refractedPoint == null) {
+                return color.add(this.scene.background);
+            }
 
             color = color.add(calcColor(refractedPoint, refractedRay, level - 1, kkt).scale(kt));
         }
