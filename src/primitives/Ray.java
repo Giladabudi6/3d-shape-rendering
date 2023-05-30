@@ -11,6 +11,8 @@ public class Ray {
     Point p0;
     Vector dir;
 
+    private static final double DELTA = 0.1;
+
     public Ray(Point p0, Vector dir) {
         this.p0 = p0;
         this.dir = dir.normalize();
