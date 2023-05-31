@@ -5,6 +5,8 @@ package renderer;
 
 import static java.awt.Color.*;
 
+import geometries.Plane;
+import lighting.DirectionalLight;
 import org.junit.jupiter.api.Test;
 
 import geometries.Sphere;
@@ -49,6 +51,9 @@ public class ReflectionRefractionTests {
       Camera camera = new Camera(new Point(0, 0, 10000), new Vector(0, 0, -1), new Vector(0, 1, 0)) //
          .setVPSize(2500, 2500).setVPDistance(10000); //
 
+      /*Camera camera1 = new Camera(new Point(0, -20000, 0), new Vector(0, 1, 0), new Vector(0, 0, 1)) //
+              .setVPSize(2500, 2500).setVPDistance(10000); // */
+
       scene.setAmbientLight(new AmbientLight(new Color(255, 255, 255), 0.1));
 
       scene.geometries.add( //
@@ -84,6 +89,9 @@ public class ReflectionRefractionTests {
       Camera camera = new Camera(new Point(0, 0, 1000), new Vector(0, 0, -1), new Vector(0, 1, 0)) //
          .setVPSize(200, 200).setVPDistance(1000);
 
+      /*Camera camera1 = new Camera(new Point(0, -1500, 0), new Vector(0, 1, 0), new Vector(0, 0, 1)) //
+              .setVPSize(2500, 2500).setVPDistance(10000); //  */
+
       scene.setAmbientLight(new AmbientLight(new Color(WHITE), 0.15));
 
       scene.geometries.add( //
@@ -102,6 +110,137 @@ public class ReflectionRefractionTests {
       camera.setImageWriter(imageWriter) //
          .setRayTracer(new RayTracerBasic(scene)) //
          .renderImage(); //
+      camera.writeToImage();
+   }
+
+   @Test
+   public void picture1() {
+      Camera camera = new Camera(new Point(0, -25, 2200), new Vector(0, 0, -1), new Vector(0, 1, 0)) //
+              .setVPSize(200, 200).setVPDistance(1000);
+
+      /*Camera camera1 = new Camera(new Point(0, -1500, 0), new Vector(0, 1, 0), new Vector(0, 0, 1)) //
+              .setVPSize(2500, 2500).setVPDistance(10000); //  */
+
+      scene.setAmbientLight(new AmbientLight(new Color(WHITE), 0.15));
+
+      scene.geometries.add( //
+              new Triangle(new Point(-150, -150, -115), new Point(150, -150, -135),
+                      new Point(75, 75, -150)) //
+                      .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+              new Sphere(50d,new Point(-150, -150, -115)).setEmission(new Color(GREEN))
+                      .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.7)),
+                      //
+              new Triangle(new Point(-150, -150, -115), new Point(-130, 100, -170), new Point(75, 75, -150)) //
+                      .setMaterial(new Material().setkD(0.05).setkS(0.5).setnShininess(400)), //
+              new Sphere( 70d, new Point(60, 50, -50)).setEmission(new Color(BLUE)) //
+                      .setMaterial(new Material().setkD(0.002).setkS(0.8).setnShininess(30).setkT(0.003).setkR(0.9)));
+
+      scene.lights.add(new SpotLight(new Color(700, 400, 400), new Point(60, 50, 0), new Vector(0, 0, -1)) //
+              .setkL(4E-5).setkQ(2E-7));
+      scene.lights.add(new SpotLight(new Color(700, 400, 400), new Point(-60, 50, 0), new Vector(0, 0, -1)) //
+              .setkL(4E-5).setkQ(2E-7));
+
+      ImageWriter imageWriter = new ImageWriter("picture1", 600, 600);
+      camera.setImageWriter(imageWriter) //
+              .setRayTracer(new RayTracerBasic(scene)) //
+              .renderImage(); //
+      camera.writeToImage();
+   }
+
+   @Test
+   public void Bonus() {
+      Camera camera = new Camera(new Point(-200, -200, 200), new Vector(1, 1, -0.9), new Vector(1, 1, 2/0.9)) //
+              .setVPSize(200, 200).setVPDistance(1000);
+
+      /*Camera camera1 = new Camera(new Point(0, -1500, 0), new Vector(0, 1, 0), new Vector(0, 0, 1)) //
+              .setVPSize(2500, 2500).setVPDistance(10000); //  */
+
+      scene.setAmbientLight(new AmbientLight(new Color(WHITE), 0.15));
+      // points for geometries:
+
+      // points for ground :
+      Point ground1 = new Point(-25,-25,0);
+      Point ground2 = new Point(25,-25,0);
+      Point ground3 = new Point(25,25,0);
+      Point ground4 = new Point(-25,25,0);
+
+         // points for triangles (walls and roof):
+      Point a = new Point(0,0,0);
+      Point b = new Point(10,0,0);
+      Point c = new Point(0,0,10);
+      Point d = new Point(10,0,10);
+      Point e = new Point(0,10,0);
+      Point f = new Point(0,10,10);
+      Point g = new Point(5,5,15);
+
+         // points for clouds:
+      Point h = new Point(-3,0,35);
+      Point i = new Point(-14,0,34);
+      Point j = new Point(-11,2,36);
+      Point k = new Point(-7,-1,33);
+
+
+
+      scene.geometries.add( //
+
+              // ground
+              new Triangle(ground1,ground2,ground4).setEmission(new Color(GREEN))
+                      .setMaterial(new Material().setkD(0.7).setkS(0.2).setkT(0.003).setnShininess(100)),
+
+              new Triangle(ground4,ground2,ground3).setEmission(new Color(GREEN))
+                      .setMaterial(new Material().setkD(0.7).setkS(0.2).setkT(0.003).setnShininess(100)),
+
+
+              // walls:
+              new Triangle(a,b,c).setEmission(new Color(BLUE)) //
+                      .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
+              new Triangle(b,c,d).setEmission(new Color(BLUE)) //
+                      .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
+              new Triangle(a,c,e).setEmission(new Color(BLUE)) //
+                      .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
+              new Triangle(c,e,f).setEmission(new Color(BLUE)) //
+                      .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
+
+              // roof:
+              new Triangle(f,c,g).setEmission(new Color(RED)) //
+                      .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
+              new Triangle(c,d,g).setEmission(new Color(RED)) //
+                      .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
+
+              // clouds
+              new Sphere(6d,h).setEmission(new Color(GRAY))
+                      .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.7)),
+
+              new Sphere(5d,i).setEmission(new Color(GRAY))
+                      .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.7)),
+
+              new Sphere(3d,j).setEmission(new Color(GRAY))
+                      .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.7)),
+
+              new Sphere(7d,k).setEmission(new Color(GRAY))
+                      .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.7)));
+
+
+
+
+
+
+
+      //scene.lights.add(new SpotLight(new Color(0, 100, 100), new Point(0, -13, 5), new Vector(0, 1, 0)) //
+              //.setkL(4E-5).setkQ(2E-7));
+      scene.lights.add(new DirectionalLight(new Color(94, 100, 86), new Vector(0, 0, -1))); //
+
+
+      ImageWriter imageWriter = new ImageWriter("Bonus", 600, 600);
+      camera.setImageWriter(imageWriter) //
+              .setRayTracer(new RayTracerBasic(scene)) //
+              .renderImage(); //
       camera.writeToImage();
    }
 }
