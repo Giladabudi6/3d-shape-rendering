@@ -1,9 +1,12 @@
 package primitives;
 
 public class Material {
-    public Double3 kD = new Double3(0) ,kS = new Double3(0);
     public int nShininess = 0  ;
 
+    //the specular light factor of the object material type
+    public Double3 kS = Double3.ZERO;
+    // the Diffuse light factor of the object material type
+    public Double3 kD = Double3.ZERO;
     // kT Represents the level of transparency/Refraction
     public Double3 kT = Double3.ZERO;
     // kR Represents the level of reflection
