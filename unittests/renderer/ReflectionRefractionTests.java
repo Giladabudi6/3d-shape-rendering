@@ -201,11 +201,11 @@ public class ReflectionRefractionTests {
                       .setMaterial(new Material().setkD(0.7).setkS(0.2).setkT(0.003).setkR(0.99).setnShininess(100)),
 
               // walls:
-              new Triangle(a,b,c).setEmission(new Color(BLUE)) //
-                      .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+              new Triangle(a,b,c).setEmission(new Color(0,0,14)) //
+                      .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
 
-              new Triangle(b,c,d).setEmission(new Color(BLUE)) //
-                      .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+              new Triangle(b,c,d).setEmission(new Color(0,0,14)) //
+                      .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
 
               new Triangle(a,c,e).setEmission(new Color(yellow)) //
                       .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
