@@ -222,10 +222,10 @@ public class ReflectionRefractionTests {
               new Triangle(d,m,l).setEmission(new Color(gray)) //
                       .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
 
-              new Triangle(f,e,m).setEmission(new Color(pink)) //
+              new Triangle(f,e,m).setEmission(new Color(150,20,70)) //
                       .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
 
-              new Triangle(e,m,l).setEmission(new Color(pink)) //
+              new Triangle(e,m,l).setEmission(new Color(150,20,70)) //
                       .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
 
 
@@ -256,9 +256,6 @@ public class ReflectionRefractionTests {
 
               new Sphere(7d,k).setEmission(new Color(60,60,60))
                       .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.01)));
-
-
-
 
 
 
