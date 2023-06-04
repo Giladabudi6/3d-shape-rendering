@@ -7,6 +7,7 @@ import static java.awt.Color.*;
 
 import geometries.Plane;
 import lighting.DirectionalLight;
+import lighting.PointLight;
 import org.junit.jupiter.api.Test;
 
 import geometries.Sphere;
@@ -149,7 +150,8 @@ public class ReflectionRefractionTests {
 
    @Test
    public void Bonus() {
-      Camera camera = new Camera(new Point(-200, -200, 200), new Vector(1, 1, -0.9), new Vector(1, 1, 2/0.9)) //
+      Camera camera = new Camera(new Point(-300, -300, 95), new Vector(1, 1, -0.2), (new Vector(1, 1, -0.2))
+              .crossProduct(new Vector(-1,1,0))) //
               .setVPSize(200, 200).setVPDistance(1000);
 
       /*Camera camera1 = new Camera(new Point(0, -1500, 0), new Vector(0, 1, 0), new Vector(0, 0, 1)) //
@@ -172,12 +174,16 @@ public class ReflectionRefractionTests {
       Point e = new Point(0,10,0);
       Point f = new Point(0,10,10);
       Point g = new Point(5,5,15);
+      Point l = new Point(10,10,0);
+      Point m = new Point(10,10,10);
 
-         // points for clouds:
+
+      // points for clouds:
       Point h = new Point(-3,0,35);
       Point i = new Point(-14,0,34);
       Point j = new Point(-11,2,36);
-      Point k = new Point(-7,-1,33);
+      Point k = new Point(-7,-1,35);
+
 
 
 
@@ -190,6 +196,12 @@ public class ReflectionRefractionTests {
               new Triangle(ground4,ground2,ground3).setEmission(new Color(GREEN))
                       .setMaterial(new Material().setkD(0.7).setkS(0.2).setkT(0.003).setnShininess(100)),
 
+              // mirror
+              new Triangle(new Point(25,0,90000),ground2,ground3).setEmission(new Color(30,30,30))
+                      .setMaterial(new Material().setkD(0.7).setkS(0.2).setkT(0.003).setkR(0.99).setnShininess(100)),
+
+              new Triangle(new Point(0,25,90000),ground4,ground3).setEmission(new Color(50,50,50))
+                      .setMaterial(new Material().setkD(0.7).setkS(0.2).setkT(0.003).setkR(0.99).setnShininess(100)),
 
               // walls:
               new Triangle(a,b,c).setEmission(new Color(BLUE)) //
@@ -198,10 +210,10 @@ public class ReflectionRefractionTests {
               new Triangle(b,c,d).setEmission(new Color(BLUE)) //
                       .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
 
-              new Triangle(a,c,e).setEmission(new Color(BLUE)) //
+              new Triangle(a,c,e).setEmission(new Color(yellow)) //
                       .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
 
-              new Triangle(c,e,f).setEmission(new Color(BLUE)) //
+              new Triangle(c,e,f).setEmission(new Color(yellow)) //
                       .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
 
 
@@ -212,27 +224,34 @@ public class ReflectionRefractionTests {
               new Triangle(c,d,g).setEmission(new Color(RED)) //
                       .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
 
+              new Triangle(d,m,g).setEmission(new Color(RED)) //
+                      .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
+              new Triangle(f,m,g).setEmission(new Color(RED)) //
+                      .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
+
 
               // clouds
-              new Sphere(6d,h).setEmission(new Color(GRAY))
-                      .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.7)),
+              new Sphere(6d,h).setEmission(new Color(60,60,60))
+                      .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.01)),
 
-              new Sphere(5d,i).setEmission(new Color(GRAY))
-                      .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.7)),
+              new Sphere(5d,i).setEmission(new Color(60,60,60))
+                      .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.01)),
 
-              new Sphere(3d,j).setEmission(new Color(GRAY))
-                      .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.7)),
+              new Sphere(3d,j).setEmission(new Color(60,60,60))
+                      .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.01)),
 
-              new Sphere(7d,k).setEmission(new Color(GRAY))
-                      .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.7)));
-
-
+              new Sphere(7d,k).setEmission(new Color(60,60,60))
+                      .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.01)));
 
 
 
 
 
-      //scene.lights.add(new SpotLight(new Color(0, 100, 100), new Point(0, -13, 5), new Vector(0, 1, 0)) //
+
+
+      //scene.lights.add(new PointLight(new Color(35, 10, 30), c) //
               //.setkL(4E-5).setkQ(2E-7));
       scene.lights.add(new DirectionalLight(new Color(94, 100, 86), new Vector(0, 0, -1))); //
 
