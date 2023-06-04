@@ -260,8 +260,7 @@ public class ReflectionRefractionTests {
 
 
 
-      //scene.lights.add(new PointLight(new Color(35, 10, 30), c) //
-              //.setkL(4E-5).setkQ(2E-7));
+
       scene.lights.add(new DirectionalLight(new Color(94, 100, 86), new Vector(0, 0, -1))); //
 
 
