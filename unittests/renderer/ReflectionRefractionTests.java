@@ -216,6 +216,18 @@ public class ReflectionRefractionTests {
               new Triangle(c,e,f).setEmission(new Color(yellow)) //
                       .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
 
+              new Triangle(b,d,l).setEmission(new Color(gray)) //
+                        .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
+              new Triangle(d,m,l).setEmission(new Color(gray)) //
+                      .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
+              new Triangle(f,e,m).setEmission(new Color(pink)) //
+                      .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
+              new Triangle(e,m,l).setEmission(new Color(pink)) //
+                      .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
 
               // roof:
               new Triangle(f,c,g).setEmission(new Color(RED)) //
