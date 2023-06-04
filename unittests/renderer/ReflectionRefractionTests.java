@@ -6,14 +6,11 @@ package renderer;
 import static java.awt.Color.*;
 
 import geometries.Plane;
-import lighting.DirectionalLight;
-import lighting.PointLight;
+import lighting.*;
 import org.junit.jupiter.api.Test;
 
 import geometries.Sphere;
 import geometries.Triangle;
-import lighting.AmbientLight;
-import lighting.SpotLight;
 import primitives.*;
 import renderer.*;
 import scene.Scene;
@@ -260,8 +257,10 @@ public class ReflectionRefractionTests {
 
 
 
-
-      scene.lights.add(new DirectionalLight(new Color(94, 100, 86), new Vector(0, 0, -1))); //
+      // light sources
+      scene.lights.add(new DirectionalLight(new Color(94, 100, 86), new Vector(0, 0, -1)));
+      scene.lights.add(new SpotLight(new Color(100, 30, 30),new Point(15,-5,0),new Vector(-1,1,0)));
+      scene.lights.add(new PointLight(new Color(20, 45, 32),new Point(20,20,10)));
 
 
       ImageWriter imageWriter = new ImageWriter("Bonus", 600, 600);
