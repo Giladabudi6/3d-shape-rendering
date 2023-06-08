@@ -83,17 +83,10 @@ public class Camera {
     }
 
 
-    /*private Color antialiasing (int nX, int nY, Point Pij){
-        LinkedList<Ray> rays = constructRayBeam(nX, nY, Pij);
-        Color pixelColor = averageColor(rays);
-        return pixelColor;
-    }*/
-
     private List<Color> constructRayBeam(int nX, int nY, int j, int i, List<Ray> rays) {
 
         List<Color> colors = new LinkedList<Color>();
 
-        Point pIJ = location.add(Vto.scale(distance));
 
         double Ry = height / nY;   // SIZE OF THE PIXEL - HEIGHT
         double Rx = width / nX;    // SIZE OF THE PIXEL - WIDTH
@@ -113,18 +106,20 @@ public class Camera {
             double randomX = minValueX + (maxValueX - minValueX) * randomXY.nextDouble();
             double randomY = minValueY + (maxValueY - minValueY) * randomXY.nextDouble();
 
+            Point pIJ = location.add(Vto.scale(distance));
+
             if (!isZero(xJ + randomX))
-                pIJ = pIJ.add(Vright.scale(xJ));
+                pIJ = pIJ.add(Vright.scale(xJ+ randomX));
             if (!isZero(yI + randomY))
-                pIJ = pIJ.add(Vup.scale(yI));
+                pIJ = pIJ.add(Vup.scale(yI + randomY));
+
             Ray ray = new Ray(location, pIJ.subtract(location));
             colors.add(castRay(ray));
         }
         return colors;
     }
 
-
-    private Color averageColor(List<Color> colors) {
+   private Color averageColor(List<Color> colors) {
         double red = 0;
         double green = 0;
         double blue = 0;
@@ -141,6 +136,7 @@ public class Camera {
 
         return averageColor;
     }
+
 
 
     public Ray constructRay(int nX, int nY, int j, int i) {
@@ -219,7 +215,6 @@ public class Camera {
                     List<Color> colors = constructRayBeam(nX, nY, i, j, rays);
                     color = averageColor(colors);
                 }
-
                 imageWriter.writePixel(i, j, color);
             }
         }

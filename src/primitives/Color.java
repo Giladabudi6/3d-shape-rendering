@@ -1,4 +1,5 @@
 package primitives;
+import java.util.LinkedList;
 
 /**
  * Wrapper class for java.jwt.Color The constructors operate with any
@@ -148,5 +149,7 @@ public class Color {
     {
         return this.rgb.d1==c.rgb.d1 && this.rgb.d2==c.rgb.d2 && this.rgb.d3==c.rgb.d3;
     }
+
+
 }
 
