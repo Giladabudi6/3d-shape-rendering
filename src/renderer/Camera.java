@@ -7,6 +7,7 @@ import primitives.Vector;
 
 import java.util.MissingResourceException;
 
+import static primitives.Util.alignZero;
 import static primitives.Util.isZero;
 
 public class Camera {
@@ -76,6 +77,31 @@ public class Camera {
     public Camera setRayTracer(RayTracerBase rayTracer) {
         this.rayTracer = rayTracer;
         return this;
+    }
+
+
+    private Color antialising (int nX, int nY, Point Pij){
+        LinkedList<Ray> rays = constructRayBim(nX, nY, Pij);
+        Color pixelColor = averageColor(rays);
+        return pixelColor;
+    }
+
+
+
+    private Ray constructRayBim(double Ry, double Rx, Point pIJ){
+        List<Ray> rays = new LinkedList<>;
+
+        return rays;
+    }
+
+    private Color averageColor (LinkedList<Ray> rays){
+
+        double r;
+        double g;
+        double b;
+        Color avrColor(r,g,b);
+
+        return avrColor;
     }
 
 
@@ -174,6 +200,7 @@ public class Camera {
 
     public Color castRay(Ray ray) {
         // Use the ray tracer base to trace the given ray and return the resulting color
+
         return rayTracer.traceRay(ray);
     }
 }
