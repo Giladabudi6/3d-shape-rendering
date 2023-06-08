@@ -8,8 +8,8 @@ import primitives.Vector;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.MissingResourceException;
+import java.util.Random;
 
-import static primitives.Util.alignZero;
 import static primitives.Util.isZero;
 
 public class Camera {
@@ -20,6 +20,7 @@ public class Camera {
     ImageWriter imageWriter;
     RayTracerBase rayTracer;
     private double height, width, distance;
+    private boolean level8 = true;
 
     public Camera(Point location, Vector vto, Vector vup) {
 
@@ -82,13 +83,11 @@ public class Camera {
     }
 
 
-    private Color antialising (int nX, int nY, Point Pij){
-        LinkedList<Ray> rays = constructRayBim(nX, nY, Pij);
+    /*private Color antialiasing (int nX, int nY, Point Pij){
+        LinkedList<Ray> rays = constructRayBeam(nX, nY, Pij);
         Color pixelColor = averageColor(rays);
         return pixelColor;
-    }
-
-
+    }*/
 
     private Ray constructRayBim(double Ry, double Rx, Point pIJ){
         List<Ray> rays = new LinkedList<>;

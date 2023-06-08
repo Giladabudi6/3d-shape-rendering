@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="started level 8">
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="began working on anti aliasing improvement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
     </list>
-    <list id="fea420e9-3c41-4870-ba85-509e63db1df8" name="Changes by gilad" comment="">
+    <list id="fea420e9-3c41-4870-ba85-509e63db1df8" name="Changes by gilad" comment="began working on anti aliasing improvement">
       <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" afterDir="false" />
     </list>
     <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="Complete level 5!" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,14 +52,20 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/src/renderer/Camera.java">
       <ranges>
-        <range start1="7" end1="7" start2="7" end2="9" changelist="fea420e9-3c41-4870-ba85-509e63db1df8" />
-        <range start1="9" end1="9" start2="11" end2="12" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="80" end1="80" start2="83" end2="108" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="87" end1="89" start2="115" end2="120" changelist="fea420e9-3c41-4870-ba85-509e63db1df8" />
-        <range start1="90" end1="92" start2="121" end2="122" changelist="fea420e9-3c41-4870-ba85-509e63db1df8" />
-        <range start1="98" end1="98" start2="128" end2="129" changelist="fea420e9-3c41-4870-ba85-509e63db1df8" />
-        <range start1="148" end1="149" start2="179" end2="189" changelist="fea420e9-3c41-4870-ba85-509e63db1df8" />
-        <range start1="176" end1="176" start2="216" end2="217" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="10" end1="10" start2="10" end2="11" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="11" end1="12" start2="12" end2="12" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="22" end1="22" start2="22" end2="23" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="84" end1="86" start2="85" end2="87" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="88" end1="91" start2="89" end2="90" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="92" end1="94" start2="91" end2="99" changelist="fea420e9-3c41-4870-ba85-509e63db1df8" />
+        <range start1="95" end1="96" start2="100" end2="123" changelist="fea420e9-3c41-4870-ba85-509e63db1df8" />
+        <range start1="98" end1="99" start2="125" end2="125" changelist="fea420e9-3c41-4870-ba85-509e63db1df8" />
+        <range start1="100" end1="104" start2="126" end2="138" changelist="fea420e9-3c41-4870-ba85-509e63db1df8" />
+        <range start1="105" end1="106" start2="139" end2="142" changelist="fea420e9-3c41-4870-ba85-509e63db1df8" />
+        <range start1="121" end1="123" start2="157" end2="157" changelist="fea420e9-3c41-4870-ba85-509e63db1df8" />
+        <range start1="179" end1="179" start2="213" end2="214" changelist="fea420e9-3c41-4870-ba85-509e63db1df8" />
+        <range start1="180" end1="183" start2="215" end2="220" changelist="fea420e9-3c41-4870-ba85-509e63db1df8" />
+        <range start1="184" end1="188" start2="221" end2="221" changelist="fea420e9-3c41-4870-ba85-509e63db1df8" />
       </ranges>
     </file>
   </component>
@@ -124,7 +131,7 @@
       <recent name="primitives" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in ISE5783_3676_3060">
+  <component name="RunManager" selected="JUnit.ReflectionRefractionTests.picture1">
     <configuration name="All in ISE5783_3676_3060" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <option name="PACKAGE_NAME" value="" />
@@ -198,9 +205,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReflectionRefractionTests.picture1" />
         <item itemvalue="JUnit.All in ISE5783_3676_3060" />
         <item itemvalue="JUnit.ReflectionRefractionTests.Bonus" />
-        <item itemvalue="JUnit.ReflectionRefractionTests.picture1" />
         <item itemvalue="JUnit.ReflectionRefractionTests" />
         <item itemvalue="JUnit.ReflectionRefractionTests.trianglesTransparentSphere" />
       </list>
@@ -275,21 +282,8 @@
       <workItem from="1685561483940" duration="15625000" />
       <workItem from="1685864222519" duration="6087000" />
       <workItem from="1686060833378" duration="2766000" />
-      <workItem from="1686206607363" duration="8697000" />
-    </task>
-    <task id="LOCAL‎-00004" summary="completed Primitives package and begin working on the Geometry package">
-      <created>1679433386245</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL‎-00004" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1679433386245</updated>
-    </task>
-    <task id="LOCAL‎-00005" summary="completed Level 1">
-      <created>1679440479718</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL‎-00005" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1679440479718</updated>
+      <workItem from="1686206607363" duration="8835000" />
+      <workItem from="1686247931450" duration="11067000" />
     </task>
     <task id="LOCAL‎-00006" summary="completed Level 1">
       <created>1679441113669</created>
@@ -620,7 +614,21 @@
       <option name="project" value="LOCAL‎" />
       <updated>1685875284712</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL‎-00053" summary="began working on anti aliasing improvement">
+      <created>1686222990941</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL‎-00053" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1686222990941</updated>
+    </task>
+    <task id="LOCAL‎-00054" summary="began working on anti aliasing improvement">
+      <created>1686223011683</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL‎-00054" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1686223011683</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,7 +646,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="findIntersection test in Sphare, Triangle and Plane" />
     <MESSAGE value="completed all sphere tests (findIntersection and getnormal)&#10;not yet implemented findIintersection in the class sphere" />
     <MESSAGE value="implemented findIntersection in sphere class" />
     <MESSAGE value="completed all Sphere Tests" />
@@ -663,9 +670,24 @@
     <MESSAGE value="level 7 - to finish the bonus" />
     <MESSAGE value="Complete level 7!" />
     <MESSAGE value="started level 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="started level 8" />
+    <MESSAGE value="began working on anti aliasing improvement" />
+    <option name="LAST_COMMIT_MESSAGE" value="began working on anti aliasing improvement" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/renderer/Camera.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/renderer/Camera.java</url>
+          <line>218</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="geometries.Triangle" memberName="emission" />
