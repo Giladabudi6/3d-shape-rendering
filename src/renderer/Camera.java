@@ -5,6 +5,8 @@ import primitives.Point;
 import primitives.Ray;
 import primitives.Vector;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.MissingResourceException;
 
 import static primitives.Util.alignZero;
@@ -111,16 +113,19 @@ public class Camera {
 
         Point pIJ = location.add(Vto.scale(distance));
 
-        double Ry = height / nY;
-        double Rx = width / nX;
+        double Ry = height / nY;   // SIZE OF THE PIXEL - HEIGHT
+        double Rx = width / nX;    // SIZE OF THE PIXEL - WIDTH
 
-        double yI = -(i - ((nY - 1) / 2d)) * Ry;
-        double xJ = (j - ((nX - 1) / 2d)) * Rx;
+        double yI = -(i - ((nY - 1) / 2d)) * Ry;  // CENTER OF THE PIXEL
+        double xJ = (j - ((nX - 1) / 2d)) * Rx;   // CENTER OF THE PIXEL
+
+
 
         if (!isZero(xJ))
             pIJ = pIJ.add(Vright.scale(xJ));
         if (!isZero(yI))
             pIJ = pIJ.add(Vup.scale(yI));
+
 
         Ray ray = new Ray(location, pIJ.subtract(location));
 
@@ -172,7 +177,16 @@ public class Camera {
             for (int j = 0; j < nY; j++) {
                 // Cast a ray from the camera to the current pixel and get the color
                 Ray ray = constructRay(nX, nY, i, j);
-                Color color = castRay(ray);
+
+                if(l8) {
+                    Ray ray = constructRayBim(nX, nY, i, j);
+                    Color color = antialising(nX, nY, Pij);
+                }
+                else {
+                    Ray ray = constructRay(nX, nY, i, j);
+                    Color color = castRay(ray);
+                }
+
                 imageWriter.writePixel(i, j, color);
             }
         }
