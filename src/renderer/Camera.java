@@ -89,20 +89,57 @@ public class Camera {
         return pixelColor;
     }*/
 
-    private Ray constructRayBim(double Ry, double Rx, Point pIJ){
-        List<Ray> rays = new LinkedList<>;
+    private List<Color> constructRayBeam(int nX, int nY, int j, int i, List<Ray> rays) {
 
-        return rays;
+        List<Color> colors = new LinkedList<Color>();
+
+        Point pIJ = location.add(Vto.scale(distance));
+
+        double Ry = height / nY;   // SIZE OF THE PIXEL - HEIGHT
+        double Rx = width / nX;    // SIZE OF THE PIXEL - WIDTH
+
+        double yI = -(i - ((nY - 1) / 2d)) * Ry;  // CENTER OF THE PIXEL
+        double xJ = (j - ((nX - 1) / 2d)) * Rx;   // CENTER OF THE PIXEL
+        // TODO: check if the boundaries are available
+
+        double minValueX = -Rx / 2;
+        double maxValueX =  Rx / 2;
+
+        double minValueY = -Ry / 2;
+        double maxValueY =  Ry / 2;
+
+        Random randomXY = new Random();
+        for (int k = 0; k < 50; k++) {
+            double randomX = minValueX + (maxValueX - minValueX) * randomXY.nextDouble();
+            double randomY = minValueY + (maxValueY - minValueY) * randomXY.nextDouble();
+
+            if (!isZero(xJ + randomX))
+                pIJ = pIJ.add(Vright.scale(xJ));
+            if (!isZero(yI + randomY))
+                pIJ = pIJ.add(Vup.scale(yI));
+            Ray ray = new Ray(location, pIJ.subtract(location));
+            colors.add(castRay(ray));
+        }
+        return colors;
     }
 
-    private Color averageColor (LinkedList<Ray> rays){
 
-        double r;
-        double g;
-        double b;
-        Color avrColor(r,g,b);
+    private Color averageColor(List<Color> colors) {
+        double red = 0;
+        double green = 0;
+        double blue = 0;
+        for (Color color : colors) {
+            red+=color.getColor().getRed();
+            green+=color.getColor().getGreen();
+            blue+=color.getColor().getBlue();
+        }
+        red = red/colors.size();
+        green = green/colors.size();
+        blue = blue/colors.size();
 
-        return avrColor;
+        Color averageColor = new Color(red,green,blue);
+
+        return averageColor;
     }
 
 
@@ -117,8 +154,6 @@ public class Camera {
 
         double yI = -(i - ((nY - 1) / 2d)) * Ry;  // CENTER OF THE PIXEL
         double xJ = (j - ((nX - 1) / 2d)) * Rx;   // CENTER OF THE PIXEL
-
-
 
         if (!isZero(xJ))
             pIJ = pIJ.add(Vright.scale(xJ));
@@ -176,14 +211,13 @@ public class Camera {
             for (int j = 0; j < nY; j++) {
                 // Cast a ray from the camera to the current pixel and get the color
                 Ray ray = constructRay(nX, nY, i, j);
+                Color color = castRay(ray);
 
-                if(l8) {
-                    Ray ray = constructRayBim(nX, nY, i, j);
-                    Color color = antialising(nX, nY, Pij);
-                }
-                else {
-                    Ray ray = constructRay(nX, nY, i, j);
-                    Color color = castRay(ray);
+                if (level8) {
+                    List<Ray> rays = new LinkedList<>();
+                    rays.add(ray);
+                    List<Color> colors = constructRayBeam(nX, nY, i, j, rays);
+                    color = averageColor(colors);
                 }
 
                 imageWriter.writePixel(i, j, color);
