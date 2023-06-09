@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="Complete level 7!">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
-    </list>
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="Complete level 8! &#10;(Anti-aliasing)" />
     <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
     <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="Complete level 7!" />
     <option name="SHOW_DIALOG" value="false" />
@@ -273,14 +269,7 @@
       <workItem from="1686207307929" duration="60000" />
       <workItem from="1686249407507" duration="1201000" />
       <workItem from="1686259302467" duration="42000" />
-      <workItem from="1686259346179" duration="3752000" />
-    </task>
-    <task id="LOCAL‎-00004" summary="completed Primitives package and begin working on the Geometry package">
-      <created>1679433386245</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL‎-00004" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1679433386245</updated>
+      <workItem from="1686259346179" duration="3850000" />
     </task>
     <task id="LOCAL‎-00005" summary="completed Level 1">
       <created>1679440479718</created>
@@ -618,7 +607,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1685870828027</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL‎-00053" summary="Complete level 8! &#10;(Anti-aliasing)">
+      <created>1686263211801</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL‎-00053" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1686263211801</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,7 +632,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="started level 3" />
     <MESSAGE value="findIntersection test in Sphare, Triangle and Plane" />
     <MESSAGE value="completed all sphere tests (findIntersection and getnormal)&#10;not yet implemented findIintersection in the class sphere" />
     <MESSAGE value="implemented findIntersection in sphere class" />
@@ -661,7 +656,8 @@
     <MESSAGE value="level 7 - finish but wrong images" />
     <MESSAGE value="level 7 - to finish the bonus" />
     <MESSAGE value="Complete level 7!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete level 7!" />
+    <MESSAGE value="Complete level 8! &#10;(Anti-aliasing)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete level 8! &#10;(Anti-aliasing)" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
