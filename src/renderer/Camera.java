@@ -9,8 +9,10 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.MissingResourceException;
 import java.util.Random;
+import java.util.stream.IntStream;
 
 import static primitives.Util.isZero;
+import static renderer.Pixel.printInterval;
 
 public class Camera {
     private final Point location;
@@ -20,10 +22,11 @@ public class Camera {
     ImageWriter imageWriter;
     RayTracerBase rayTracer;
     private double height, width, distance;
-    private boolean level8 = false;
+    private boolean antiAliasing = false;
+    private boolean MT = false;
 
-    public Camera setLevel8(boolean level8) {
-        this.level8 = level8;
+    public Camera setantiAliasing(boolean antiAliasing) {
+        this.antiAliasing = antiAliasing;
         return this;
     }
 
@@ -208,19 +211,47 @@ public class Camera {
 
         int nX = imageWriter.getNx();
         int nY = imageWriter.getNy();
-        for (int i = 0; i < nX; i++) {
-            for (int j = 0; j < nY; j++) {
-                // Cast a ray from the camera to the current pixel and get the color
-                Ray ray = constructRay(nX, nY, i, j);
-                Color color = castRay(ray);
 
-                if (level8) {
-                    List<Ray> rays = new LinkedList<>();
-                    rays.add(ray);
-                    List<Color> colors = constructRayBeam(nX, nY, i, j, rays);
-                    color = averageColor(colors);
+        if (MT) {
+            Pixel.initialize(nY, nX, printInterval);
+            IntStream.range(0, nY).parallel().forEach(i -> {
+                IntStream.range(0, nX).parallel().forEach(j -> {
+
+                    Ray ray = constructRay(nX, nY, i, j);
+                    Color color = castRay(ray);
+
+                    if (antiAliasing) {
+                        List<Ray> rays = new LinkedList<>();
+                        rays.add(ray);
+                        List<Color> colors = constructRayBeam(nX, nY, i, j, rays);
+                        color = averageColor(colors);
+                    }
+                    Pixel.pixelDone();
+                    Pixel.printPixel();
+
+                    imageWriter.writePixel(i, j, color);
+
+                });
+            });
+        }
+
+        else {
+            for (int i = 0; i < nX; i++) {
+                for (int j = 0; j < nY; j++) {
+
+                    // Cast a ray from the camera to the current pixel and get the color
+                    Ray ray = constructRay(nX, nY, i, j);
+                    Color color = castRay(ray);
+
+                    if (antiAliasing) {
+                        List<Ray> rays = new LinkedList<>();
+                        rays.add(ray);
+                        List<Color> colors = constructRayBeam(nX, nY, i, j, rays);
+                        color = averageColor(colors);
+                    }
+
+                    imageWriter.writePixel(i, j, color);
                 }
-                imageWriter.writePixel(i, j, color);
             }
         }
     }
