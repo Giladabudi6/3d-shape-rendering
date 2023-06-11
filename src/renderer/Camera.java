@@ -20,6 +20,7 @@ public class Camera {
     ImageWriter imageWriter;
     RayTracerBase rayTracer;
     private double height, width, distance;
+    // turns the improvements ON/OFF
     private boolean level8 = false;
 
     public Camera setLevel8(boolean level8) {
