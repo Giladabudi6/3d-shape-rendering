@@ -29,6 +29,10 @@ public class Camera {
         this.antiAliasing = antiAliasing;
         return this;
     }
+    public Camera setMT(boolean MT) {
+        this.MT = MT;
+        return this;
+    }
 
     public Camera(Point location, Vector vto, Vector vup) {
 
