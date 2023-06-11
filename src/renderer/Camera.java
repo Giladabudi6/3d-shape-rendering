@@ -20,7 +20,12 @@ public class Camera {
     ImageWriter imageWriter;
     RayTracerBase rayTracer;
     private double height, width, distance;
-    private boolean level8 = true;
+    private boolean level8 = false;
+
+    public Camera setLevel8(boolean level8) {
+        this.level8 = level8;
+        return this;
+    }
 
     public Camera(Point location, Vector vto, Vector vup) {
 

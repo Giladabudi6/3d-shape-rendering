@@ -147,7 +147,7 @@ public class ReflectionRefractionTests {
    @Test
    public void Bonus() {
       Camera camera = new Camera(new Point(-300, -300, 95), new Vector(1, 1, -0.2), (new Vector(1, 1, -0.2))
-              .crossProduct(new Vector(-1,1,0))) //
+              .crossProduct(new Vector(-1,1,0))).setLevel8(true) //
               .setVPSize(200, 200).setVPDistance(1000);
 
       /*Camera camera1 = new Camera(new Point(0, -1500, 0), new Vector(0, 1, 0), new Vector(0, 0, 1)) //

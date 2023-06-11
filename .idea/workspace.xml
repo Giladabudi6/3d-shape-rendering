@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="Complete level 8! &#10;(Anti-aliasing)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" afterDir="false" />
     </list>
     <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
     <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="Complete level 7!" />
@@ -107,7 +109,7 @@
       <recent name="primitives" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in ISE5783_3676_3060">
+  <component name="RunManager" selected="JUnit.ReflectionRefractionTests.Bonus">
     <configuration name="All in ISE5783_3676_3060" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <option name="PACKAGE_NAME" value="" />
@@ -181,9 +183,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in ISE5783_3676_3060" />
         <item itemvalue="JUnit.ReflectionRefractionTests.Bonus" />
         <item itemvalue="JUnit.ReflectionRefractionTests.picture1" />
+        <item itemvalue="JUnit.All in ISE5783_3676_3060" />
         <item itemvalue="JUnit.ReflectionRefractionTests.trianglesTransparentSphere" />
         <item itemvalue="JUnit.ReflectionRefractionTests" />
       </list>
@@ -265,13 +267,7 @@
       <workItem from="1686259302467" duration="42000" />
       <workItem from="1686259346179" duration="3850000" />
       <workItem from="1686300934939" duration="2296000" />
-    </task>
-    <task id="LOCAL‎-00006" summary="completed Level 1">
-      <created>1679441113669</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL‎-00006" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1679441113669</updated>
+      <workItem from="1686470146265" duration="1135000" />
     </task>
     <task id="LOCAL‎-00007" summary="completed Level 1">
       <created>1679441419820</created>
@@ -609,7 +605,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1686300956558</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL‎-00055" summary="Complete level 8! &#10;(Anti-aliasing)">
+      <created>1686470270677</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL‎-00055" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1686470270677</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
