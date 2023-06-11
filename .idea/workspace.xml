@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="Complete level 8! &#10;(Anti-aliasing)">
-      <change afterPath="$PROJECT_DIR$/src/renderer/Pixel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="level 9 - MT, started superSampling" />
     <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
-    <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="Complete level 7!">
-      <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
-    </list>
+    <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="level 9 - MT, started superSampling" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,19 +42,6 @@
         <option name="url" value="https://github.com/Tsuriya1/ISE5783_3676_3060.git" />
       </UrlAndAccount>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/renderer/Camera.java">
-      <ranges>
-        <range start1="11" end1="11" start2="11" end2="12" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="13" end1="13" start2="14" end2="15" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="22" end1="23" start2="24" end2="26" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="24" end1="26" start2="27" end2="29" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="27" end1="27" start2="30" end2="34" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
-        <range start1="210" end1="215" start2="217" end2="248" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="216" end1="223" start2="249" end2="258" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -284,21 +264,7 @@
       <workItem from="1686259346179" duration="3850000" />
       <workItem from="1686300934939" duration="2296000" />
       <workItem from="1686470146265" duration="1135000" />
-      <workItem from="1686472014870" duration="5058000" />
-    </task>
-    <task id="LOCAL‎-00007" summary="completed Level 1">
-      <created>1679441419820</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL‎-00007" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1679441419820</updated>
-    </task>
-    <task id="LOCAL‎-00008" summary="completed Level 1">
-      <created>1679443089772</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL‎-00008" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1679443089772</updated>
+      <workItem from="1686472014870" duration="5383000" />
     </task>
     <task id="LOCAL‎-00009" summary="started working on unit tests">
       <created>1679504399163</created>
@@ -629,7 +595,21 @@
       <option name="project" value="LOCAL‎" />
       <updated>1686470270677</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL‎-00056" summary="level 9 - MT, started superSampling">
+      <created>1686483925963</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL‎-00056" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1686483925963</updated>
+    </task>
+    <task id="LOCAL‎-00057" summary="level 9 - MT, started superSampling">
+      <created>1686483963257</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL‎-00057" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1686483963257</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -647,7 +627,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="findIntersection test in Sphare, Triangle and Plane" />
     <MESSAGE value="completed all sphere tests (findIntersection and getnormal)&#10;not yet implemented findIintersection in the class sphere" />
     <MESSAGE value="implemented findIntersection in sphere class" />
     <MESSAGE value="completed all Sphere Tests" />
@@ -672,7 +651,8 @@
     <MESSAGE value="level 7 - to finish the bonus" />
     <MESSAGE value="Complete level 7!" />
     <MESSAGE value="Complete level 8! &#10;(Anti-aliasing)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete level 8! &#10;(Anti-aliasing)" />
+    <MESSAGE value="level 9 - MT, started superSampling" />
+    <option name="LAST_COMMIT_MESSAGE" value="level 9 - MT, started superSampling" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
