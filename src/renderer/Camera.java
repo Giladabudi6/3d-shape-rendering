@@ -23,7 +23,6 @@ public class Camera {
     RayTracerBase rayTracer;
     private double height, width, distance;
     // turns the improvements ON/OFF
-    private boolean level8 = false;
     private boolean antiAliasing = false;
     private boolean MT = false;
 
