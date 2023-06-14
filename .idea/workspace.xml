@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="level 9 - MT, started superSampling" />
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="level 9 - MT, started superSampling">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/ImageWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/ImageWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" afterDir="false" />
+    </list>
     <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
-    <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="level 9 - MT, started superSampling" />
+    <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="level 9 - MT, started superSampling">
+      <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +51,30 @@
         <option name="url" value="https://github.com/Tsuriya1/ISE5783_3676_3060.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/renderer/Camera.java">
+      <ranges>
+        <range start1="7" end1="11" start2="7" end2="8" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="27" end1="27" start2="24" end2="26" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
+        <range start1="32" end1="32" start2="31" end2="32" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="35" end1="35" start2="35" end2="40" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
+        <range start1="111" end1="112" start2="116" end2="117" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="114" end1="115" start2="119" end2="120" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="124" end1="125" start2="129" end2="130" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="134" end1="135" start2="139" end2="140" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="139" end1="142" start2="144" end2="147" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="143" end1="146" start2="148" end2="151" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="147" end1="148" start2="152" end2="153" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="153" end1="154" start2="158" end2="158" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="240" end1="243" start2="244" end2="245" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="247" end1="247" start2="249" end2="250" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="255" end1="255" start2="258" end2="260" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="257" end1="257" start2="262" end2="268" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="258" end1="258" start2="269" end2="270" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="288" end1="289" start2="300" end2="376" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -106,25 +139,34 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ReflectionRefractionTests.Bonus">
-    <configuration name="All in ISE5783_3676_3060" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LightsTests.spherePoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lighting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lighting" />
+      <option name="MAIN_CLASS_NAME" value="lighting.LightsTests" />
+      <option name="METHOD_NAME" value="spherePoint" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReflectionRefractionTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LightsTests.sphereSpot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="renderer.*" />
+          <option name="PATTERN" value="lighting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="renderer" />
-      <option name="MAIN_CLASS_NAME" value="renderer.ReflectionRefractionTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="lighting" />
+      <option name="MAIN_CLASS_NAME" value="lighting.LightsTests" />
+      <option name="METHOD_NAME" value="sphereSpot" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,7 +203,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReflectionRefractionTests.trianglesTransparentSphere" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReflectionRefractionTests.twoSpheres" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
         <pattern>
@@ -171,7 +213,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="renderer" />
       <option name="MAIN_CLASS_NAME" value="renderer.ReflectionRefractionTests" />
-      <option name="METHOD_NAME" value="trianglesTransparentSphere" />
+      <option name="METHOD_NAME" value="twoSpheres" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,10 +222,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ReflectionRefractionTests.Bonus" />
+        <item itemvalue="JUnit.LightsTests.spherePoint" />
+        <item itemvalue="JUnit.LightsTests.sphereSpot" />
+        <item itemvalue="JUnit.ReflectionRefractionTests.twoSpheres" />
         <item itemvalue="JUnit.ReflectionRefractionTests.picture1" />
-        <item itemvalue="JUnit.All in ISE5783_3676_3060" />
-        <item itemvalue="JUnit.ReflectionRefractionTests.trianglesTransparentSphere" />
-        <item itemvalue="JUnit.ReflectionRefractionTests" />
       </list>
     </recent_temporary>
   </component>
@@ -265,6 +307,7 @@
       <workItem from="1686300934939" duration="2296000" />
       <workItem from="1686470146265" duration="1135000" />
       <workItem from="1686472014870" duration="5383000" />
+      <workItem from="1686670761775" duration="23756000" />
     </task>
     <task id="LOCAL‎-00009" summary="started working on unit tests">
       <created>1679504399163</created>

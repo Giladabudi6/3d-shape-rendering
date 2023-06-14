@@ -147,7 +147,7 @@ public class ReflectionRefractionTests {
    @Test
    public void Bonus() {
       Camera camera = new Camera(new Point(-300, -300, 95), new Vector(1, 1, -0.2), (new Vector(1, 1, -0.2))
-              .crossProduct(new Vector(-1,1,0))).setantiAliasing(true).setMT(true) //
+              .crossProduct(new Vector(-1,1,0))).setantiAliasing(false).setMT(false).setsuperSampling(true) //
               .setVPSize(200, 200).setVPDistance(1000);
       //k
 

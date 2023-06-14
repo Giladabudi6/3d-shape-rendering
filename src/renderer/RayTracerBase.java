@@ -5,6 +5,8 @@ import primitives.Color;
 import primitives.Ray;
 import scene.Scene;
 
+import java.util.List;
+
 
 public abstract class RayTracerBase {
 
@@ -17,4 +19,5 @@ public abstract class RayTracerBase {
     public Color traceRay(Ray ray){
         return null;
     }
+
 }
