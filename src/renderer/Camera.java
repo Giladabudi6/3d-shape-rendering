@@ -253,10 +253,8 @@ public class Camera {
                     Color color = castRay(ray);
 
                     if (antiAliasing) {
-                        List<Ray> rays = new LinkedList<>();
-                        rays.add(ray);
-                        List<Color> colors = constructRayBeam(nX, nY, i, j, rays);
-                        color = averageColor(colors);
+                        superSampling = false;
+                        color = antiAliasing(ray, nY, i, j, recursionDepth);
                     }
 
 
@@ -271,6 +269,7 @@ public class Camera {
                     imageWriter.writePixel(i, j, color);
 
                 });
+
             });
         } else {
             for (int i = 0; i < nX; i++) {
@@ -334,7 +333,7 @@ public class Camera {
         double yI = -(i - ((nY - 1) / 2d)) * Ry;  // CENTER OF THE PIXEL
         double xJ = (j - ((nX - 1) / 2d)) * Rx;   // CENTER OF THE PIXEL
 
-        Color pixelColor = getColorAtPixel(xJ, yI, Rx, Ry, recursionDepth);
+        Color pixelColor = getColorAtPixel(xJ, yI, Rx, Ry, currentRecursionDepth);
         if (pixelColor != null) {
             colors.add(pixelColor);
         } else {
