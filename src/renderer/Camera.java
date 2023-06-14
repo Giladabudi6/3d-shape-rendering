@@ -22,6 +22,8 @@ public class Camera {
     // turns the improvements ON/OFF
     private boolean antiAliasing = false;
     private boolean MT = false;
+    private boolean superSampling = false;
+
 
     public Camera setantiAliasing(boolean antiAliasing) {
         this.antiAliasing = antiAliasing;
@@ -30,6 +32,11 @@ public class Camera {
 
     public Camera setMT(boolean MT) {
         this.MT = MT;
+        return this;
+    }
+
+    public Camera setsuperSampling(boolean superSampling) {
+        this.superSampling = superSampling;
         return this;
     }
 
