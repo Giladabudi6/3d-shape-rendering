@@ -24,6 +24,14 @@ public class Camera {
     private boolean MT = false;
     private boolean superSampling = false;
 
+    private int recursionDepth = 5;
+
+
+    public Camera setRecursionDepth(int recursionDepth) {
+        this.recursionDepth = recursionDepth;
+        return this;
+    }
+
 
     public Camera setantiAliasing(boolean antiAliasing) {
         this.antiAliasing = antiAliasing;
@@ -101,7 +109,21 @@ public class Camera {
     }
 
 
-    private List<Color> constructRayBeam(int nX, int nY, int j, int i, List<Ray> rays) {
+    private Color antiAliasing(Ray ray, int nX, int nY, int i, int j) {
+        List<Ray> rays = new LinkedList<>();
+        rays.add(ray);
+        List<Color> colors = antiAliasingHelper(nX, nY, i, j, rays);
+        return averageColor(colors);
+    }
+
+    private Color superSampling(Ray ray, int nX, int nY, int i, int j, int recursionDepth) {
+        List<Ray> rays = new LinkedList<>();
+        rays.add(ray);
+        return averageColor(superSamplingHelper(nX, nY, i, j, rays, recursionDepth));
+    }
+
+
+    private List<Color> antiAliasingHelper(int nX, int nY, int j, int i, List<Ray> rays) {
 
         List<Color> colors = new LinkedList<Color>();
 
@@ -159,6 +181,7 @@ public class Camera {
     public Ray constructRay(int nX, int nY, int j, int i) {
         // nX represent rows and nY represents columns of the resolution
         // i represent rows and j represents columns of the view plane
+
 
         Point pIJ = location.add(Vto.scale(distance));
 
@@ -235,6 +258,13 @@ public class Camera {
                         List<Color> colors = constructRayBeam(nX, nY, i, j, rays);
                         color = averageColor(colors);
                     }
+
+
+                    if (superSampling) {
+                        antiAliasing = false;
+                        color = superSampling(ray, nX, nY, i, j, recursionDepth);
+                    }
+
                     Pixel.pixelDone();
                     Pixel.printPixel();
 
@@ -252,18 +282,13 @@ public class Camera {
                     Color color = castRay(ray);
 
                     if (antiAliasing) {
-                        List<Ray> rays = new LinkedList<>();
-                        rays.add(ray);
-                        List<Color> colors = constructRayBeam(nX, nY, i, j, rays);
-                        color = averageColor(colors);
-
-
+                        superSampling = false;
+                        color = antiAliasing(ray, nY, i, j, recursionDepth);
                     }
 
                     if (superSampling) {
-                        List<Ray> rays = new LinkedList<>();
-                        rays.add(ray);
-                        color = averageColor(constructRayBeam9(nX, nY, i, j,rays,5));
+                        antiAliasing = false;
+                        color = superSampling(ray, nX, nY, i, j, recursionDepth);
                     }
 
                     imageWriter.writePixel(i, j, color);
@@ -300,7 +325,7 @@ public class Camera {
     }
 
 
-    private List<Color> constructRayBeam9(int nX, int nY, int j, int i, List<Ray> rays, int recursionDepth) {
+    private List<Color> superSamplingHelper(int nX, int nY, int j, int i, List<Ray> rays, int currentRecursionDepth) {
         List<Color> colors = new LinkedList<>();
 
         double Ry = height / nY;   // SIZE OF THE PIXEL - HEIGHT
@@ -313,7 +338,7 @@ public class Camera {
         if (pixelColor != null) {
             colors.add(pixelColor);
         } else {
-            if (recursionDepth < 20) {
+            if (currentRecursionDepth < recursionDepth) {
                 double halfRx = Rx / 2;
                 double halfRy = Ry / 2;
 
@@ -324,7 +349,7 @@ public class Camera {
                 subRays.add(new Ray(location, Vright.scale(-halfRx).add(Vup.scale(halfRy))));
                 subRays.add(new Ray(location, Vright.scale(-halfRx).subtract(Vup.scale(halfRy))));
 
-                colors.addAll(constructRayBeam9(nX, nY, j, i, subRays, recursionDepth + 1));
+                colors.addAll(superSamplingHelper(nX, nY, j, i, subRays, currentRecursionDepth + 1));
             } else {
                 // If recursion depth is 5, return the average color of the edges to each quarter
 

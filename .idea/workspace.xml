@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="level 9 - MT, started superSampling">
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="level 9 - MT, Not final superSampling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/ImageWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/ImageWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/RayTracerBasic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" afterDir="false" />
     </list>
     <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
-    <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="level 9 - MT, started superSampling">
+    <list id="00f28990-3fd7-4f8d-9ad2-5060048a90df" name="Changes by tsuri" comment="">
       <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,24 +52,18 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/src/renderer/Camera.java">
       <ranges>
-        <range start1="7" end1="11" start2="7" end2="8" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="27" end1="27" start2="24" end2="26" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
-        <range start1="32" end1="32" start2="31" end2="32" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="35" end1="35" start2="35" end2="40" changelist="262a25ad-918a-4c70-bf3b-68817dfc0a0b" />
-        <range start1="111" end1="112" start2="116" end2="117" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="114" end1="115" start2="119" end2="120" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="124" end1="125" start2="129" end2="130" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="134" end1="135" start2="139" end2="140" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="139" end1="142" start2="144" end2="147" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="143" end1="146" start2="148" end2="151" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="147" end1="148" start2="152" end2="153" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="153" end1="154" start2="158" end2="158" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="240" end1="243" start2="244" end2="245" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="247" end1="247" start2="249" end2="250" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="255" end1="255" start2="258" end2="260" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="257" end1="257" start2="262" end2="268" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="258" end1="258" start2="269" end2="270" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="288" end1="289" start2="300" end2="376" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="26" end1="26" start2="26" end2="34" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="103" end1="104" start2="111" end2="126" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="162" end1="162" start2="184" end2="185" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="232" end1="236" start2="255" end2="257" changelist="00f28990-3fd7-4f8d-9ad2-5060048a90df" />
+        <range start1="237" end1="237" start2="258" end2="265" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="243" end1="243" start2="271" end2="272" changelist="00f28990-3fd7-4f8d-9ad2-5060048a90df" />
+        <range start1="254" end1="260" start2="283" end2="285" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="263" end1="266" start2="288" end2="290" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="302" end1="303" start2="326" end2="327" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="311" end1="312" start2="335" end2="336" changelist="00f28990-3fd7-4f8d-9ad2-5060048a90df" />
+        <range start1="315" end1="316" start2="339" end2="340" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="326" end1="327" start2="350" end2="351" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
       </ranges>
     </file>
   </component>
@@ -307,21 +298,7 @@
       <workItem from="1686300934939" duration="2296000" />
       <workItem from="1686470146265" duration="1135000" />
       <workItem from="1686472014870" duration="5383000" />
-      <workItem from="1686670761775" duration="23756000" />
-    </task>
-    <task id="LOCAL‎-00009" summary="started working on unit tests">
-      <created>1679504399163</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL‎-00009" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1679504399163</updated>
-    </task>
-    <task id="LOCAL‎-00010" summary="bka bla">
-      <created>1679839462979</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL‎-00010" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1679839462979</updated>
+      <workItem from="1686670761775" duration="35074000" />
     </task>
     <task id="LOCAL‎-00011" summary="tests for getnormals&#10;mimiush to getnormals&#10;end of targil 2!">
       <created>1681423929810</created>
@@ -652,7 +629,21 @@
       <option name="project" value="LOCAL‎" />
       <updated>1686483963257</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL‎-00058" summary="level 9 - MT, Not final superSampling">
+      <created>1686730842061</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL‎-00058" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1686730842063</updated>
+    </task>
+    <task id="LOCAL‎-00059" summary="level 9 - MT, Not final superSampling">
+      <created>1686730857557</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL‎-00059" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1686730857557</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,7 +661,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed all sphere tests (findIntersection and getnormal)&#10;not yet implemented findIintersection in the class sphere" />
     <MESSAGE value="implemented findIntersection in sphere class" />
     <MESSAGE value="completed all Sphere Tests" />
     <MESSAGE value="Changes by gilad" />
@@ -695,7 +685,8 @@
     <MESSAGE value="Complete level 7!" />
     <MESSAGE value="Complete level 8! &#10;(Anti-aliasing)" />
     <MESSAGE value="level 9 - MT, started superSampling" />
-    <option name="LAST_COMMIT_MESSAGE" value="level 9 - MT, started superSampling" />
+    <MESSAGE value="level 9 - MT, Not final superSampling" />
+    <option name="LAST_COMMIT_MESSAGE" value="level 9 - MT, Not final superSampling" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
