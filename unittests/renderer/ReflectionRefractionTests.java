@@ -274,17 +274,18 @@ public class ReflectionRefractionTests {
                 new Triangle(c, e, f).setEmission(new Color(yellow)) //
                         .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
 
-                new Triangle(b, d, l).setEmission(new Color(gray)) //
+                new Triangle(a, o, p).setEmission(new Color(yellow)) //
                         .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
 
-                new Triangle(d, m, l).setEmission(new Color(gray)) //
-                        .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
 
-                new Triangle(f, e, m).setEmission(new Color(150, 20, 70)) //
-                        .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
+                // window:
+                new Triangle(n, o, c).setEmission(new Color(0, 0, 245)) //
+                        .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.9).setnShininess(100)),
 
                 new Triangle(e, m, l).setEmission(new Color(150, 20, 70)) //
                         .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
 
 
                 // roof:
@@ -358,20 +359,47 @@ public class ReflectionRefractionTests {
                 new Triangle(H1, J1, I1).setEmission(new Color(0, 0, 0)) //
                         .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
                 //RIGHT ARM
-                new Triangle(J1, M1, N1).setEmission(new Color(0, 0, 0)) //
+                new Triangle(J2, M2, N2).setEmission(new Color(0, 0, 0)) //
                         .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
                 //LEFT ARM
-                new Triangle(L1, I1, K1).setEmission(new Color(0, 0, 0)) //
+                new Triangle(L2, I2, K2).setEmission(new Color(0, 0, 0)) //
                         .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
                 //HEAD
-                new Sphere(headRadius, O1).setEmission(new Color(90, 0, 50)) //
-                        .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)));
+                new Sphere(headRadius, O2).setEmission(new Color(90, 0, 50)) //
+                        .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
 
+
+                // man3:
+                //RIGHT LEG
+                new Triangle(A3, B3, C3).setEmission(new Color(0, 0, 100)) //
+                .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
+                new Triangle(B3, C3, H3).setEmission(new Color(0, 0, 100)) //
+                        .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
+                //LEFT LEG
+                new Triangle(D3, E3, F3).setEmission(new Color(0, 0, 100)) //
+                        .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
+                new Triangle(E3, F3, G3).setEmission(new Color(0, 0, 100)) //
+                        .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
+                //STOMACH
+                new Triangle(G3, H3, I3).setEmission(new Color(0, 0, 0)) //
+                        .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
+                new Triangle(H3, J3, I3).setEmission(new Color(0, 0, 0)) //
+                        .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
+                //RIGHT ARM
+                new Triangle(J3, M3, N3).setEmission(new Color(0, 0, 0)) //
+                        .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
+                //LEFT ARM
+                new Triangle(L3, I3, K3).setEmission(new Color(0, 0, 0)) //
+                        .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
+                //HEAD
+                new Sphere(headRadius, O3).setEmission(new Color(90, 0, 50)) //
+                        .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)));
 
         // light sources
         scene.lights.add(new DirectionalLight(new Color(94, 100, 86), new Vector(0, 0, -1)));
-        scene.lights.add(new SpotLight(new Color(100, 30, 30), new Point(15, -5, 0), new Vector(-1, 1, 0)));
-        scene.lights.add(new PointLight(new Color(20, 45, 32), new Point(20, 20, 10)));
+        //scene.lights.add(new SpotLight(new Color(100, 30, 30), new Point(15, -5, 0), new Vector(-1, 1, 0)));
+        scene.lights.add(new PointLight(new Color(150, 150, 0), new Point(5, 5, 14)));
+        scene.lights.add(new SpotLight(new Color(70, 110, 85), new Point(10, 14.5, 12),new Vector(-1, 0, -0.5)));
 
 
         ImageWriter imageWriter = new ImageWriter("Bonus", 600, 600);

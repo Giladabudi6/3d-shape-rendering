@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="level 9 - MT, Not final superSampling">
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="level 9 - MT, started superSampling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" afterDir="false" />
     </list>
-    <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
-    <list id="00f28990-3fd7-4f8d-9ad2-5060048a90df" name="Changes by tsuri" comment="">
-      <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
+    <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad">
+      <change beforePath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" afterDir="false" />
     </list>
+    <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="level 9 - MT, started superSampling" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,20 +49,34 @@
     </option>
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/renderer/Camera.java">
+    <file path="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java">
       <ranges>
-        <range start1="26" end1="26" start2="26" end2="34" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="103" end1="104" start2="111" end2="126" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="162" end1="162" start2="184" end2="185" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="232" end1="236" start2="255" end2="257" changelist="00f28990-3fd7-4f8d-9ad2-5060048a90df" />
-        <range start1="237" end1="237" start2="258" end2="265" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="243" end1="243" start2="271" end2="272" changelist="00f28990-3fd7-4f8d-9ad2-5060048a90df" />
-        <range start1="254" end1="260" start2="283" end2="285" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="263" end1="266" start2="288" end2="290" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="302" end1="303" start2="326" end2="327" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="311" end1="312" start2="335" end2="336" changelist="00f28990-3fd7-4f8d-9ad2-5060048a90df" />
-        <range start1="315" end1="316" start2="339" end2="340" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
-        <range start1="326" end1="327" start2="350" end2="351" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="176" end1="176" start2="176" end2="180" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="216" end1="217" start2="220" end2="221" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="220" end1="224" start2="224" end2="228" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="226" end1="230" start2="230" end2="234" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="232" end1="234" start2="236" end2="238" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="236" end1="238" start2="240" end2="242" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="240" end1="242" start2="244" end2="246" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="244" end1="245" start2="248" end2="281" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="270" end1="271" start2="306" end2="319" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="273" end1="274" start2="321" end2="322" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="276" end1="277" start2="324" end2="325" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="279" end1="281" start2="327" end2="327" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="282" end1="284" start2="328" end2="332" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="285" end1="287" start2="333" end2="335" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="288" end1="288" start2="336" end2="337" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="345" end1="346" start2="394" end2="395" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="347" end1="348" start2="396" end2="397" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="350" end1="351" start2="399" end2="400" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="352" end1="353" start2="401" end2="402" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="355" end1="356" start2="404" end2="405" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="357" end1="358" start2="406" end2="407" changelist="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" />
+        <range start1="360" end1="361" start2="409" end2="410" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="363" end1="364" start2="412" end2="413" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="366" end1="367" start2="415" end2="443" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="368" end1="369" start2="444" end2="444" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
+        <range start1="372" end1="374" start2="447" end2="450" changelist="874aa220-7aef-438f-8583-4ab518bb28f0" />
       </ranges>
     </file>
   </component>
