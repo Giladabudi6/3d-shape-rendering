@@ -174,6 +174,10 @@ public class ReflectionRefractionTests {
         Point g = new Point(5, 5, 15);
         Point l = new Point(10, 10, 0);
         Point m = new Point(10, 10, 10);
+        Point n = new Point(0, 5, 10);
+        Point o = new Point(0, 5, 5);
+        Point p = new Point(0, 0, 5);
+
 
 
         // points for clouds:
@@ -214,35 +218,67 @@ public class ReflectionRefractionTests {
         int headRadius = 1;
 
 
-        Vector V = new Vector(0, 22, 0);
+        Vector man2 = new Vector(0, 24, 0);
         // points for man2:
 
         //LEFT LEG
-        Point E1 = E.add(V);
-        Point F1 = F.add(V);
-        Point G1 = G.add(V);
-        Point D1 = D.add(V);
+        Point E2 = E.add(man2);
+        Point F2 = F.add(man2);
+        Point G2 = G.add(man2);
+        Point D2 = D.add(man2);
 
         //RIGHT LEG
-        Point A1 = A.add(V);
-        Point B1 = B.add(V);
-        Point C1 = C.add(V);
-        Point H1 = H.add(V);
+        Point A2 = A.add(man2);
+        Point B2 = B.add(man2);
+        Point C2 = C.add(man2);
+        Point H2 = H.add(man2);
 
         //STOMACH
-        Point I1 = I.add(V);
-        Point J1 = J.add(V);
+        Point I2 = I.add(man2);
+        Point J2 = J.add(man2);
 
         //LEFT ARM
-        Point K1 = K.add(V);
-        Point L1 = L.add(V);
+        Point K2 = K.add(man2);
+        Point L2 = L.add(man2);
 
         //RIGHT ARM
-        Point M1 = M.add(V);
-        Point N1 = N.add(V);
+        Point M2 = M.add(man2);
+        Point N2 = N.add(man2);
 
         //HEAD
-        Point O1 = O.add(V);
+        Point O2 = O.add(man2);
+
+
+        Vector man3 = new Vector(2, 14, 1);
+        // points for man3:
+
+        //LEFT LEG
+        Point E3 = E.add(man3);
+        Point F3 = F.add(man3);
+        Point G3 = G.add(man3);
+        Point D3 = D.add(man3);
+
+        //RIGHT LEG
+        Point A3 = A.add(man3);
+        Point B3 = B.add(man3);
+        Point C3 = C.add(man3);
+        Point H3 = H.add(man3);
+
+        //STOMACH
+        Point I3 = I.add(man3);
+        Point J3 = J.add(man3);
+
+        //LEFT ARM
+        Point K3 = K.add(man3);
+        Point L3 = L.add(man3);
+
+        //RIGHT ARM
+        Point M3 = M.add(man3);
+        Point N3 = N.add(man3);
+
+        //HEAD
+        Point O3 = O.add(man3);
+
 
 
         scene.geometries.add( //
@@ -268,10 +304,22 @@ public class ReflectionRefractionTests {
                 new Triangle(b, c, d).setEmission(new Color(0, 0, 14)) //
                         .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
 
-                new Triangle(a, c, e).setEmission(new Color(yellow)) //
+                new Triangle(b, d, l).setEmission(new Color(gray)) //
                         .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
 
-                new Triangle(c, e, f).setEmission(new Color(yellow)) //
+                new Triangle(d, m, l).setEmission(new Color(gray)) //
+                        .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
+                new Triangle(f, e, m).setEmission(new Color(150, 20, 70)) //
+                        .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
+                new Triangle(e, m, l).setEmission(new Color(150, 20, 70)) //
+                        .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
+                new Triangle(a, f, e).setEmission(new Color(yellow)) //
+                        .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+
+                new Triangle(o, n, f).setEmission(new Color(yellow)) //
                         .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
 
                 new Triangle(a, o, p).setEmission(new Color(yellow)) //
@@ -283,8 +331,8 @@ public class ReflectionRefractionTests {
                 new Triangle(n, o, c).setEmission(new Color(0, 0, 245)) //
                         .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.9).setnShininess(100)),
 
-                new Triangle(e, m, l).setEmission(new Color(150, 20, 70)) //
-                        .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
+                new Triangle(c, o, p).setEmission(new Color(0, 0, 245)) //
+                        .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.9).setnShininess(100)),
 
 
 
@@ -344,19 +392,19 @@ public class ReflectionRefractionTests {
 
                 // man2:
                 //RIGHT LEG
-                new Triangle(A1, B1, C1).setEmission(new Color(0, 0, 100)) //
+                new Triangle(A2, B2, C2).setEmission(new Color(0, 0, 100)) //
                         .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
-                new Triangle(B1, C1, H1).setEmission(new Color(0, 0, 100)) //
+                new Triangle(B2, C2, H2).setEmission(new Color(0, 0, 100)) //
                         .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
                 //LEFT LEG
-                new Triangle(D1, E1, F1).setEmission(new Color(0, 0, 100)) //
+                new Triangle(D2, E2, F2).setEmission(new Color(0, 0, 100)) //
                         .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
-                new Triangle(E1, F1, G1).setEmission(new Color(0, 0, 100)) //
+                new Triangle(E2, F2, G2).setEmission(new Color(0, 0, 100)) //
                         .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
                 //STOMACH
-                new Triangle(G1, H1, I1).setEmission(new Color(0, 0, 0)) //
+                new Triangle(G2, H2, I2).setEmission(new Color(0, 0, 0)) //
                         .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
-                new Triangle(H1, J1, I1).setEmission(new Color(0, 0, 0)) //
+                new Triangle(H2, J2, I2).setEmission(new Color(0, 0, 0)) //
                         .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003).setnShininess(20)),
                 //RIGHT ARM
                 new Triangle(J2, M2, N2).setEmission(new Color(0, 0, 0)) //
