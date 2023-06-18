@@ -260,7 +260,6 @@ public class Camera {
 
         double yI = -(i - ((nY - 1) / 2d)) * Ry;  // CENTER OF THE PIXEL
         double xJ = (j - ((nX - 1) / 2d)) * Rx;   // CENTER OF THE PIXEL
-        // TODO: check if the boundaries are available
 
         double minValueX = -Rx / 2;
         double maxValueX = Rx / 2;

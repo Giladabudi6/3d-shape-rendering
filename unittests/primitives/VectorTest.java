@@ -114,7 +114,6 @@ class VectorTest {
     // Test method for Normalize method
     @Test
     void TestNormalize() {
-        // TODO: change the test to a different test instead
         // ============ Equivalence Partitions Tests ==============
         //Normalize vector - length = 1
         Vector v1 = new Vector(1, 2, 2);

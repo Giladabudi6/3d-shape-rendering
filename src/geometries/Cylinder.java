@@ -30,6 +30,6 @@ public class Cylinder extends Tube {
      * @return The normal vector to the cylinder at the given point.
      */
     public Vector getNormal(Point point) {
-        return null; // TODO: Implement the calculation of the normal vector
+        return null;
     }
 }
