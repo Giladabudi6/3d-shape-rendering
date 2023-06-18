@@ -286,6 +286,13 @@ public class Camera {
         return colors;
     }
 
+
+    /**
+     * Calculates the average color from a list of colors.
+     *
+     * @param colors The list of colors.
+     * @return The average color.
+     */
     private Color averageColor(List<Color> colors) {
         double red = 0;
         double green = 0;
@@ -304,7 +311,15 @@ public class Camera {
         return averageColor;
     }
 
-
+    /**
+     * Constructs a ray from the camera's location to a specific pixel on the view plane.
+     *
+     * @param nX The number of rows in the resolution.
+     * @param nY The number of columns in the resolution.
+     * @param j  The column index of the pixel on the view plane.
+     * @param i  The row index of the pixel on the view plane.
+     * @return The constructed ray.
+     */
     public Ray constructRay(int nX, int nY, int j, int i) {
         // nX represent rows and nY represents columns of the resolution
         // i represent rows and j represents columns of the view plane
@@ -551,6 +566,14 @@ public class Camera {
         return null;
     }
 
+
+    /**
+     * Casts a ray at a specific pixel coordinate (x, y) on the view plane.
+     *
+     * @param x The x-coordinate of the pixel.
+     * @param y The y-coordinate of the pixel.
+     * @return The color resulting from casting the ray at the pixel.
+     */
     private Color castRayAtPixel(double x, double y) {
         Point pIJ = location.add(Vto.scale(distance));
 
