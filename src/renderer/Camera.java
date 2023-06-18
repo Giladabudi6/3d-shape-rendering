@@ -22,7 +22,7 @@ public class Camera {
     ImageWriter imageWriter;
     RayTracerBase rayTracer;
     private double height, width, distance;
-    // turns the improvements ON/OFF
+    /// turns the improvements ON/OFF
     private boolean antiAliasing = false;
     private boolean MT = false;
     private boolean superSampling = false;
