@@ -401,9 +401,8 @@ public class Camera {
 
                     if (antiAliasing) {
                         superSampling = false;
-                        color = antiAliasing(ray, nY, i, j, recursionDepth);
+                        color = antiAliasing(ray, nX, nY, i, j);
                     }
-
 
                     if (superSampling) {
                         antiAliasing = false;
@@ -427,14 +426,14 @@ public class Camera {
                     Ray ray = constructRay(nX, nY, i, j);
                     Color color = castRay(ray);
 
-                    if (antiAliasing) {
-                        superSampling = false;
-                        color = antiAliasing(ray, nY, i, j, recursionDepth);
-                    }
-
                     if (superSampling) {
                         antiAliasing = false;
                         color = superSampling(ray, nX, nY, i, j, recursionDepth);
+                    }
+
+                    if (antiAliasing) {
+                        superSampling = false;
+                        color = antiAliasing(ray, nX ,nY, i, j);
                     }
 
                     imageWriter.writePixel(i, j, color);
