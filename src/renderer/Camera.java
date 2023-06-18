@@ -11,6 +11,9 @@ import java.util.stream.IntStream;
 import static primitives.Util.isZero;
 import static renderer.Pixel.printInterval;
 
+/**
+ * Represents a camera in a 3D scene.
+ */
 public class Camera {
     private final Point location;
     private final Vector Vright;
@@ -27,29 +30,60 @@ public class Camera {
     private int recursionDepth = 5;
 
 
+    /**
+     * Sets the recursion depth for ray tracing.
+     *
+     * @param recursionDepth The recursion depth
+     * @return The camera object
+     */
     public Camera setRecursionDepth(int recursionDepth) {
         this.recursionDepth = recursionDepth;
         return this;
     }
 
 
-    public Camera setantiAliasing(boolean antiAliasing) {
+    /**
+     * Enables or disables anti-aliasing.
+     *
+     * @param antiAliasing True to enable anti-aliasing, false to disable it
+     * @return The camera object
+     */
+    public Camera setAntiAliasing(boolean antiAliasing) {
         this.antiAliasing = antiAliasing;
         return this;
     }
 
+    /**
+     * Enables or disables multi-threading.
+     *
+     * @param MT True to enable multi-threading, false to disable it
+     * @return The camera object
+     */
     public Camera setMT(boolean MT) {
         this.MT = MT;
         return this;
     }
 
-    public Camera setsuperSampling(boolean superSampling) {
+    /**
+     * Enables or disables super-sampling.
+     *
+     * @param superSampling True to enable super-sampling, false to disable it
+     * @return The camera object
+     */
+    public Camera setSuperSampling(boolean superSampling) {
         this.superSampling = superSampling;
         return this;
     }
 
+    /**
+     * Creates a camera with the specified location, view direction, and up direction.
+     *
+     * @param location The location of the camera
+     * @param vto      The view direction vector of the camera
+     * @param vup      The up direction vector of the camera
+     * @throws IllegalArgumentException if the view direction and up direction vectors are not orthogonal
+     */
     public Camera(Point location, Vector vto, Vector vup) {
-
         if (!isZero(vup.dotProduct(vto))) {
             throw new IllegalArgumentException("The two Vectors are not orthogonal");
         }
@@ -59,56 +93,126 @@ public class Camera {
         Vright = Vup.crossProduct(Vto).scale(-1).normalize();
     }
 
+    /**
+     * Returns the location of the camera.
+     *
+     * @return The location of the camera
+     */
     public Point getLocation() {
         return location;
     }
 
+    /**
+     * Returns the right vector of the camera.
+     *
+     * @return The right vector of the camera
+     */
     public Vector getVright() {
         return Vright;
     }
 
+    /**
+     * Returns the up vector of the camera.
+     *
+     * @return The up vector of the camera
+     */
     public Vector getVup() {
         return Vup;
     }
 
+    /**
+     * Returns the view direction vector of the camera.
+     *
+     * @return The view direction vector of the camera
+     */
     public Vector getVto() {
         return Vto;
     }
 
+    /**
+     * Returns the height of the view plane.
+     *
+     * @return The height of the view plane
+     */
     public double getHeight() {
         return height;
     }
 
+    /**
+     * Returns the width of the view plane.
+     *
+     * @return The width of the view plane
+     */
     public double getWidth() {
         return width;
     }
 
+    /**
+     * Returns the distance from the camera to the view plane.
+     *
+     * @return The distance from the camera to the view plane
+     */
     public double getDistance() {
         return distance;
     }
 
+    /**
+     * Sets the size of the view plane.
+     *
+     * @param width  The width of the view plane
+     * @param height The height of the view plane
+     * @return The camera object
+     */
     public Camera setVPSize(double width, double height) {
         this.height = height;
         this.width = width;
         return this;
     }
 
+    /**
+     * Sets the distance from the camera to the view plane.
+     *
+     * @param distance The distance from the camera to the view plane
+     * @return The camera object
+     */
     public Camera setVPDistance(double distance) {
         this.distance = distance;
         return this;
     }
 
+    /**
+     * Sets the image writer for the camera.
+     *
+     * @param imageWriter The image writer
+     * @return The camera object
+     */
     public Camera setImageWriter(ImageWriter imageWriter) {
         this.imageWriter = imageWriter;
         return this;
     }
 
+    /**
+     * Sets the ray tracer for the camera.
+     *
+     * @param rayTracer The ray tracer
+     * @return The camera object
+     */
     public Camera setRayTracer(RayTracerBase rayTracer) {
         this.rayTracer = rayTracer;
         return this;
     }
 
 
+    /**
+     * Applies anti-aliasing technique to a given ray by generating additional rays within a pixel and averaging the colors.
+     *
+     * @param ray The primary ray
+     * @param nX  The number of rays to generate horizontally within the pixel
+     * @param nY  The number of rays to generate vertically within the pixel
+     * @param i   The row index of the pixel
+     * @param j   The column index of the pixel
+     * @return The averaged color of the rays
+     */
     private Color antiAliasing(Ray ray, int nX, int nY, int i, int j) {
         List<Ray> rays = new LinkedList<>();
         rays.add(ray);
@@ -116,6 +220,18 @@ public class Camera {
         return averageColor(colors);
     }
 
+
+    /**
+     * Performs super-sampling technique by generating additional rays within a pixel and recursively averaging the colors.
+     *
+     * @param ray              The primary ray
+     * @param nX               The number of rays to generate horizontally within the pixel
+     * @param nY               The number of rays to generate vertically within the pixel
+     * @param i                The row index of the pixel
+     * @param j                The column index of the pixel
+     * @param recursionDepth   The recursion depth for super-sampling
+     * @return The averaged color of the rays
+     */
     private Color superSampling(Ray ray, int nX, int nY, int i, int j, int recursionDepth) {
         List<Ray> rays = new LinkedList<>();
         rays.add(ray);
@@ -123,6 +239,17 @@ public class Camera {
     }
 
 
+
+    /**
+     * Helper method for performing anti-aliasing by generating additional rays within a pixel.
+     *
+     * @param nX   The number of rays to generate horizontally within the pixel
+     * @param nY   The number of rays to generate vertically within the pixel
+     * @param j    The column index of the pixel
+     * @param i    The row index of the pixel
+     * @param rays The list of rays to store the generated rays
+     * @return The list of colors obtained by casting rays
+     */
     private List<Color> antiAliasingHelper(int nX, int nY, int j, int i, List<Ray> rays) {
 
         List<Color> colors = new LinkedList<Color>();
@@ -203,6 +330,11 @@ public class Camera {
 
     }
 
+    /**
+     * Renders the image by casting rays from the camera to each pixel.
+     * Performs anti-aliasing and super-sampling if enabled.
+     * Throws MissingResourceException if any required resource is missing.
+     */
     public void renderImage() {
         // Check if all the required resources are set before rendering the image
         if (location == null) {
@@ -297,6 +429,13 @@ public class Camera {
         }
     }
 
+    /**
+     * Prints a grid on the image with the specified interval and color.
+     * Throws MissingResourceException if the imageWriter is not set.
+     *
+     * @param interval The interval between grid lines.
+     * @param color    The color of the grid lines.
+     */
     public void printGrid(int interval, Color color) {
         // Check if the imageWriter is set before printing the grid
         if (imageWriter == null)
@@ -317,6 +456,10 @@ public class Camera {
         imageWriter.writeToImage();
     }
 
+    /**
+     * Writes the rendered image to the image file.
+     * Throws MissingResourceException if the imageWriter is not set.
+     */
     public Color castRay(Ray ray) {
         // Use the ray tracer base to trace the given ray and return the resulting color
 
@@ -324,6 +467,18 @@ public class Camera {
     }
 
 
+    /**
+     * Helper method for super-sampling that performs the sub-sampling process.
+     * Returns a list of colors representing the sampled colors in the sub-pixels.
+     *
+     * @param nX                    The number of pixels in the X direction
+     * @param nY                    The number of pixels in the Y direction
+     * @param j                     The current pixel's X coordinate
+     * @param i                     The current pixel's Y coordinate
+     * @param rays                  The list of rays to be traced for each sub-pixel
+     * @param currentRecursionDepth The current recursion depth
+     * @return A list of colors representing the sampled colors in the sub-pixels
+     */
     private List<Color> superSamplingHelper(int nX, int nY, int j, int i, List<Ray> rays, int currentRecursionDepth) {
         List<Color> colors = new LinkedList<>();
 
@@ -358,7 +513,6 @@ public class Camera {
                 Color topRightColor = castRayAtPixel(xJ + Rx, yI);
                 Color bottomLeftColor = castRayAtPixel(xJ, yI + Ry);
                 Color bottomRightColor = castRayAtPixel(xJ + Rx, yI + Ry);
-
                 colorsForAverage.add(topLeftColor);
                 colorsForAverage.add(topRightColor);
                 colorsForAverage.add(bottomLeftColor);
@@ -371,6 +525,18 @@ public class Camera {
         return colors;
     }
 
+    /**
+     * Returns the color at the specified pixel by casting rays to the four corners
+     * and comparing their colors. If all four corners have the same color, that color is returned.
+     * Otherwise, null is returned to indicate different colors at the corners.
+     *
+     * @param x              The X coordinate of the pixel's top-left corner
+     * @param y              The Y coordinate of the pixel's top-left corner
+     * @param width          The width of the pixel
+     * @param height         The height of the pixel
+     * @param recursionDepth The current recursion depth
+     * @return The color at the pixel if all four corners have the same color, otherwise null
+     */
     private Color getColorAtPixel(double x, double y, double width, double height, int recursionDepth) {
         Color topLeftColor = castRayAtPixel(x, y);
         Color topRightColor = castRayAtPixel(x + width, y);
@@ -397,4 +563,3 @@ public class Camera {
         return castRay(ray);
     }
 }
-

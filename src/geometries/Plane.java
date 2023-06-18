@@ -9,66 +9,95 @@ import java.util.List;
 import static primitives.Util.alignZero;
 import static primitives.Util.isZero;
 
+/**
+ * The Plane class represents a geometric plane in 3D space.
+ */
 public class Plane extends Geometry {
-    Point q0;
-    Vector normal = null;
+    private Point q0;
+    private Vector normal;
 
+    /**
+     * Constructs a Plane object with the specified base point and normal vector.
+     *
+     * @param q0     The base point of the plane.
+     * @param normal The normal vector of the plane.
+     */
     public Plane(Point q0, Vector normal) {
         this.q0 = q0;
         this.normal = normal.normalize();
     }
 
+    /**
+     * Constructs a Plane object from three given points on the plane.
+     * The normal vector is calculated as the cross product of the vectors (a - b) and (a - c).
+     *
+     * @param a The first point on the plane.
+     * @param b The second point on the plane.
+     * @param c The third point on the plane.
+     */
     public Plane(Point a, Point b, Point c) {
         q0 = a;
-        normal = (a.subtract(b).crossProduct(a.subtract(c))).normalize();  // calculate the normalize normal
+        normal = (a.subtract(b).crossProduct(a.subtract(c))).normalize();
     }
 
+    /**
+     * Computes the normal vector to the plane at the specified point.
+     * This method is overridden from the parent Geometry class.
+     *
+     * @param point The point on the plane.
+     * @return The normal vector to the plane.
+     */
+    @Override
     public Vector getNormal(Point point) {
-        Vector v = getNormal();
-        return v;
+        return getNormal();
     }
 
+    /**
+     * Returns the normal vector to the plane.
+     *
+     * @return The normal vector to the plane.
+     */
     public Vector getNormal() {
         return normal;
     }
 
-
+    /**
+     * Finds the geometric intersections between the given ray and the plane.
+     * This method is overridden from the parent Geometry class.
+     *
+     * @param ray The ray for intersection calculation.
+     * @return A list of GeoPoint objects representing the geometric intersections.
+     */
     @Override
     protected List<GeoPoint> findGeoIntersectionsHelper(Ray ray) {
+        Point P0 = ray.getP0();
+        Vector v = ray.getDir();
 
-        Point P0 = ray.getP0(); // according to the illustration P0 is the same point of the ray's P0 (that's why the definition))
-        Vector v = ray.getDir(); // according to the illustration v is the same vector of the ray's vector (that's why the definition))
-
-        if (q0.equals(P0)) { // if the ray starting from the plane it doesn't cut the plane at all
-            return null; // so return null
+        if (q0.equals(P0)) {
+            return null;
         }
 
-        Vector n = normal; // the normal to the plane
+        Vector n = normal;
 
-        double nv = n.dotProduct(v); // the formula's denominator of "t" (t =(n*(Q-P0))/nv)
+        double nv = n.dotProduct(v);
 
-        // ray is lying on the plane axis
-        if (isZero(nv)) { // can't divide by zero (nv is the denominator)
+        if (isZero(nv)) {
             return null;
         }
 
         Vector q0_p0 = q0.subtract(P0);
         double nP0Q0 = alignZero(n.dotProduct(q0_p0));
 
-        // t should be bigger than 0
         if (isZero(nP0Q0)) {
             return null;
         }
 
         double t = alignZero(nP0Q0 / nv);
 
-        // t should be bigger than 0
         if (t <= 0) {
             return null;
         }
 
-        return List.of(new GeoPoint(this,ray.getPoint(t)));
+        return List.of(new GeoPoint(this, ray.getPoint(t)));
     }
-
-
 }
