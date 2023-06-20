@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="level 9 - MT, started superSampling">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+    <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="Complete level 9!">
+      <change afterPath="$PROJECT_DIR$/unittests/renderer/Level7Picture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unittests/renderer/houseSuperSampling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unittests/renderer/pyramidAntiAliasing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" afterDir="false" />
@@ -20,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -110,40 +112,8 @@
       <recent name="primitives" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReflectionRefractionTests.Bonus">
-    <configuration name="LightsTests.spherePoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ISE5783_3676_3060" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lighting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lighting" />
-      <option name="MAIN_CLASS_NAME" value="lighting.LightsTests" />
-      <option name="METHOD_NAME" value="spherePoint" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LightsTests.sphereSpot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ISE5783_3676_3060" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lighting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lighting" />
-      <option name="MAIN_CLASS_NAME" value="lighting.LightsTests" />
-      <option name="METHOD_NAME" value="sphereSpot" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReflectionRefractionTests.Bonus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.pyramidAntiAliasing.finalPictureAntiAliasing">
+    <configuration name="Level7Picture.Level7PictureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
         <pattern>
@@ -152,14 +122,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="renderer" />
-      <option name="MAIN_CLASS_NAME" value="renderer.ReflectionRefractionTests" />
-      <option name="METHOD_NAME" value="Bonus" />
+      <option name="MAIN_CLASS_NAME" value="renderer.Level7Picture" />
+      <option name="METHOD_NAME" value="Level7PictureTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReflectionRefractionTests.picture1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Level7Picture.finalPicture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
         <pattern>
@@ -168,14 +138,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="renderer" />
-      <option name="MAIN_CLASS_NAME" value="renderer.ReflectionRefractionTests" />
-      <option name="METHOD_NAME" value="picture1" />
+      <option name="MAIN_CLASS_NAME" value="renderer.Level7Picture" />
+      <option name="METHOD_NAME" value="finalPicture" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReflectionRefractionTests.twoSpheres" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Level7Picture.finalPictureAdaptiveSuperSampling" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
         <pattern>
@@ -184,8 +154,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="renderer" />
-      <option name="MAIN_CLASS_NAME" value="renderer.ReflectionRefractionTests" />
-      <option name="METHOD_NAME" value="twoSpheres" />
+      <option name="MAIN_CLASS_NAME" value="renderer.Level7Picture" />
+      <option name="METHOD_NAME" value="finalPictureAdaptiveSuperSampling" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="houseSuperSampling.finalPictureAdaptiveSuperSampling" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ISE5783_3676_3060" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="renderer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="renderer" />
+      <option name="MAIN_CLASS_NAME" value="renderer.houseSuperSampling" />
+      <option name="METHOD_NAME" value="finalPictureAdaptiveSuperSampling" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pyramidAntiAliasing.finalPictureAntiAliasing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ISE5783_3676_3060" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="renderer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="renderer" />
+      <option name="MAIN_CLASS_NAME" value="renderer.pyramidAntiAliasing" />
+      <option name="METHOD_NAME" value="finalPictureAntiAliasing" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ReflectionRefractionTests.Bonus" />
-        <item itemvalue="JUnit.LightsTests.spherePoint" />
-        <item itemvalue="JUnit.LightsTests.sphereSpot" />
-        <item itemvalue="JUnit.ReflectionRefractionTests.twoSpheres" />
-        <item itemvalue="JUnit.ReflectionRefractionTests.picture1" />
+        <item itemvalue="JUnit.pyramidAntiAliasing.finalPictureAntiAliasing" />
+        <item itemvalue="JUnit.houseSuperSampling.finalPictureAdaptiveSuperSampling" />
+        <item itemvalue="JUnit.Level7Picture.finalPictureAdaptiveSuperSampling" />
+        <item itemvalue="JUnit.Level7Picture.finalPicture" />
+        <item itemvalue="JUnit.Level7Picture.Level7PictureTest" />
       </list>
     </recent_temporary>
   </component>
@@ -283,28 +285,9 @@
       <workItem from="1687039350439" duration="5526000" />
       <workItem from="1687081064308" duration="584000" />
       <workItem from="1687081667123" duration="20000" />
-      <workItem from="1687081688968" duration="1980000" />
-    </task>
-    <task id="LOCAL‎-00011" summary="tests for getnormals&#10;mimiush to getnormals&#10;end of targil 2!">
-      <created>1681423929810</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL‎-00011" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1681423929810</updated>
-    </task>
-    <task id="LOCAL‎-00012" summary="taged level 2">
-      <created>1681663995026</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL‎-00012" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1681663995026</updated>
-    </task>
-    <task id="LOCAL‎-00013" summary="started level 3">
-      <created>1681833685533</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL‎-00013" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1681833685533</updated>
+      <workItem from="1687081688968" duration="2300000" />
+      <workItem from="1687091226166" duration="1791000" />
+      <workItem from="1687271637735" duration="20022000" />
     </task>
     <task id="LOCAL‎-00014" summary="started level 3">
       <created>1682235642937</created>
@@ -628,7 +611,28 @@
       <option name="project" value="LOCAL‎" />
       <updated>1686730857557</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL‎-00060" summary="Complete level 9!">
+      <created>1687083738986</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL‎-00060" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1687083738986</updated>
+    </task>
+    <task id="LOCAL‎-00061" summary="Complete level 9!">
+      <created>1687083891743</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL‎-00061" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1687083891743</updated>
+    </task>
+    <task id="LOCAL‎-00062" summary="Complete level 9!">
+      <created>1687083979946</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL‎-00062" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1687083979946</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -646,7 +650,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="implemented findIntersection in sphere class" />
     <MESSAGE value="completed all Sphere Tests" />
     <MESSAGE value="Changes by gilad" />
     <MESSAGE value="completed all Plane Tests (findIntersections)" />
@@ -671,7 +674,8 @@
     <MESSAGE value="Complete level 8! &#10;(Anti-aliasing)" />
     <MESSAGE value="level 9 - MT, started superSampling" />
     <MESSAGE value="level 9 - MT, Not final superSampling" />
-    <option name="LAST_COMMIT_MESSAGE" value="level 9 - MT, Not final superSampling" />
+    <MESSAGE value="Complete level 9!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete level 9!" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

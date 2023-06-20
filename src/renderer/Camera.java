@@ -23,12 +23,13 @@ public class Camera {
     RayTracerBase rayTracer;
     private double height, width, distance;
     /// turns the improvements ON/OFF
-    private boolean antiAliasing = false;
-    private boolean MT = false;
-    private boolean superSampling = false;
+    private boolean isAntiAliasing = false;
+    private boolean isMultiThreading = false;
+    private boolean isAdaptiveSuperSampling = false;
 
     private int recursionDepth = 5;
 
+    private int numOfRays = 300;
 
     /**
      * Sets the recursion depth for ray tracing.
@@ -41,37 +42,48 @@ public class Camera {
         return this;
     }
 
+    /**
+     * Sets the num of rays for ray tracing.
+     *
+     * @param numOfRays The number of rays sent throw pixel in Anti-Aliasing
+     * @return The camera object
+     */
+    public Camera setNumOfRays(int numOfRays) {
+        this.numOfRays = numOfRays;
+        return this;
+    }
+
 
     /**
      * Enables or disables anti-aliasing.
      *
-     * @param antiAliasing True to enable anti-aliasing, false to disable it
+     * @param AntiAliasing True to enable anti-aliasing, false to disable it
      * @return The camera object
      */
-    public Camera setAntiAliasing(boolean antiAliasing) {
-        this.antiAliasing = antiAliasing;
+    public Camera setAntiAliasing(boolean AntiAliasing) {
+        this.isAntiAliasing = AntiAliasing;
         return this;
     }
 
     /**
      * Enables or disables multi-threading.
      *
-     * @param MT True to enable multi-threading, false to disable it
+     * @param multiThreading True to enable multi-threading, false to disable it
      * @return The camera object
      */
-    public Camera setMT(boolean MT) {
-        this.MT = MT;
+    public Camera setMultiThreading(boolean multiThreading) {
+        this.isMultiThreading = multiThreading;
         return this;
     }
 
     /**
      * Enables or disables super-sampling.
      *
-     * @param superSampling True to enable super-sampling, false to disable it
+     * @param isAdaptiveSuperSampling True to enable super-sampling, false to disable it
      * @return The camera object
      */
-    public Camera setSuperSampling(boolean superSampling) {
-        this.superSampling = superSampling;
+    public Camera setAdaptiveSuperSampling(boolean isAdaptiveSuperSampling) {
+        this.isAdaptiveSuperSampling = isAdaptiveSuperSampling;
         return this;
     }
 
@@ -213,10 +225,10 @@ public class Camera {
      * @param j   The column index of the pixel
      * @return The averaged color of the rays
      */
-    private Color antiAliasing(Ray ray, int nX, int nY, int i, int j) {
+    private Color AntiAliasing(Ray ray, int nX, int nY, int i, int j) {
         List<Ray> rays = new LinkedList<>();
         rays.add(ray);
-        List<Color> colors = antiAliasingHelper(nX, nY, i, j, rays);
+        List<Color> colors = AntiAliasingHelper(nX, nY, i, j, rays);
         return averageColor(colors);
     }
 
@@ -232,10 +244,10 @@ public class Camera {
      * @param recursionDepth   The recursion depth for super-sampling
      * @return The averaged color of the rays
      */
-    private Color superSampling(Ray ray, int nX, int nY, int i, int j, int recursionDepth) {
+    private Color isAdaptiveSuperSampling(Ray ray, int nX, int nY, int i, int j, int recursionDepth) {
         List<Ray> rays = new LinkedList<>();
         rays.add(ray);
-        return averageColor(superSamplingHelper(nX, nY, i, j, rays, recursionDepth));
+        return averageColor(AdaptiveSuperSamplingHelper(nX, nY, i, j, rays, 0));
     }
 
 
@@ -250,7 +262,7 @@ public class Camera {
      * @param rays The list of rays to store the generated rays
      * @return The list of colors obtained by casting rays
      */
-    private List<Color> antiAliasingHelper(int nX, int nY, int j, int i, List<Ray> rays) {
+    private List<Color> AntiAliasingHelper(int nX, int nY, int j, int i, List<Ray> rays) {
 
         List<Color> colors = new LinkedList<Color>();
 
@@ -268,7 +280,7 @@ public class Camera {
         double maxValueY = Ry / 2;
 
         Random randomXY = new Random();
-        for (int k = 0; k < 50; k++) {
+        for (int k = 0; k < numOfRays; k++) {
             double randomX = minValueX + (maxValueX - minValueX) * randomXY.nextDouble();
             double randomY = minValueY + (maxValueY - minValueY) * randomXY.nextDouble();
 
@@ -390,26 +402,23 @@ public class Camera {
         int nX = imageWriter.getNx();
         int nY = imageWriter.getNy();
 
-        if (MT) {
-            Pixel.initialize(nY, nX, printInterval);
+        if (isMultiThreading) {
             IntStream.range(0, nY).parallel().forEach(i -> {
                 IntStream.range(0, nX).parallel().forEach(j -> {
 
                     Ray ray = constructRay(nX, nY, i, j);
                     Color color = castRay(ray);
 
-                    if (antiAliasing) {
-                        superSampling = false;
-                        color = antiAliasing(ray, nX, nY, i, j);
+                    if (isAntiAliasing) {
+                        isAdaptiveSuperSampling = false;
+                        color = AntiAliasing(ray, nX, nY, i, j);
                     }
 
-                    if (superSampling) {
-                        antiAliasing = false;
-                        color = superSampling(ray, nX, nY, i, j, recursionDepth);
+                    if (isAdaptiveSuperSampling) {
+                        isAntiAliasing = false;
+                        color = isAdaptiveSuperSampling(ray, nX, nY, i, j, recursionDepth);
                     }
 
-                    Pixel.pixelDone();
-                    Pixel.printPixel();
 
                     imageWriter.writePixel(i, j, color);
 
@@ -425,14 +434,14 @@ public class Camera {
                     Ray ray = constructRay(nX, nY, i, j);
                     Color color = castRay(ray);
 
-                    if (superSampling) {
-                        antiAliasing = false;
-                        color = superSampling(ray, nX, nY, i, j, recursionDepth);
+                    if (isAdaptiveSuperSampling) {
+                        isAntiAliasing = false;
+                        color = isAdaptiveSuperSampling(ray, nX, nY, i, j, recursionDepth);
                     }
 
-                    if (antiAliasing) {
-                        superSampling = false;
-                        color = antiAliasing(ray, nX ,nY, i, j);
+                    if (isAntiAliasing) {
+                        isAdaptiveSuperSampling = false;
+                        color = AntiAliasing(ray, nX ,nY, i, j);
                     }
 
                     imageWriter.writePixel(i, j, color);
@@ -492,7 +501,7 @@ public class Camera {
      * @param currentRecursionDepth The current recursion depth
      * @return A list of colors representing the sampled colors in the sub-pixels
      */
-    private List<Color> superSamplingHelper(int nX, int nY, int j, int i, List<Ray> rays, int currentRecursionDepth) {
+    private List<Color> AdaptiveSuperSamplingHelper(int nX, int nY, int j, int i, List<Ray> rays, int currentRecursionDepth) {
         List<Color> colors = new LinkedList<>();
 
         double Ry = height / nY;   // SIZE OF THE PIXEL - HEIGHT
@@ -508,7 +517,6 @@ public class Camera {
             if (currentRecursionDepth < recursionDepth) {
                 double halfRx = Rx / 2;
                 double halfRy = Ry / 2;
-
                 // Subdivide the pixel into four quadrants
                 List<Ray> subRays = new ArrayList<>(rays);
                 subRays.add(new Ray(location, Vright.scale(halfRx).add(Vup.scale(halfRy))));
@@ -516,7 +524,7 @@ public class Camera {
                 subRays.add(new Ray(location, Vright.scale(-halfRx).add(Vup.scale(halfRy))));
                 subRays.add(new Ray(location, Vright.scale(-halfRx).subtract(Vup.scale(halfRy))));
 
-                colors.addAll(superSamplingHelper(nX, nY, j, i, subRays, currentRecursionDepth + 1));
+                colors.addAll(AdaptiveSuperSamplingHelper(nX, nY, j, i, subRays, currentRecursionDepth + 1));
             } else {
                 // If recursion depth is 5, return the average color of the edges to each quarter
 
