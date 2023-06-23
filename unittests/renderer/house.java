@@ -29,7 +29,7 @@ class house {
 
 
         scene.setAmbientLight(new AmbientLight(new Color(WHITE), 0.15));
-        // points for geometries:
+        /// points for geometries:
 
         // points for ground :
         Point ground1 = new Point(-25, -25, 0);
