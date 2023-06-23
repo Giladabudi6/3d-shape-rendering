@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="874aa220-7aef-438f-8583-4ab518bb28f0" name="Changes" comment="Complete level 9!">
-      <change afterPath="$PROJECT_DIR$/unittests/renderer/Level7Picture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unittests/renderer/houseSuperSampling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unittests/renderer/pyramidAntiAliasing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/ReflectionRefractionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/renderer/houseSuperSampling.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/house.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/renderer/pyramidAntiAliasing.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/pyramid.java" afterDir="false" />
     </list>
     <list id="d72368fa-9b8f-4334-9db2-9ef678b1a3d5" name="Changes by gilad" comment="completed all Plane Tests (findIntersections) - changes by gilad" />
     <list id="262a25ad-918a-4c70-bf3b-68817dfc0a0b" name="Changes by tsuri" comment="level 9 - MT, started superSampling" />
@@ -112,55 +109,7 @@
       <recent name="primitives" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.pyramidAntiAliasing.finalPictureAntiAliasing">
-    <configuration name="Level7Picture.Level7PictureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ISE5783_3676_3060" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="renderer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="renderer" />
-      <option name="MAIN_CLASS_NAME" value="renderer.Level7Picture" />
-      <option name="METHOD_NAME" value="Level7PictureTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Level7Picture.finalPicture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ISE5783_3676_3060" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="renderer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="renderer" />
-      <option name="MAIN_CLASS_NAME" value="renderer.Level7Picture" />
-      <option name="METHOD_NAME" value="finalPicture" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Level7Picture.finalPictureAdaptiveSuperSampling" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ISE5783_3676_3060" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="renderer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="renderer" />
-      <option name="MAIN_CLASS_NAME" value="renderer.Level7Picture" />
-      <option name="METHOD_NAME" value="finalPictureAdaptiveSuperSampling" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.renderer in ISE5783_3676_3060">
     <configuration name="houseSuperSampling.finalPictureAdaptiveSuperSampling" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ISE5783_3676_3060" />
       <extension name="coverage">
@@ -172,6 +121,22 @@
       <option name="PACKAGE_NAME" value="renderer" />
       <option name="MAIN_CLASS_NAME" value="renderer.houseSuperSampling" />
       <option name="METHOD_NAME" value="finalPictureAdaptiveSuperSampling" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="house.finalPictureHouse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ISE5783_3676_3060" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="renderer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="renderer" />
+      <option name="MAIN_CLASS_NAME" value="renderer.house" />
+      <option name="METHOD_NAME" value="finalPictureHouse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,13 +158,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="pyramid.finalPicturePyramid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ISE5783_3676_3060" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="renderer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="renderer" />
+      <option name="MAIN_CLASS_NAME" value="renderer.pyramid" />
+      <option name="METHOD_NAME" value="finalPicturePyramid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="renderer in ISE5783_3676_3060" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ISE5783_3676_3060" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="renderer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="renderer" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.pyramidAntiAliasing.finalPictureAntiAliasing" />
+        <item itemvalue="JUnit.renderer in ISE5783_3676_3060" />
+        <item itemvalue="JUnit.pyramid.finalPicturePyramid" />
+        <item itemvalue="JUnit.house.finalPictureHouse" />
         <item itemvalue="JUnit.houseSuperSampling.finalPictureAdaptiveSuperSampling" />
-        <item itemvalue="JUnit.Level7Picture.finalPictureAdaptiveSuperSampling" />
-        <item itemvalue="JUnit.Level7Picture.finalPicture" />
-        <item itemvalue="JUnit.Level7Picture.Level7PictureTest" />
+        <item itemvalue="JUnit.pyramidAntiAliasing.finalPictureAntiAliasing" />
       </list>
     </recent_temporary>
   </component>
@@ -287,14 +282,8 @@
       <workItem from="1687081667123" duration="20000" />
       <workItem from="1687081688968" duration="2300000" />
       <workItem from="1687091226166" duration="1791000" />
-      <workItem from="1687271637735" duration="20022000" />
-    </task>
-    <task id="LOCAL‎-00014" summary="started level 3">
-      <created>1682235642937</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL‎-00014" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1682235642937</updated>
+      <workItem from="1687271637735" duration="20743000" />
+      <workItem from="1687512740645" duration="3540000" />
     </task>
     <task id="LOCAL‎-00015" summary="started level 3">
       <created>1682235801913</created>
@@ -632,7 +621,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1687083979946</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL‎-00063" summary="Complete level 9!">
+      <created>1687292659725</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL‎-00063" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1687292659725</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

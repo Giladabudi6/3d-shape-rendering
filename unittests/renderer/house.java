@@ -14,14 +14,13 @@ import primitives.Vector;
 import scene.Scene;
 
 import static java.awt.Color.*;
-import static java.awt.Color.RED;
 
-class houseSuperSampling {
+class house {
 
     private Scene scene = new Scene("Test scene");
 
     @Test
-    public void finalPictureAdaptiveSuperSampling() {
+    public void finalPictureHouse() {
         Camera camera = new Camera(new Point(-300, -300, 95), new Vector(1, 1, -0.2), (new Vector(1, 1, -0.2))
                 .crossProduct(new Vector(-1, 1, 0))).setAntiAliasing(false)
                 .setMultiThreading(true)
@@ -51,7 +50,6 @@ class houseSuperSampling {
         Point n = new Point(0, 5, 10);
         Point o = new Point(0, 5, 5);
         Point p = new Point(0, 0, 5);
-
 
 
         // points for clouds:
@@ -154,7 +152,6 @@ class houseSuperSampling {
         Point O3 = O.add(man3);
 
 
-
         scene.geometries.add( //
 
                 // ground
@@ -200,14 +197,12 @@ class houseSuperSampling {
                         .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.003).setnShininess(100)),
 
 
-
                 // window:
                 new Triangle(n, o, c).setEmission(new Color(0, 0, 245)) //
                         .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.9).setnShininess(100)),
 
                 new Triangle(c, o, p).setEmission(new Color(0, 0, 245)) //
                         .setMaterial(new Material().setkD(0.7).setkS(0.7).setkT(0.9).setnShininess(100)),
-
 
 
                 // roof:
@@ -321,10 +316,10 @@ class houseSuperSampling {
         scene.lights.add(new DirectionalLight(new Color(94, 100, 86), new Vector(0, 0, -1)));
         //scene.lights.add(new SpotLight(new Color(100, 30, 30), new Point(15, -5, 0), new Vector(-1, 1, 0)));
         scene.lights.add(new PointLight(new Color(150, 150, 0), new Point(5, 5, 14)));
-        scene.lights.add(new SpotLight(new Color(70, 110, 85), new Point(10, 14.5, 12),new Vector(-1, 0, -0.5)));
+        scene.lights.add(new SpotLight(new Color(70, 110, 85), new Point(10, 14.5, 12), new Vector(-1, 0, -0.5)));
 
 
-        ImageWriter imageWriter = new ImageWriter("finalPictureAdaptiveSuperSampling", 100, 100);
+        ImageWriter imageWriter = new ImageWriter("finalPictureHouse", 1000, 1000);
         camera.setImageWriter(imageWriter) //
                 .setRayTracer(new RayTracerBasic(scene)) //
                 .renderImage();

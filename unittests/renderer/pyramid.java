@@ -3,8 +3,6 @@ package renderer;
 import geometries.Sphere;
 import geometries.Triangle;
 import lighting.AmbientLight;
-import lighting.DirectionalLight;
-import lighting.PointLight;
 import lighting.SpotLight;
 import org.junit.jupiter.api.Test;
 import primitives.Color;
@@ -14,13 +12,12 @@ import primitives.Vector;
 import scene.Scene;
 
 import static java.awt.Color.*;
-import static java.awt.Color.RED;
 
-class pyramidAntiAliasing {
+class pyramid {
     private Scene scene = new Scene("Test scene");
 
     @Test
-    public void finalPictureAntiAliasing() {
+    public void finalPicturePyramid() {
         Camera camera = new Camera(new Point(-350, -390, 190), new Vector(0.9, 1, -0.430), (new Vector(0.9, 1, -0.430))
                 .crossProduct(new Vector(-1, 1, 0))).setAntiAliasing(false)
                 .setMultiThreading(true)
@@ -49,39 +46,7 @@ class pyramidAntiAliasing {
         Point ground1 = new Point (-50, -50, 0);
         Point ground2 = new Point(50, -50, 0);
         Point ground3 = new Point(50, 50, 0);
-
-        Point ground4 = new Point(-50, -50, 0);
-        Point ground5 = new Point(50, 50, 0);
-        Point ground6 = new Point(-50, 50, 0);
-
-
-    // points for triangles of the pyramid1:
-        // Base (Triangle):
-        Point a = new Point(-10, -10, 0);
-        Point b = new Point(10, -10, 0);
-        Point c = new Point(0, 10, 0);
-        // Apex (Height):
-        Point d = new Point(0, 0, 10);
-
-    //points for triangles of the Pyramid 2:
-        //Base (Triangle)
-        Point e = new Point(-20, 0, 0);
-        Point f = new Point (-10, 0, 0);
-        Point g = new Point (-15, 10, 0);
-        //Apex (Height)
-        Point l = new Point (-15, 10, 10);
-
-
-        Point m = new Point(10, 10, 10);
-        Point n = new Point(0, 5, 10);
-        Point o = new Point(0, 5, 5);
-        Point p = new Point(0, 0, 5);
-
-        // points for clouds:
-        Point h = new Point(-3, 0, 35);
-        Point i = new Point(-14, 0, 34);
-        Point j = new Point(-11, 2, 36);
-        Point k = new Point(-7, -1, 35);
+        Point ground4 = new Point(-50, 50, 0);
 
 
         //points for Camel1:
@@ -188,7 +153,7 @@ class pyramidAntiAliasing {
                 new Triangle(ground1, ground2, ground3).setEmission(new Color(200,180,100))
                         .setMaterial(new Material().setkD(0.7).setkS(0.2).setkT(0.003).setnShininess(100)),
 
-                new Triangle(ground4, ground5, ground6).setEmission(new Color(200,180,100))
+                new Triangle(ground1, ground3, ground4).setEmission(new Color(200,180,100))
                         .setMaterial(new Material().setkD(0.7).setkS(0.2).setkT(0.003).setnShininess(100)),
 
                 //pyramid1:
@@ -374,38 +339,13 @@ class pyramidAntiAliasing {
                         .setMaterial(new Material().setkD(0.0007).setkS(1).setkT(0.003)));
 
 
-                //ball:
-                //new Sphere(70, new Point(0,0,20)).setEmission(new Color(50,50,70)) //
-                        //.setMaterial(new Material().setkD(0.4).setkS(0).setnShininess(100).setkT(0.9))
-
-                //.setMaterial(new Material().setkS(0.00001).setkT(0.9)));
-
-
-                // clouds
-                /*new Sphere(6d, h).setEmission(new Color(60, 60, 60))
-                        .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.01)),
-
-                new Sphere(5d, i).setEmission(new Color(60, 60, 60))
-                        .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.01)),
-
-                new Sphere(3d, j).setEmission(new Color(60, 60, 60))
-                        .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.01)),
-
-                new Sphere(7d, k).setEmission(new Color(60, 60, 60))
-                        .setMaterial(new Material().setkD(0.01).setkS(0.05).setnShininess(30).setkT(0.01)));*/
-
-
-
 
         // light sources
-        //scene.lights.add(new DirectionalLight(new Color(84, 90, 76), new Vector(0, 0, -1)));
         scene.lights.add(new SpotLight(new Color(770,740,100), new Point(38,17,23), new Vector(-2.1, -1, -1))
                 .setNarrowBeam(5));
-        //scene.lights.add(new PointLight(new Color(150, 150, 0), new Point(5, 5, 14)));
-        //scene.lights.add(new SpotLight(new Color(70, 110, 85), new Point(10, 14.5, 12),new Vector(-1, 0, -0.5)));
 
 
-        ImageWriter imageWriter = new ImageWriter("finalPictureAntiAliasing", 1200, 1200);
+        ImageWriter imageWriter = new ImageWriter("finalPicturePyramid", 1000, 1000);
         camera.setImageWriter(imageWriter) //
                 .setRayTracer(new RayTracerBasic(scene)) //
                 .renderImage();
